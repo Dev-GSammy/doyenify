@@ -20,7 +20,8 @@
     "react-bootstrap": "^2.0.0-rc.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "3.4.4",
+    "react-scripts": "^5.0.1",
+    "typescript": "4.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,8 +35,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "typescript": "^4.7.4"
-  }
+  ]
 }
