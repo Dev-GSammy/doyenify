@@ -5,15 +5,11 @@ import Rectangle62 from "../img/Rectangle62.png";
 import Rectangle63 from "../img/Rectangle63.png";
 import Rectangle64 from "../img/Rectangle64.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 const About_us: React.FC = () => {
   return (
     <div>
-    
         <h2 className="text-center text-success  mb-5 mt-3" >About us</h2>
         <div> 
-        
-    
         <Row >
       <Col sm={6}>
           <h2 className="text-center">Our Mission</h2>
@@ -23,9 +19,6 @@ const About_us: React.FC = () => {
       <Col></Col>
     </Row>
     </div>
-
-
-
 <br></br>
 <br></br>
 <br></br>
@@ -42,9 +35,7 @@ const About_us: React.FC = () => {
 <br></br>
 <br></br>
 <br></br>
-    <div>
-    
-    
+    <div>  
         <Row >
       <Col sm={6}>
           <h2 className="text-center  mb-5">Our Process</h2>
@@ -54,12 +45,7 @@ const About_us: React.FC = () => {
       <Col sm={6}><img src={Rectangle64} alt="Rectangle64"  width="500" height="300" className="rounded"/></Col>
     </Row>
     </div>
-    </div>
-    
-
-    
-
-    
+    </div>    
   )
 }
 export default About_us

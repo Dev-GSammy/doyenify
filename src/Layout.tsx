@@ -1,12 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { Container, Overlay } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import Landing from "./Pages/Landing";
 import About_us from "./Pages/About_us";
-
-
 const Layout: React.FC = () => {
   return (
     <Router>
@@ -23,5 +21,4 @@ const Layout: React.FC = () => {
     </Router>
   );
 };
-
 export default Layout;
