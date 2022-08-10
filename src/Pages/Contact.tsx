@@ -42,8 +42,6 @@ const Contact: React.FC = () => {
     </main>
     </div>
     </Col>
-
-
     <Col>
     <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>First Name</Form.Label>
@@ -74,6 +72,13 @@ const Contact: React.FC = () => {
         </Form.Text>
       </Form.Group>
 
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Message</Form.Label>
+        <Form.Control type="message" placeholder="Write your message here" />
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+
       <Button variant="success" type="submit" className="">
         Submit
       </Button>
@@ -84,7 +89,6 @@ const Contact: React.FC = () => {
     </div>
     <br></br>
    
-
     </main>
 </div>
 </>
