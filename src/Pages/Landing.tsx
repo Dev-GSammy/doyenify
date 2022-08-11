@@ -36,7 +36,8 @@ const Landing: React.FC = () => {
     <div className="my-3 p-3 rounded shadow-sm">
     <h2 className="text-center  mb-5">Why Doyenify?</h2>
     <Row className="mb-5">
-      <Col lg={4} className="text-center" ><div style={divStyle} ><Display size={96}/>
+      <Col lg={4} className="text-center" >
+        <div style={divStyle} ><Display size={96}/>
       <p style={{marginTop: "25%"}}><h4>Reliable</h4></p></div></Col>
       <Col sm={4} className="text-center "><div style={divStyle} ><Award  size={96} /><p style={{marginTop: "25%"}}><h4>Professionalism</h4></p></div></Col>
       <Col sm={4} className="text-center"><div style={divStyle} ><PersonHeart size={96} /><p style={{marginTop: "25%"}}><h4>Integrity</h4></p></div></Col>

@@ -19,7 +19,6 @@ const navBarStyles = {
   backgroundImage: "linear-gradient(0deg, #D2D2D2 0%, #97D9E1 100%);",
   boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.3)"
 };
-
 const Header: React.FC = () => {
   return (
     <div>
@@ -38,12 +37,11 @@ const Header: React.FC = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/About_us">About us</Nav.Link>
+              <Nav.Link href="/About_us">About us</Nav.Link> 
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <div className="nav-scroller bg-white shadow-sm">
         <Container>
           <nav className="nav nav-underline">
@@ -53,5 +51,4 @@ const Header: React.FC = () => {
     </div>
   );
 };
-
 export default Header;

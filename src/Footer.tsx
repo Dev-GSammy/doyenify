@@ -21,32 +21,37 @@ const Footer: React.FC = () => {
   <div className="" style={{backgroundColor: "#42ba96"}}>
   <div className="my-3 p-3 rounded shadow-sm">
     <Row className="mb-5">
-      <Col lg={3} className="text-center text-white" >
-        <h5>Doyenify</h5>
-      <div>
-      61 community road,
-      <div>Akoka,yaba,Lagos.</div>
-        
-        </div>
-        </Col>
 
-      <Col sm={3} className="text-center text-white  ">
-      <h5>Main Navigation</h5>
-      <div>About</div>
-      <br></br>
-      <div>Services</div>
-      <br></br>
-      <div>Products</div>
+      <Col lg={3} className="text-center" ><h6 className="text-white"> Doyenify</h6>
+          <p><span></span></p>
+          <div className="text-white">61, community road, Akoka, Yaba, Lagos</div>
+
       </Col>
-      <Col sm={3} className="text-center text-white"> <h5>Social media</h5>
-      <div><Facebook/></div>
-      <br></br>
-      <div><Twitter/></div>
-      <br></br>
-      <div><Youtube/></div></Col>
-      <Col sm={3} className="text-center text-white" > <h5>Contact</h5>
-      <div>0808*******</div>
-      <div>080********</div>
+      <Col sm={3} className="text-center "><h6 className="text-white"> Main Navigation</h6>
+      <p><span></span></p>
+      <div className="text-white">About</div>
+      <p><span></span></p>
+      <div className="text-white">Services</div>
+      <p><span></span></p>
+      <div className="text-white">Products</div>
+      </Col>
+
+      <Col sm={3} className="text-center"><h6 className="text-white"> Social Media</h6>
+      <p><span></span></p>
+      <div className="text-white"><Facebook/> </div>
+      <p><span></span></p>
+      <div className="text-white"><Twitter/></div>
+      <p><span></span></p>
+      <div className="text-white"><Youtube/> </div>
+      </Col>
+    
+      <Col sm={3} className="text-center "><h6 className="text-white"> Contact</h6>
+      <p><span></span></p>
+      <div className="text-white">08034657796</div>
+      <p><span></span></p>
+      <div className="text-white">78697840600</div>
+      <p><span></span></p>
+      <div className="text-white">info@doyenify.tech</div>
       </Col>
     </Row>
     </div>
