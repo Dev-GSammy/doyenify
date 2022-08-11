@@ -15,7 +15,7 @@ const divStyle = {
 
 const Landing: React.FC = () => {
   return (
-    <>
+    <> 
 <div>
   <main role="main" className="container">
   <div className="my-3 p-3 rounded shadow-sm" style={{backgroundColor: "#F4FDF4"}}>

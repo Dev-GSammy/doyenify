@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
   <div className="" style={{backgroundColor: "#42ba96"}}>
   <div className="my-3 p-3 rounded shadow-sm">
     <Row className="mb-5">
+
       <Col lg={3} className="text-center" ><h6 className="text-white"> Doyenify</h6>
           <p><span></span></p>
           <div className="text-white">61, community road, Akoka, Yaba, Lagos</div>
@@ -52,8 +53,6 @@ const Footer: React.FC = () => {
       <p><span></span></p>
       <div className="text-white">info@doyenify.tech</div>
       </Col>
-
-      
     </Row>
     </div>
      </div>
