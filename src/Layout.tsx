@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import Landing from "./Pages/Landing";
+import Services from "./Pages/Services";
 
 const Layout: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Layout: React.FC = () => {
         <Container>
           <Routes>
           <Route path="/" element={<Landing/>} />
+          <Route path="/Services" element={<Services/>} />
           </Routes>
         </Container>
       </main>
@@ -20,5 +22,4 @@ const Layout: React.FC = () => {
     </Router>
   );
 };
-
 export default Layout;

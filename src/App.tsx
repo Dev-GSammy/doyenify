@@ -8,6 +8,8 @@ import "bootstrap/dist/css/bootstrap.css"; // Import precompiled Bootstrap css
 
 export default function App() {
   return (
+    <div>
         <Layout />
+    </div>
   );
 }
