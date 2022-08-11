@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Landing from "./Pages/Landing";
 import About_us from "./Pages/About_us";
-
+import Services from "./Pages/Services";
 const Layout: React.FC = () => {
   return (
     <Router>
@@ -15,6 +15,7 @@ const Layout: React.FC = () => {
           <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="About_us" element={<About_us/>} /> 
+          <Route path="Services" element={<Services/>} />
           </Routes>
         </Container>
       </main>
