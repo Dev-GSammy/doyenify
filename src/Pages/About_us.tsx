@@ -16,7 +16,7 @@ const About_us: React.FC = () => {
           <p><span></span></p>
           <div>Our mission is to help businesses solve problems by building affordable IT solutions to make their processes seamless and achieve their organisational objectives.</div>
       </Col>
-      <Col></Col>
+      <Col sm={6}><img src={Rectangle62} alt="Rectangle62"  width="500" height="300" className="rounded"/></Col>
     </Row>
     </div>
 <br></br>
