@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Display, PersonHeart ,Award, FileEarmarkMedicalFill,CalendarFill, Cart4} from 'react-bootstrap-icons';
 import office from '../img/office.jpg';
+import wel from '../img/wel.jpg';
 
 const divStyle = {
   backgroundColor: "#F4FDF4",
@@ -19,47 +20,45 @@ const Landing: React.FC = () => {
 <div>
   <main role="main" className="container">
   <div className="my-3 p-3 rounded shadow-sm" style={{backgroundColor: "#F4FDF4"}}>
-    <Row >
+    <Row>
       <Col sm={6}>
           <h2 className="text-success">Welcome to Doyenify</h2>
+          <h2 className="text-success">Technologies</h2>
           <p><span></span></p>
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-             It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged.
-             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          <div>At Doyenify, we help organisations solve problems with bespoke IT solutions 
+            by providing the most efficient technological solutions to improve business profitability</div>
       </Col>
-      <Col sm={6}><img src={office} alt="office"  width="500" height="300" className="rounded"/></Col>
+      <Col sm={6}><img src={wel} alt="wel"  width="500" height="300" className="rounded"/></Col>
     </Row>
     </div>
     <div className="my-3 p-3 rounded shadow-sm">
-    <h2 className="text-center  mb-5">Why Doyenify?</h2>
+    <h3 className="text-center text-success mb-5">Why Doyenify?</h3>
     <Row className="mb-5">
       <Col lg={4} className="text-center" >
         <div style={divStyle} ><Display size={96}/>
-      <p style={{marginTop: "25%"}}><h4>Reliable</h4></p></div></Col>
-      <Col sm={4} className="text-center "><div style={divStyle} ><Award  size={96} /><p style={{marginTop: "25%"}}><h4>Professionalism</h4></p></div></Col>
-      <Col sm={4} className="text-center"><div style={divStyle} ><PersonHeart size={96} /><p style={{marginTop: "25%"}}><h4>Integrity</h4></p></div></Col>
+      <p style={{marginTop: "25%"}}><h5>Reliable</h5></p></div></Col>
+      <Col sm={4} className="text-center "><div style={divStyle} ><Award  size={96} /><p style={{marginTop: "25%"}}><h5>Professionalism</h5></p></div></Col>
+      <Col sm={4} className="text-center"><div style={divStyle} ><PersonHeart size={96} /><p style={{marginTop: "25%"}}><h5>Integrity</h5></p></div></Col>
     </Row>
     </div>
     <div className="my-3 p-3 rounded shadow-sm">
     <Row >
     <Col sm={6}><img src={office} alt="office"  width="500" height="300" className="rounded"/></Col>
       <Col sm={6}>
-          <h2 className="text-success">Be a data Guru</h2>
+          <h3 className="text-success">Be a Tech Guru</h3>
           <p><span></span></p>
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-             It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged.
-             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          <div>We offer distinctive training and reputable professional development
+             programs designed to cover and meet the needs of all sectors of our society 
+             ranging from individuals, corporate establishments and government agencies 
+             making them international standard. Our training module is holistic,
+             which include foundational theories as well 
+            as hands-on application activities that will go a long way to
+             develop minds and making them IT professionals.</div>
       </Col>
     </Row>
     </div>
     <div className="my-3 p-3 rounded shadow-sm">
-    <h2 className="text-center  mb-5">Our Products</h2>
+    <h3 className="text-center text-success mb-5">Our Products</h3>
     <Row className="mb-5">
       <Col lg={4} className="text-center" ><div style={divStyle} ><FileEarmarkMedicalFill size={96}/>
       <p style={{marginTop: "25%"}}><strong>Pharmarcy Solutions</strong></p></div></Col>
@@ -72,5 +71,4 @@ const Landing: React.FC = () => {
   </>
   );
 };
-
 export default Landing;
