@@ -1,11 +1,45 @@
-import React from "react";
+import React  from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import fluid from "../img/fluid.jpeg";
 import {Card, Row, Col, Form, Button} from 'react-bootstrap';
+import axios from 'axios';
+import { Formik, } from 'formik';
+ import * as Yup from 'yup';
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+const schema = Yup.object().shape({
+  email: Yup.string().email('Invalid email').required('Required'),
+  message: Yup.string().required(), 
+});
 
 const Contact: React.FC = () => {
+
+  const notify = () => toast("We have recieved your message, We would get back to you shortly!");
+
+//  Form states
+// const [email, setEmail] = useState('');
+// const [message, setMessage] = useState('');
+
+  const handleSubmit=(email:string, message:string)=>{
+    console.log(email)
+    // e.preventDefault();
+    const data ={
+      Email:email,
+      Message:message,
+    }
+      axios.post('https://sheet.best/api/sheets/00eab23e-ab27-4413-b033-ce75e35eb3d3', data). then ((response)=>{
+      console.log(response);
+      // clearing form fields
+      // setEmail ('');
+      // setMessage ('');
+      
+      }) 
+    }
+
   return (
-<>
+<>  
 <div>
     <main role="main" className="container">
     <Card className="mt-5">
@@ -47,19 +81,62 @@ const Contact: React.FC = () => {
     </div>
     </Col>
     <Col>
-    <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+
+    <Formik
+      validationSchema={schema}
+      onSubmit={(values, actions) => handleSubmit(values.email, values.message)
+      // console.log(values)
+      }
+      initialValues={{
+        email: '',
+        message: '',
+      }}
+    >
+      {({
+        handleSubmit,
+        handleChange,
+        values,      
+        errors,
+
+      }) => (
+    
+      <Form noValidate onSubmit={handleSubmit}>
+      <Form.Group className="mb-3" controlId="validationCustom01">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter Email@example.com" />
+        <Form.Control 
+         type="text"
+         placeholder="Enter your email address"
+         name="email"
+         value={values.email}
+         onChange={handleChange}
+         isInvalid={!!errors.email}
+       />
+       <Form.Control.Feedback type="invalid">
+         {errors.email}
+       </Form.Control.Feedback>
+
       </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+      <Form.Group className="mb-3" controlId="validationCustom01">
         <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" placeholder="Write your message" rows={3} />
+        <Form.Control 
+        as="textarea" 
+        placeholder="Write your message" 
+        rows={3} 
+        name="message"
+        value={values.message}
+        onChange={handleChange}
+        isInvalid={!!errors.message}
+       />
+       <Form.Control.Feedback type="invalid">
+         {errors.message}
+       </Form.Control.Feedback>
       </Form.Group>
-      <Button variant="success" type="submit" className="">
-        Submit
-      </Button>
+      <Button variant="success" type="submit" onClick={notify}>Submit </Button>
+      <ToastContainer />
     </Form>
+    )}
+    </Formik>
+
     </Col>
     </Row>
     </div>
