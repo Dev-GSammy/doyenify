@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './img/doyen.png';
+import Logo from './img/doyen1.png';
 // import { Redirect } from "react-router-dom";
 import {
   Container,
@@ -31,14 +31,15 @@ const Header: React.FC = () => {
       >
         <Container>
           <Navbar.Brand>
-          <img src={logo} alt="Logo"  width="120" height="100"  className="d-inline-block align-top" />
+          <img src={Logo} alt="doyen1"  width="100" height="auto"  className="d-inline-block align-top" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/About_us">About us</Nav.Link> 
-              <Nav.Link href="/Services">Services</Nav.Link> 
+            <Nav className="ms-5 p-3" >
+              <Nav.Link href="/" className="ms-5" style={{color:"#121212"}}> <h5>Home</h5> </Nav.Link>
+              <Nav.Link href="/About_us" className="ms-4" style={{color:"#121212"}}> <h5>About us</h5></Nav.Link> 
+              <Nav.Link href="/Services" className="ms-4" style={{color:"#121212"}}> <h5>Services</h5></Nav.Link>
+              <Nav.Link href="/Contact" className="ms-4" style={{color:"#121212"}}> <h5>Contact</h5></Nav.Link> 
             </Nav>
           </Navbar.Collapse>
         </Container>

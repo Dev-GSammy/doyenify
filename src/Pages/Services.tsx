@@ -1,30 +1,22 @@
 import React from 'react'
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import {FileEarmarkMedicalFill, CalendarFill, Cart4} from 'react-bootstrap-icons';
-
-const divStyle = {
-  backgroundColor: "#F4FDF4",
-  width: "120px",
-	height: "120px",
-  borderRadius: "50px",
-  marginLeft:"115px"
-};
+import Rectangle72 from "../img/Rectangle72.png";
+import pharm from "../img/pharm.jpg";
+import payrool from "../img/payrool.jpg";
+import ecommerce from "../img/ecommerce.jpg";
+import {Container, Card, Button, Row, Col,} from 'react-bootstrap';
 
 const Services: React.FC = () => {
   return (
     <>
     <div>
       <main role="main" className="container">
-        <div>
-          <h2 className="text-center text-success mb-5 mt-3" >Services</h2>
+        <div className="mt-5">
           <Row>
-            <Col sm={6} >
-           <h1 className=" text-justify mt-4 ms-5" > Our <br></br> Services.</h1>
+            <Col sm={6}><img src={Rectangle72} alt="Rectangle72"  width="500" height="300" className="rounded"/>
             </Col>
             <Col>
-              <h2 className=" text-left text success ">An  Overview of </h2>
-              <h2 className=" text-left text success "> what we do</h2>
+              <h2 className=" text-left text-success ">An  Overview of </h2>
+              <h2 className=" text-left text-success "> what we do</h2>
               <p><span></span></p>
               <div> We are an IT outfit with experienced technical and business
                  professionals dedicated to developing technologically driven
@@ -33,16 +25,57 @@ const Services: React.FC = () => {
             </Col>
           </Row>
           <div className="my-3 p-3 rounded shadow-sm">
-            <h2 className="text-center  mb-5">Our Digital Products</h2>
-            <Row className="mb-5">
-            <Col lg={4} className="text-center" ><div style={divStyle} ><FileEarmarkMedicalFill size={96}/>
-            <p style={{marginTop: "25%"}}><strong>Pharmarcy Solutions</strong></p></div>
+            <h3 className="text-center text-success  mb-3">Our Digital Products</h3>
+            <div className="text-center">We utilize the latest innovations, digital technologies and methodologies,</div>
+            <div className="text-center">to create a valuable experience and improve your digital experience.</div>
+            <p><span></span></p>
+            <Container>
+            <Row className="mb-5 text-center">
+            <Col>
+            <Card style={{ width: '18rem' }} className="mb-3">
+            <img src={pharm} alt="pharm"  className="rounded"/>
+              <Card.Body>
+                <Card.Title>Pharm Solution</Card.Title>
+                <Card.Text>
+                <p>
+                Our pharm solution affords patients easy access
+                to prescription medications from our online retail pharmacy
+                </p>
+                </Card.Text>
+                <Button variant="success">Read More</Button>
+              </Card.Body>
+            </Card>
             </Col>
-            <Col sm={4} className="text-center "><div style={divStyle} ><CalendarFill  size={96} /><p style={{marginTop: "25%"}}><strong>Pay Roll</strong></p></div>
+            <Col>
+            <Card style={{ width: '18rem' }} className="mb-3">
+            <img src={payrool} alt="payrool"  className="rounded"/>
+              <Card.Body>
+                <Card.Title>Payroll Solution</Card.Title>
+                <Card.Text> 
+                <p>
+                The Doyenify payroll solution is a simple-to-use software that allows 
+                organisations to integrate performance measurement, 
+                </p>
+                </Card.Text>
+                <Button variant="success">Read More</Button>
+              </Card.Body>
+            </Card>
             </Col>
-            <Col sm={4} className="text-center"><div style={divStyle} ><Cart4 size={96} /><p style={{marginTop: "25%"}}><strong>E-commerce</strong></p></div>
+            <Col>
+            <Card style={{ width: '18rem' }} className="mb-3">
+            <img src={ecommerce} alt="ecommerce"  className="rounded"/>
+              <Card.Body>
+                <Card.Title>E-Commerce</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </Card.Text>
+                <Button variant="success">Read More</Button>
+              </Card.Body>
+            </Card>
             </Col>
             </Row>
+            </Container>
           </div>
         </div>
       </main>
