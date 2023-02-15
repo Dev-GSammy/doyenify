@@ -7,11 +7,15 @@ import { Formik, } from 'formik';
  import * as Yup from 'yup';
  import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../contact.css';
 
 
 const schema = Yup.object().shape({
+  firstName: Yup.string().required(),
+  lastName: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
-  message: Yup.string().required(), 
+  phone: Yup.number(),
+  message: Yup.string().required(),
 });
 
 const Contact: React.FC = () => {
@@ -39,6 +43,7 @@ const Contact: React.FC = () => {
     }
 
   return (
+
 <>  
 <div>
     <main role="main" className="container">
@@ -53,34 +58,31 @@ const Contact: React.FC = () => {
         </Card.Text>
       </Card.ImgOverlay>
     </Card>
-    <div>
-    <h6 className="text-center mt-5" >Any question or remarks? just write us a message</h6>
-    </div>
-    <br></br>
-    <div>
+
+
+    <div className="container" style={{ marginTop: "6.25rem", marginBottom: "6.25rem" }}>
     <Row>
-    <Col>
-    <div>
-    <main role="main" className="container">
-    <div className="rounded" style={{backgroundColor: "#42ba96"}}>
-    <div className="my-3 p-3 rounded shadow-sm">
-    <h5 className="text-white"> Contact Information</h5>
-    <br></br>
-    <div className="text-white">Fill up the form and our team will get back
-     to you within 24hours</div>
-     <br></br>
-     <div className="text-white">+98085643697</div>
-     <br></br>
-     <div className="text-white">hello@doyenify.tech</div>
-     <br></br>
-     <div className="text-white">61, community road, Akoka,
-     Yaba, Lagos</div>
-    </div>
-    </div>
-    </main>
+    <Col className="col-4 h-100" style={{ height: "100%" }}>
+    <div style={{ paddingBottom: "6rem" }}>
+      <main role="main" className="container h-100">
+      <div className="rounded-4" style={{backgroundColor: "#000000"}}>
+      <div className="p-4 rounded shadow-sm">
+      <h5 className="text-white"> Contact Information</h5>
+      <div className="text-white mt-0">Fill up the form and our team will get back
+      to you within 24hours</div>
+      <br></br>
+      <div className="text-white">+98085643697</div>
+      <br></br>
+      <div className="text-white">hello@doyenify.tech</div>
+      <br></br>
+      <div className="text-white pb-5">61, community road, Akoka,
+      Yaba, Lagos</div>
+      </div>
+      </div>
+      </main>
     </div>
     </Col>
-    <Col>
+    <Col className="col-8">
 
     <Formik
       validationSchema={schema}
@@ -100,40 +102,89 @@ const Contact: React.FC = () => {
 
       }) => (
     
-      <Form noValidate onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="validationCustom01">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control 
-         type="text"
-         placeholder="Enter your email address"
-         name="email"
-         value={values.email}
-         onChange={handleChange}
-         isInvalid={!!errors.email}
-       />
-       <Form.Control.Feedback type="invalid">
-         {errors.email}
-       </Form.Control.Feedback>
+      <Form noValidate onSubmit={handleSubmit} className="row">
+      <div className="col-6">
+        <Form.Group className="mb-3" controlId="validationCustom01">
+            <Form.Label className="input-label">First Name</Form.Label>
+            <Form.Control className="contact-input"
+            type="text"
 
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="validationCustom01">
-        <Form.Label>Message</Form.Label>
-        <Form.Control 
-        as="textarea" 
-        placeholder="Write your message" 
-        rows={3} 
-        name="message"
-        value={values.message}
-        onChange={handleChange}
-        isInvalid={!!errors.message}
-       />
-       <Form.Control.Feedback type="invalid">
-         {errors.message}
-       </Form.Control.Feedback>
-      </Form.Group>
-      <Button variant="success" type="submit" onClick={notify}>Submit </Button>
-      <ToastContainer />
-    </Form>
+            name="firstName"
+            value={values.email}
+            onChange={handleChange}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="validationCustom01">
+          <Form.Label className="input-label">Email address</Form.Label>
+          <Form.Control className="contact-input"
+          type="text"
+          name="email"
+          value={values.email}
+          onChange={handleChange}
+          isInvalid={!!errors.email}
+        />
+        <Form.Control.Feedback type="invalid">
+          {errors.email}
+        </Form.Control.Feedback>
+        </Form.Group>
+        </div>
+
+        <div className="col-6">
+        <Form.Group className="mb-3" controlId="validationCustom01">
+            <Form.Label className="input-label">Email address</Form.Label>
+            <Form.Control className="contact-input"
+            type="text"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="validationCustom01">
+          <Form.Label className="input-label">Email address</Form.Label>
+          <Form.Control className="contact-input"
+          type="text"
+          name="email"
+          value={values.email}
+          onChange={handleChange}
+          isInvalid={!!errors.email}
+        />
+        <Form.Control.Feedback type="invalid">
+          {errors.email}
+        </Form.Control.Feedback>
+        </Form.Group>
+        </div>
+
+        <div className="col-12">
+          <Form.Group className="mb-3" controlId="validationCustom01">
+            <Form.Label className="input-label">Message</Form.Label>
+            <Form.Control className="contact-input"
+            as="textarea" 
+            placeholder="Write your message" 
+            rows={3} 
+            name="message"
+            value={values.message}
+            onChange={handleChange}
+            isInvalid={!!errors.message}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.message}
+          </Form.Control.Feedback>
+          </Form.Group>
+        </div>
+          <div className="col-10"></div>
+          <Button className="btn-primary col-2"  variant="success" type="submit" onClick={notify} style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
+          <ToastContainer />
+      </Form>
     )}
     </Formik>
 

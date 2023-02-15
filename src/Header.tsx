@@ -39,7 +39,8 @@ const Header: React.FC = () => {
               <Nav.Link href="/" className="ms-5" style={{color:"#121212"}}> <h5>Home</h5> </Nav.Link>
               <Nav.Link href="/About_us" className="ms-4" style={{color:"#121212"}}> <h5>About us</h5></Nav.Link> 
               <Nav.Link href="/Services" className="ms-4" style={{color:"#121212"}}> <h5>Services</h5></Nav.Link>
-              <Nav.Link href="/Contact" className="ms-4" style={{color:"#121212"}}> <h5>Contact</h5></Nav.Link> 
+              <Nav.Link href="/Contact" className="ms-4" style={{color:"#121212"}}> <h5>Contact</h5></Nav.Link>
+              <Nav.Link href="/Our_Team" className="ms-4" style={{color:"#121212"}}> <h5>Our Team</h5></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

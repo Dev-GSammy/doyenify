@@ -7,17 +7,20 @@ import Landing from "./Pages/Landing";
 import About_us from "./Pages/About_us";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
+import OurTeam from "./Pages/Our_Team";
+
 const Layout: React.FC = () => {
   return (
     <Router>
       <Header /> 
       <main>
-        <Container>
+        <Container fluid>
           <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="About_us" element={<About_us/>} /> 
           <Route path="Services" element={<Services/>} />
           <Route path="Contact" element={<Contact/>} />
+          <Route path="Our_Team" element={<OurTeam/>} />
           </Routes>
         </Container>
       </main>

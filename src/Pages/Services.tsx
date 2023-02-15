@@ -12,7 +12,7 @@ const Services: React.FC = () => {
       <main role="main" className="container">
         <div className="mt-5">
           <Row>
-            <Col sm={6}><img src={Rectangle72} alt="Rectangle72"  width="500" height="300" className="rounded"/>
+            <Col sm={6}><img src={Rectangle72} alt="Rectangle72" width="500" height="300" className="rounded"/>
             </Col>
             <Col>
               <h2 className=" text-left text-success ">An  Overview of </h2>
