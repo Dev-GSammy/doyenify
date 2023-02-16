@@ -4,8 +4,8 @@ import fluid from "../img/fluid.jpeg";
 import {Card, Row, Col, Form, Button} from 'react-bootstrap';
 import axios from 'axios';
 import { Formik, } from 'formik';
- import * as Yup from 'yup';
- import { ToastContainer, toast } from 'react-toastify';
+import * as Yup from 'yup';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
