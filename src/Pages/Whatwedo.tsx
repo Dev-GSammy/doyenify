@@ -5,7 +5,7 @@ import payrool from "../img/payrool.jpg";
 import ecommerce from "../img/ecommerce.jpg";
 import {Container, Card, Button, Row, Col,} from 'react-bootstrap';
 
-const Services: React.FC = () => {
+const Whatwedo: React.FC = () => {
   return (
     <>
     <div>
@@ -83,4 +83,4 @@ const Services: React.FC = () => {
     </>
   );
 };
-export default Services;
+export default Whatwedo;
