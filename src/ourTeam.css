@@ -1,5 +1,13 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .header-wrapper {
-        height: 100vh;
+        /* height: 100vh; */
     }
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
+* {
+    box-sizing: border-box;
 }

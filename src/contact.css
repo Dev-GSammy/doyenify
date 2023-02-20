@@ -1,3 +1,19 @@
+@media screen and (max-width: 768px) {
+    .send-btn {
+        margin-bottom: 30px;
+    }
+
+    .form-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
 input:focus {
     outline: none !important;
 }
@@ -16,3 +32,7 @@ input:focus {
 .input-label {
     font-weight: 600 !important;
 }
+
+/* .spacer-20 {
+    height: 20px;
+} */

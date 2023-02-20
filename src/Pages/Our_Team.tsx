@@ -24,10 +24,10 @@ const OurTeam: React.FC = () => {
           <Card.Img src={teamImg} />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> Our Team </h2></Card.Title>
-          <Card.Text className="small-text" style={{ fontSize: "1.5em" }}>
+          <Card.Text className="small-text" style={{ fontSize: "1em" }}>
           Meet our team of developers, creators, designers, and world-class <br /> problem solver
-          <br /> <br />To the company our customers want us to be , it takes an eclectic of passionate
-          operators. <br /> Get to know the people leading the way at Doyenify
+         To the company our customers want us to be , it takes an eclectic of passionate
+          operators.<br /> Get to know the people leading the way at Doyenify
           </Card.Text>
          </Card.ImgOverlay>
          </Card>
