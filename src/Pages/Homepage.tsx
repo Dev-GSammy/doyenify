@@ -31,7 +31,7 @@ const Landing: React.FC = () => {
           <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> Welcome to Doyenify Technologies </h2></Card.Title>
           <Card.Text >
           <br />
-          At Doyenify, we help organisations solve problems with <br /> bespoke IT solutions 
+          At Doyenify, we help organisations solve problems with <br/> bespoke IT solutions 
           by providing the most efficient technological <br /> solutions to improve business profitability
           </Card.Text>
           <button className="mt-5 px-5 py-1" 
@@ -57,7 +57,7 @@ const Landing: React.FC = () => {
                   a company's brand and information and ensure a user-friendly experience. 
                   Appearance and design are incorporated as vital 
                   elements whether you're designing a website, mobile app or
-                   maintaining content on a web page</p>
+                   maintaining content on a web page </p>
               </Col>
             </Row>
           </div>
