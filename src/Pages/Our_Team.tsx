@@ -61,48 +61,7 @@ const OurTeam: React.FC = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <Card.Img src={Rectangle75} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Abimbola Opakunle
-                                    </Card.Title>
-                                    <Card.Text>
-                                        Team Lead, Software Engineer
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
 
-                    <Row className="gx-5 mb-3">
-                        <Col>
-                            <Card className="border-0" >
-                                <Card.Img src={Rectangle76} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Ayomide Awoyemi
-                                    </Card.Title>
-                                    <Card.Text className="font-italic">
-                                        Human Resource Manager
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <Card.Img src={Rectangle77} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Abayomi Oluyide
-                                    </Card.Title>
-                                    <Card.Text>
-                                        Intern
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
                         <Col>
                             <Card className="border-0">
                                 <Card.Img src={Rectangle78} />
