@@ -23,22 +23,18 @@ const Contact: React.FC = () => {
 
   const notify = () => toast("We have recieved your message, We would get back to you shortly!");
 
-//  Form states
-// const [email, setEmail] = useState('');
-// const [message, setMessage] = useState('');
+
 
   const handleSubmit=(email:string, message:string)=>{
     console.log(email)
-    // e.preventDefault();
+    
     const data ={
       Email:email,
       Message:message,
     }
       axios.post('https://sheet.best/api/sheets/00eab23e-ab27-4413-b033-ce75e35eb3d3', data). then ((response)=>{
       console.log(response);
-      // clearing form fields
-      // setEmail ('');
-      // setMessage ('');
+      
       
       }) 
     }
@@ -101,9 +97,8 @@ const Contact: React.FC = () => {
               }, 500)
             }}
 
-            // onSubmit={(values, actions) => handleSubmit(values.email, values.message)
-            //   // console.log(values)
-            //   }
+            
+              
             validationSchema={schema}
             
             
