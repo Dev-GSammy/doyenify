@@ -17,7 +17,7 @@ const Header: React.FC = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end flex-grow-1 pe-3">
           <Nav.Link href="/" className="ms-5">Home</Nav.Link>
-            <Nav.Link href="#features" className="ms-5">Our Work</Nav.Link>
+            <Nav.Link href="/Ourwork" className="ms-5">Our Work</Nav.Link>
             <Nav.Link href="/About_us"className="ms-5">About Us</Nav.Link>
             <Nav.Link href="/Services"className="ms-5">What We Do</Nav.Link>
             <Nav.Link href="#team"className="ms-5">Our Team</Nav.Link>
