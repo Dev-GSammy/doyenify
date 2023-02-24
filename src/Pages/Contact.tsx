@@ -41,11 +41,11 @@ const Contact: React.FC = () => {
           <main role="main" className="container-fluid px-0">
               <div className=" header-wrapper text-center">
               
-              <Card className="bg-dark card-wrapper h-100">
+              <Card className="bg-dark card-wrapper h-100" style={{ borderRadius: "0" }}>
                 <Card.Img  src={contactImg} />
                 <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
                 <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> We'd love to hear from you </h2></Card.Title>
-                <Card.Text className="small-text" style={{ fontSize: "1em" }}>
+                <Card.Text className="small-text" style={{ fontSize: "1.25em" }}>
                 Whether you have a question about services and products, our team is ready to answer all your questions.
                 </Card.Text>
                 <div className="icon-container">
