@@ -14,23 +14,24 @@ const Ourwork = () => {
     <>
     <main role="main" className= "container-fluid px-0">
     <div className="text-center">
-         <Card className="bg-dark text-white">
+         <Card className="bg-dark text-white" style={{ borderRadius: 0}}>
           <Card.Img src={work} alt="work" />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
-          <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> 
-            Our Work </h2></Card.Title>
+          <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h1> 
+            Our Work </h1></Card.Title>
           <Card.Text >
           <br />
-          At Doyenify, we help organisations solve problems with <br/> bespoke IT solutions 
-          by providing the most efficient technological <br /> solutions to improve business profitability
+          <p style={{ fontStyle: "30px" }}> At Doyenify, we help organisations solve problems with  bespoke IT solutions 
+          by providing the most efficient technological  solutions to improve business profitability
+          </p>
           </Card.Text>
          </Card.ImgOverlay>
          </Card>
     </div>
     <div className='text-center'>
     <Row className=" mt-5 mx-5" >
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem' , backgroundColor: "#D8FEE0" }}>
+              <Col className="d-flex justify-content-center mb-5gi">
+              <Card style={{ width: '18rem' , backgroundColor: "#D9D7F8" }}>
                <Card.Img variant="top" src={brain} />
                  <Card.Body>
                    <Card.Title>Shining Brain</Card.Title>
@@ -38,8 +39,8 @@ const Ourwork = () => {
                  </Card.Body>
              </Card >
               </Col>
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem', backgroundColor: "#D8FEE0" }}  className="">
+              <Col className="d-flex justify-content-center mb-5">
+              <Card style={{ width: '18rem', backgroundColor: "#D9D7F8" }}  className="">
                <Card.Img variant="top" src={sola} />
                  <Card.Body>
                    <Card.Title>Sola Enitilo</Card.Title>
@@ -47,8 +48,8 @@ const Ourwork = () => {
                  </Card.Body>
                  </Card>
               </Col>
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem' , backgroundColor: "#D8FEE0"}} className="">
+              <Col className="d-flex justify-content-center mb-5">
+              <Card style={{ width: '18rem' , backgroundColor: "#D9D7F8"}} className="">
                <Card.Img variant="top" src={book} />
                  <Card.Body>
                    <Card.Title>Pharmacy App</Card.Title>
@@ -59,9 +60,9 @@ const Ourwork = () => {
              </Row>
     </div>
     <div className='text-center'>
-    <Row className=" mt-5 mx-5" >
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem', backgroundColor: "#D8FEE0" }}>
+    <Row className=" mt-5 mx-5 mb-5" >
+              <Col className="d-flex justify-content-center mb-5">
+              <Card style={{ width: '18rem', backgroundColor: "#D9D7F8" }}>
                <Card.Img variant="top" src={pharmacy} />
                  <Card.Body>
                    <Card.Title>Bookly</Card.Title>
@@ -69,8 +70,8 @@ const Ourwork = () => {
                  </Card.Body>
              </Card >
               </Col>
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem', backgroundColor: "#D8FEE0" }}  className="">
+              <Col className="d-flex justify-content-center mb-5">
+              <Card style={{ width: '18rem', backgroundColor: "#D9D7F8" }}  className="">
                <Card.Img variant="top" src={payment} />
                  <Card.Body>
                    <Card.Title>Payment Website</Card.Title>
@@ -78,8 +79,8 @@ const Ourwork = () => {
                  </Card.Body>
                  </Card>
               </Col>
-              <Col className="d-flex justify-content-center">
-              <Card style={{ width: '18rem' , backgroundColor: "#D8FEE0"}} className="">
+              <Col className="d-flex justify-content-center mb-5">
+              <Card style={{ width: '18rem' , backgroundColor: "#D9D7F8"}} className="">
                <Card.Img variant="top" src={makeup} />
                  <Card.Body>
                    <Card.Title>Makeup Website</Card.Title>

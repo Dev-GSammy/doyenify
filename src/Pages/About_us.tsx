@@ -5,16 +5,12 @@ import about from "../img/about.png";
 import who from "../img/who.png";
 import what from "../img/what.png";
 
-
-
-
-
 const About_us: React.FC = () => {
   return (
     <>
     <main role="main" className= "container-fluid px-0">
       <div className="text-center">
-      <Card className="bg-dark text-white">
+      <Card className="bg-dark text-white" style={{ borderRadius: 0}}>
           <Card.Img src={about} alt="about" />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> 
@@ -28,10 +24,10 @@ const About_us: React.FC = () => {
          </Card>
       </div>
       <div>
-        <Row className='mt-5 mx-3'>
-          <Col> < img src={who} alt="who we are" /> </Col>
-          <Col> 
-           <h2> Who We Are </h2>
+        <Row className='mt-5 mb-5 mx-3'>
+          <Col> < img src={who} width="600px" height="" alt="who we are" /> </Col>
+          <Col className= "d-flex flex-column align-items-center justify-content-center"> 
+           <h2 className= "mt-5"> Who We Are </h2>
            <p>Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse nisi
              nisi nunc arcu consectetur in. Suspendisse nunc sodales commodo sed eu auctor porta pulvinar quisque. 
             Tristique lacus et nisi sed vitae dolor urna. Malesuada ac et eu pellentesque gravida suscipit.
@@ -45,8 +41,25 @@ const About_us: React.FC = () => {
       </div>
       <div>
         <Row className='mt-5 mx-3'>
-          <Col> <h2>Why <br /> choose us</h2> </Col>
-          <Col> 
+          <Col > 
+            <div 
+             style={{ width: "460px",
+             height: "460px", 
+             borderRadius: "50%", 
+             backgroundColor: "#B0FFC1",
+             textAlign: "center",
+             display: "flex",
+             justifyContent: "center",
+             alignItems: "center",
+             margin:"0 auto"
+            
+            }} 
+            >
+            <h1>Why <br /> Choose Us</h1>
+            </div> 
+            </Col>
+          <Col className= "d-flex flex-column align-items-center justify-content-center" > 
+          <div >
            <p>Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse nisi
              nisi nunc arcu consectetur in. Suspendisse nunc sodales commodo sed eu auctor porta pulvinar quisque. 
             Tristique lacus et nisi sed vitae dolor urna. Malesuada ac et eu pellentesque gravida suscipit.
@@ -55,23 +68,20 @@ const About_us: React.FC = () => {
              Suspendisse nunc sodales commodo sed eu auctor porta pulvinar quisque. 
             Tristique lacus et nisi sed vitae dolor urna. Malesuada ac et eu pellentesque gravida suscipit.
             </p>
+           </div>
           </Col>
         </Row>
         </div>
       <div>  
         <Row className='mt-5 mx-3'>
-          <Col>
-          <h2 className='text-center'>What We Do</h2>
-          <Row>
-             <Col> <h3> Web Design </h3></Col>
-             <Col> <h3>Graphic Design </h3></Col>
-          </Row>
-          <Row>
-             <Col> <h3> Video Editing</h3></Col>
-             <Col> <h3>Web Design</h3></Col>
-          </Row>
+          <Col style={{textAlign: "center"}} className= "d-flex flex-column align-items-center justify-content-center">
+          <h2>What We Do</h2>
+          <div style={{display:"flex", justifyContent:"space-between", width:"400px ", margin: "0 auto"}} >
+            <div className='text-start'><h3>Web Design</h3> <h3>Video Editing</h3></div>
+            <div className='text-start'><h3>Graphic Design</h3> <h3>Web Design</h3></div>
+          </div>
           </Col>
-        <Col> < img src={what} alt="what we do" /> </Col>
+        <Col> < img src={what} width="600px" alt="what we do" /> </Col>
         </Row>
       </div>
     </main>

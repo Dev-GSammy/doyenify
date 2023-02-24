@@ -25,7 +25,7 @@ const Landing: React.FC = () => {
       <main role="main" className="container-fluid px-0">
         <div className="text-center">
          
-         <Card className="bg-dark text-white">
+         <Card className="bg-dark text-white" style={{ borderRadius: 0}}>
           <Card.Img src={home} alt="Home" />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> Welcome to Doyenify Technologies </h2></Card.Title>
@@ -34,13 +34,13 @@ const Landing: React.FC = () => {
           At Doyenify, we help organisations solve problems with <br/> bespoke IT solutions 
           by providing the most efficient technological <br /> solutions to improve business profitability
           </Card.Text>
-          <button className="mt-5 px-5 py-1" 
+          <Button className="mt-5 px-5 py-1" href= "/Ourwork"
            style={{ 
            backgroundColor: "#757F77", 
            color: "#ffffff", 
            borderRadius: " 50px",
            border:" 2px solid #ffffff",
-           fontWeight: "600" }}> View Our Work </button>
+           fontWeight: "600" }}> View Our Work </Button>
          </Card.ImgOverlay>
          </Card>
         
@@ -50,9 +50,9 @@ const Landing: React.FC = () => {
               <Col>
               < img src={web} alt="Web" />
               </Col>
-              <Col className="mt-5 mx-5"> 
+              <Col className="mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center"> 
                 <h4>RESPONSIVE AND CREATIVE</h4>
-                <h2 style={{color: "#00FF38"}}>Web Design</h2>
+                <h2 style={{color: "#387846"}}>Web Design</h2>
                 <p>Web design is the creation of websites and pages to reflect 
                   a company's brand and information and ensure a user-friendly experience. 
                   Appearance and design are incorporated as vital 
@@ -63,9 +63,9 @@ const Landing: React.FC = () => {
           </div>
           <div style={{backgroundColor: "#757F77"}}>
             <Row >
-              <Col className="mt-5 mx-5">
+              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center">
                 <h4>CREATIVE AND SMART</h4>
-                <h2 style={{color: "#00FF38"}}>Graphic Design</h2>
+                <h2 style={{color: "#387846"}}>Graphic Design</h2>
                 <p>Graphic design is a craft where professionals create visual content
                    to communicate messages. By applying visual hierarchy and page layout techniques,
                     designers use typography and pictures to meet users' specific needs and focus
@@ -81,9 +81,9 @@ const Landing: React.FC = () => {
               <Col className="mx-5">
               < img src={video} alt="Video Editing" />
               </Col>
-              <Col className="mt-5 mx-5">
+              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center">
                 <h4>GOOD AND NICE</h4>
-                <h2 style={{color: "#00FF38"}}>Video Editing</h2>
+                <h2 style={{color: "#387846"}}>Video Editing</h2>
                 <p>Video editing is the manipulation and arrangement of video shots.
                    Video editing is used to structure and present all video information,
                    including films and television shows, video advertisements and video essays</p>
