@@ -26,8 +26,8 @@ const OurTeam: React.FC = () => {
           <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> Our Team </h2></Card.Title>
           <Card.Text className="small-text" style={{ fontSize: "1em" }}>
           Meet our team of developers, creators, designers, and world-class <br /> problem solver
-          <br /> <br />To the company our customers want us to be , it takes an eclectic of passionate
-          operators. <br /> Get to know the people leading the way at Doyenify
+         To the company our customers want us to be , it takes an eclectic of passionate
+          operators.<br /> Get to know the people leading the way at Doyenify
           </Card.Text>
          </Card.ImgOverlay>
          </Card>
@@ -61,48 +61,7 @@ const OurTeam: React.FC = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <Card.Img src={Rectangle75} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Abimbola Opakunle
-                                    </Card.Title>
-                                    <Card.Text>
-                                        Team Lead, Software Engineer
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
 
-                    <Row className="gx-5 mb-3">
-                        <Col>
-                            <Card className="border-0" >
-                                <Card.Img src={Rectangle76} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Ayomide Awoyemi
-                                    </Card.Title>
-                                    <Card.Text className="font-italic">
-                                        Human Resource Manager
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <Card.Img src={Rectangle77} />
-                                <Card.Body className="px-0">
-                                    <Card.Title className="mb-2">
-                                        Abayomi Oluyide
-                                    </Card.Title>
-                                    <Card.Text>
-                                        Intern
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
                         <Col>
                             <Card className="border-0">
                                 <Card.Img src={Rectangle78} />

@@ -1,8 +1,10 @@
 
 
+
 .card-wrapper {
     position: relative;
     color: white;
+
 }
 
 .contact-input {
@@ -60,3 +62,4 @@ a:first-child {
     }
 
 }
+

@@ -16,6 +16,7 @@ import twitter_logo from "../img/twitter_logo.png";
 import youtube_logo from "../img/youtube_logo.png";
 
 
+
 const schema = Yup.object().shape({
   firstName: Yup.string().required(),
   lastName: Yup.string().required('Required'),
@@ -28,11 +29,22 @@ const Contact: React.FC = () => {
 
   const notify = () => toast("We have recieved your message, We would get back to you shortly!");
 
-//  Form states
-// const [email, setEmail] = useState('');
-// const [message, setMessage] = useState('');
 
-  
+
+
+  const handleSubmit=(email:string, message:string)=>{
+    console.log(email)
+    
+    const data ={
+      Email:email,
+      Message:message,
+    }
+      axios.post('https://sheet.best/api/sheets/00eab23e-ab27-4413-b033-ce75e35eb3d3', data). then ((response)=>{
+      console.log(response);
+      
+      
+      }) 
+    }
 
   return (
 
@@ -41,6 +53,7 @@ const Contact: React.FC = () => {
           <main role="main" className="container-fluid px-0">
               <div className=" header-wrapper text-center">
               
+
               <Card className="bg-dark card-wrapper h-100" style={{ borderRadius: "0" }}>
                 <Card.Img  src={contactImg} />
                 <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
@@ -112,6 +125,7 @@ const Contact: React.FC = () => {
               handleBlur,
               isSubmitting
 
+
             }) => (
           
             <Form noValidate onSubmit={handleSubmit} className="row form-wrapper">
@@ -129,6 +143,7 @@ const Contact: React.FC = () => {
               />
                 <Form.Control.Feedback type="invalid">
                   {errors.firstName}
+
                 </Form.Control.Feedback>
               </Form.Group>
 
@@ -153,6 +168,7 @@ const Contact: React.FC = () => {
                   <Form.Label className="input-label">Last Name</Form.Label>
                   <Form.Control className="contact-input"
                   type="text"
+
                   name="lastName"
                   value={values.lastName}
                   onChange={handleChange}
@@ -190,7 +206,9 @@ const Contact: React.FC = () => {
                   name="message"
                   value={values.message}
                   onChange={handleChange}
+
                   onBlur={handleBlur}
+
                   isInvalid={!!errors.message}
                 />
                 <Form.Control.Feedback type="invalid">
@@ -200,6 +218,7 @@ const Contact: React.FC = () => {
               </div>
                 <div className="col-10"></div>
                 <Button className="btn-primary col-2 send-btn"  disabled={isSubmitting} variant="success" type="submit" onClick={notify} style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
+
                 <ToastContainer />
             </Form>
           )}
