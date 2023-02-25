@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+    .send-btn {
+        margin-bottom: 30px;
+    }
+
+    .form-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+input:focus {
+    outline: none !important;
+}
+
+.contact-input {
+    border: 1px solid #c1c1c1 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+.input-label {
+    font-weight: 600 !important;
+}
+
+/* .spacer-20 {
+    height: 20px;
+} */

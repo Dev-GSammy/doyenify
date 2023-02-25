@@ -3,21 +3,24 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { Container, Overlay } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
-import Landing from "./Pages/Landing";
+import Homepage from "./Pages/Homepage";
 import About_us from "./Pages/About_us";
-import Services from "./Pages/Services";
+import Whatwedo from "./Pages/Whatwedo";
 import Contact from "./Pages/Contact";
+import OurTeam from "./Pages/Our_Team";
+
 const Layout: React.FC = () => {
   return (
     <Router>
       <Header /> 
       <main>
-        <Container>
+        <Container fluid className="px-0">
           <Routes>
-          <Route path="/" element={<Landing/>} />
-          <Route path="About_us" element={<About_us/>} /> 
-          <Route path="Services" element={<Services/>} />
+          <Route path="/" element={<Homepage/>} />
+          <Route path="About_us" element={<About_us/>} />
+          <Route path="Whatwedo" element={<Whatwedo/>} />
           <Route path="Contact" element={<Contact/>} />
+          <Route path="Our_Team" element={<OurTeam/>} />
           </Routes>
         </Container>
       </main>

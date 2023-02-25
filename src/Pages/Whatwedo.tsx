@@ -5,14 +5,14 @@ import payrool from "../img/payrool.jpg";
 import ecommerce from "../img/ecommerce.jpg";
 import {Container, Card, Button, Row, Col,} from 'react-bootstrap';
 
-const Services: React.FC = () => {
+const Whatwedo: React.FC = () => {
   return (
     <>
     <div>
       <main role="main" className="container">
         <div className="mt-5">
           <Row>
-            <Col sm={6}><img src={Rectangle72} alt="Rectangle72"  width="500" height="300" className="rounded"/>
+            <Col sm={6}><img src={Rectangle72} alt="Rectangle72" width="500" height="300" className="rounded"/>
             </Col>
             <Col>
               <h2 className=" text-left text-success ">An  Overview of </h2>
@@ -83,4 +83,4 @@ const Services: React.FC = () => {
     </>
   );
 };
-export default Services;
+export default Whatwedo;
