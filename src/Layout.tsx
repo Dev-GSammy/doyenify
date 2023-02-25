@@ -18,11 +18,11 @@ const Layout: React.FC = () => {
         <Container fluid className="px-0">
           <Routes>
           <Route path="/" element={<Homepage/>} />
-          <Route path="Ourwork" element={<Ourwork/>} />
-          <Route path="About_us" element={<About_us/>} />
-          <Route path="Whatwedo" element={<Whatwedo/>} />
-          <Route path="Contact" element={<Contact/>} />
-          <Route path="Our_Team" element={<OurTeam/>} />
+          <Route path="/Ourwork" element={<Ourwork/>} />
+          <Route path="/About_us" element={<About_us/>} />
+          <Route path="/Whatwedo" element={<Whatwedo/>} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/Our_Team" element={<OurTeam/>} />
           </Routes>
         </Container>
       </main>
