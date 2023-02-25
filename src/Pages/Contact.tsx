@@ -3,12 +3,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import fluid from "../img/fluid.jpeg";
 import {Card, Row, Col, Form, Button} from 'react-bootstrap';
 import axios from 'axios';
-import { Formik, } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../contact.css';
 import contactImg from "../img/contactImg.jpg";
+import fb_logo from "../img/fb_logo.png";
+import ig_logo from "../img/ig_logo.png";
+import linkedin_logo from "../img/linkedin_logo.png";
+import twitter_logo from "../img/twitter_logo.png";
+import youtube_logo from "../img/youtube_logo.png";
+
 
 
 const schema = Yup.object().shape({
@@ -16,12 +22,13 @@ const schema = Yup.object().shape({
   lastName: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
   phone: Yup.number().required(),
-  message: Yup.string().required(),
+  message: Yup.string().required()
 });
 
 const Contact: React.FC = () => {
 
   const notify = () => toast("We have recieved your message, We would get back to you shortly!");
+
 
 
 
@@ -46,13 +53,21 @@ const Contact: React.FC = () => {
           <main role="main" className="container-fluid px-0">
               <div className=" header-wrapper text-center">
               
-              <Card className="bg-dark text-white h-100">
+
+              <Card className="bg-dark card-wrapper h-100" style={{ borderRadius: "0" }}>
                 <Card.Img  src={contactImg} />
                 <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
                 <Card.Title className="text-center" style={{ color: "#00FF38" }}> <h2> We'd love to hear from you </h2></Card.Title>
-                <Card.Text className="small-text" style={{ fontSize: "1em" }}>
+                <Card.Text className="small-text" style={{ fontSize: "1.25em" }}>
                 Whether you have a question about services and products, our team is ready to answer all your questions.
                 </Card.Text>
+                <div className="icon-container">
+                  <a href="https://www.linkedin.com/company/doyenify/" target="_blank"><img src={linkedin_logo} ></img></a>
+                  <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" target="_blank"><img src={twitter_logo} ></img></a>
+                  <a href="#" target="_blank"><img src={fb_logo} ></img></a>
+                  <a href="#" target="_blank"><img src={youtube_logo} ></img></a>
+                  <a href="https://instagram.com/doyenify?igshid=ZDdkNTZiNTM=" target="_blank"><img src={ig_logo} ></img></a>
+                </div>
               </Card.ImgOverlay>
               </Card>
               </div>
@@ -97,17 +112,19 @@ const Contact: React.FC = () => {
               }, 500)
             }}
 
-            
-              
+            // onSubmit={(values, actions) => handleSubmit(values.email, values.message)
+            //   // console.log(values)
+            //   }
             validationSchema={schema}
-            
-            
           >
             {({
               handleSubmit,
               handleChange,
               values,      
               errors,
+              handleBlur,
+              isSubmitting
+
 
             }) => (
           
@@ -118,12 +135,15 @@ const Contact: React.FC = () => {
                   <Form.Control className="contact-input"
                   type="text"
                   name="firstName"
-                  value={values.email}
+                  value={values.firstName}
                   onChange={handleChange}
-                  isInvalid={!!errors.email}
-                />
+                  onBlur={handleBlur}
+
+                  isInvalid={!!errors.firstName}
+              />
                 <Form.Control.Feedback type="invalid">
-                  {errors.email}
+                  {errors.firstName}
+
                 </Form.Control.Feedback>
               </Form.Group>
 
@@ -134,6 +154,7 @@ const Contact: React.FC = () => {
                 name="email"
                 value={values.email}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 isInvalid={!!errors.email}
               />
               <Form.Control.Feedback type="invalid">
@@ -147,13 +168,15 @@ const Contact: React.FC = () => {
                   <Form.Label className="input-label">Last Name</Form.Label>
                   <Form.Control className="contact-input"
                   type="text"
-                  name="email"
-                  value={values.email}
+
+                  name="lastName"
+                  value={values.lastName}
                   onChange={handleChange}
-                  isInvalid={!!errors.email}
+                  onBlur={handleBlur}
+                  isInvalid={!!errors.lastName}
                 />
                 <Form.Control.Feedback type="invalid">
-                  {errors.email}
+                  {errors.lastName}
                 </Form.Control.Feedback>
               </Form.Group>
 
@@ -161,13 +184,14 @@ const Contact: React.FC = () => {
                 <Form.Label className="input-label">Phone</Form.Label>
                 <Form.Control className="contact-input"
                 type="text"
-                name="email"
-                value={values.email}
+                name="phone"
+                value={values.phone}
                 onChange={handleChange}
-                isInvalid={!!errors.email}
+                onBlur={handleBlur}
+                isInvalid={!!errors.phone}
               />
               <Form.Control.Feedback type="invalid">
-                {errors.email}
+                {errors.phone}
               </Form.Control.Feedback>
               </Form.Group>
               </div>
@@ -182,6 +206,9 @@ const Contact: React.FC = () => {
                   name="message"
                   value={values.message}
                   onChange={handleChange}
+
+                  onBlur={handleBlur}
+
                   isInvalid={!!errors.message}
                 />
                 <Form.Control.Feedback type="invalid">
@@ -190,7 +217,8 @@ const Contact: React.FC = () => {
                 </Form.Group>
               </div>
                 <div className="col-10"></div>
-                <Button className="btn-primary col-2 send-btn"  variant="success" type="submit" onClick={notify} style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
+                <Button className="btn-primary col-2 send-btn"  disabled={isSubmitting} variant="success" type="submit" onClick={notify} style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
+
                 <ToastContainer />
             </Form>
           )}
