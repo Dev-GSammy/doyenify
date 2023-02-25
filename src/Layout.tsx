@@ -6,7 +6,8 @@ import Footer from "./Footer";
 import Homepage from "./Pages/Homepage";
 import About_us from "./Pages/About_us";
 import Whatwedo from "./Pages/Whatwedo";
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/Contact"
+import Ourwork from "./Pages/Ourwork";
 import OurTeam from "./Pages/Our_Team";
 
 const Layout: React.FC = () => {
@@ -17,6 +18,7 @@ const Layout: React.FC = () => {
         <Container fluid className="px-0">
           <Routes>
           <Route path="/" element={<Homepage/>} />
+          <Route path="Ourwork" element={<Ourwork/>} />
           <Route path="About_us" element={<About_us/>} />
           <Route path="Whatwedo" element={<Whatwedo/>} />
           <Route path="Contact" element={<Contact/>} />
