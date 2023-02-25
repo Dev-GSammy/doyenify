@@ -12,7 +12,7 @@ import OurTeam from "./Pages/Our_Team";
 
 const Layout: React.FC = () => {
   return (
-    <Router>
+    <>
       <Header /> 
       <main>
         <Container fluid className="px-0">
@@ -22,12 +22,13 @@ const Layout: React.FC = () => {
           <Route path="/About_us" element={<About_us/>} />
           <Route path="/Whatwedo" element={<Whatwedo/>} />
           <Route path="/Contact" element={<Contact/>} />
-          <Route path="/Our_Team" element={<OurTeam/>} />
+          <Route path="Our_Team" element={<OurTeam/>} />
           </Routes>
         </Container>
       </main>
       <Footer/>
-    </Router>
+      </>
+   
   );
 };
 export default Layout;
