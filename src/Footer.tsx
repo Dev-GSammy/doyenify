@@ -8,22 +8,23 @@ const Footer: React.FC = () => {
   return (
     <div>
   <main>
-  <div className="" style={{backgroundColor: "#e6ffcc"}}>
-  <div className="my-3 p-3 rounded shadow-sm">
+  <div className="" style={{backgroundColor: "#e6ffcc", paddingTop: "100px"}}>
+  <div className="my-3 px-3 rounded shadow-sm">
     <Row className="mb-5">
 
-    <Col sm={3} className="text-center "><h5 className="text-black">Doyenify</h5>
-      <p><span></span></p>
-      <a href="/" className="text-black">Home</a>
-      <p><span></span></p>
-      <a href="/About_us" className="text-black">Our Work</a>
-      <p><span></span></p>
-      <a href="/Services" className="text-black">About Us</a>
-      <p><span></span></p>
-      <a href="#team" className="text-black">What We Do</a>
-      <p><span></span></p>
-      <a href="#team" className="text-black">Our Team</a>
-      </Col>
+    <Col sm={3} className="text-center ">
+        <h5 className="text-black">Doyenify</h5>
+        <p><span></span></p>
+        <a href="/" className="text-black" style={{ display: "block" }}>Home</a>
+        <p><span></span></p>
+        <a href="/About_us" className="text-black">Our Work</a>
+        <p><span></span></p>
+        <a href="/Services" className="text-black">About Us</a>
+        <p><span></span></p>
+        <a href="#team" className="text-black">What We Do</a>
+        <p><span></span></p>
+        <a href="#team" className="text-black">Our Team</a>
+    </Col>
 
       <Col sm={3} className="text-center "><h5 className="text-black">Contact</h5>
       <p><span></span></p>
@@ -56,7 +57,7 @@ const Footer: React.FC = () => {
     </Row>
     
     </div>
-    <p className="text-center">&copy; 2023. All right reserved.</p>
+    <p className="text-center pb-3">&copy; 2023. All right reserved.</p>
      </div>
       </main>
       </div>

@@ -7,14 +7,14 @@ import "../ourTeam.css";
 const OurTeam = () => (
   <main role="main">
     <div className=" header-wrapper text-center">
-      <Card className="bg-dark text-white h-100">
+      <Card className="bg-dark text-white h-100" style={{ borderRadius: "0" }}>
         <Card.Img src="./img/teamImg.jpg" />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>
             {" "}
             <h2> Our Team </h2>
           </Card.Title>
-          <Card.Text className="small-text" style={{ fontSize: "1em" }}>
+          <Card.Text className="small-text" style={{ fontSize: "1.25em" }}>
             Meet our team of developers, creators, designers, and world-class{" "}
             <br /> problem solver To the company our customers want us to be ,
             it takes an eclectic of passionate operators.

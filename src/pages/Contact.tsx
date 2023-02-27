@@ -63,25 +63,26 @@ const Contact = () => {
                   team is ready to answer all your questions.
                 </Card.Text>
                 <div className="icon-container">
-                  <a
+                  <a className="social-media"
                     href="https://www.linkedin.com/company/doyenify/"
                     target="_blank"
                   >
                     <img src="./img/linkedin_logo.png" alt="ld"></img>
                   </a>
-                  <a
+                  <a className="social-media"
                     href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09"
                     target="_blank"
                   >
                     <img src="./img/twitter_logo.png" alt="tw"></img>
                   </a>
-                  <a href="#" target="_blank">
+                  <a className="social-media"
+                    href="#" target="_blank">
                     <img src="../img/fb_logo.png" alt="fb"></img>
                   </a>
-                  <a href="#" target="_blank">
+                  <a className="social-media" href="#" target="_blank">
                     <img src="./img/youtube_logo.png" alt="yt"></img>
                   </a>
-                  <a
+                  <a className="social-media"
                     href="https://instagram.com/doyenify?igshid=ZDdkNTZiNTM="
                     target="_blank"
                   >
@@ -270,18 +271,12 @@ const Contact = () => {
                       </div>
                       <div className="col-10"></div>
                       <Button
-                        className="btn-primary col-2 send-btn"
+                        className="btn-primary col-2 send-btn submit"
                         disabled={isSubmitting}
                         variant="success"
                         type="submit"
                         onClick={notify}
-                        style={{
-                          border: "none",
-                          borderRadius: "50px",
-                          backgroundColor: "#00ff38",
-                          color: "#121212",
-                          fontWeight: "600",
-                        }}
+                        
                       >
                         Send{" "}
                       </Button>

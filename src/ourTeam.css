@@ -2,10 +2,10 @@
     .header-wrapper {
         /* height: 100vh; */
     }
-}
 
-.small-text {
-    font-size: 0.8em;
+    .small-text {
+        font-size: 1rem;
+    }
 }
 
 * {
