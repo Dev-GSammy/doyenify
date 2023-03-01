@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <div>
   <main>
-  <div className="" style={{backgroundColor: "#e6ffcc", paddingTop: "100px"}}>
+  <div className="" style={{backgroundColor: "#e6ffcc", paddingTop: "70px"}}>
   <div className="my-3 px-3 rounded shadow-sm">
     <Row className="mb-5">
 
