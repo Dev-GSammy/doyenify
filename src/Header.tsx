@@ -55,7 +55,7 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
             ))}
             <Button
               onClick={() => navigate("/contact")}
-              className="ms-5"
+              className="ms-5 nav-links"
               variant="success"
             >
               Contact Us
