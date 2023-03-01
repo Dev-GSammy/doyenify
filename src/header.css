@@ -1,0 +1,11 @@
+.activate {
+    border-bottom: 2px solid green;
+}
+
+.nav-links {
+    transition: 0.3s;
+}
+
+.nav-links:hover {
+    border-bottom: 2px solid green;
+}

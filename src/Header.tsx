@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import "./header.css";
 
 interface Props {
   label: string;
@@ -12,6 +13,18 @@ interface Props {
 
 const Header = ({ navigation }: { navigation: Props[] }) => {
   const navigate = useNavigate();
+
+  //Nav link active styling
+  const btnEl = document.querySelectorAll('.nav-links');
+
+  btnEl.forEach(btnEl => {
+    btnEl.addEventListener('click', () => {
+      document.querySelector('.activate')?.classList.remove('activate');
+      btnEl.classList.add('activate');
+    })
+  })
+
+  
   return (
     <Navbar
       collapseOnSelect
@@ -35,7 +48,7 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
             {navigation.map(({ label, path }) => (
               <Nav.Link
                 onClick={() => navigate(path)}
-                className="ms-5 text-black"
+                className="ms-5 text-black nav-links"
               >
                 {label}
               </Nav.Link>
