@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {Facebook, Instagram, Linkedin, Twitter,Youtube} from 'react-bootstrap-icons';
+import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram} from 'react-bootstrap-icons';
 import "./footer.css";
 
 
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   <div className="my-3 px-3 rounded shadow-sm">
     <Row className="mb-5 ">
 
-    <Col sm={3} className="text-center footer">
+    <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}>
         <h5 className="text-black mb-5 mt-5">Doyenify</h5>
         <p><span></span></p>
         <a href="/" className="text-black" style={{ display: "block" }}>Home</a>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         <a href="#team" className="text-black">Our Team</a>
     </Col>
 
-      <Col sm={3} className="text-center footer"><h5 className="text-black mb-5 mt-5">Contact</h5>
+      <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
       <p><span></span></p>
       <a href="mailto:info@doyenify.tech" className="text-black">info@doyenify.tech</a>
       <p><span></span></p>
@@ -37,20 +37,21 @@ const Footer: React.FC = () => {
       </Col>
 
      
-      <Col sm={3} className="text-center"><h5 className="text-black mb-5 mt-5"> Social Media </h5>
+      <Col sm={3} className="text-start" style={{ padding: "0 80px" }}><h5 className="text-black mb-5 mt-5"> Social Media </h5>
+      <p><span></span></p>
+      <a href="#" className="text-black " target="_blank"><Whatsapp className="footer-link" /> </a>
+      <a href="#" className="text-black " target="_blank"><Telegram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="https://www.linkedin.com/company/doyenify/" className="text-black " target="_blank"><Linkedin className="footer-link" /> </a>
-      <p><span></span></p>
       <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="text-black" target="_blank"><Instagram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="#" className="text-black" target="_blank"><Facebook className="footer-link" /> </a>
-      <p><span></span></p>
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
       <a href="#" className="text-black" target="_blank"><Youtube className="footer-link" /> </a>
       </Col>
     
-      <Col sm={3} className="text-center "><h5 className="text-black mb-5 mt-5"> Address </h5>
+      <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Address </h5>
       <p><span></span></p>
       <div className="text-black">Juhan Sutiste tee 52 - 65</div>
       <div className="text-black">Tallinn Estonia</div>

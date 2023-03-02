@@ -35,11 +35,12 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
       <Container>
         <Navbar.Brand onClick={() => navigate("/")}>
           <img
-            alt=""
+            alt="doyenify logo"
             src="./img/doyen1.png"
             width="170"
             height="auto"
             className="d-inline-block align-top"
+            style={{ cursor: "pointer" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -5,12 +5,13 @@ a.text-black {
 
 .footer a.text-black:hover {
     color: #00FF38 !important;
+    
 }
 
 .footer-link {
     transition: 0.3s;
     color: black;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .footer-link:hover {
