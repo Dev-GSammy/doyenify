@@ -17,7 +17,7 @@ import youtube_logo from "../img/youtube_logo.png";
 
 
 
-const schema = Yup.object().shape({
+const validationSchema = Yup.object().shape({
   firstName: Yup.string().required(),
   lastName: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
@@ -27,33 +27,12 @@ const schema = Yup.object().shape({
 
 const Contact: React.FC = () => {
 
-  const notify = () => toast("We have recieved your message, We would get back to you shortly!");
-
-
-
-
-  const handleSubmit=(email:string, message:string)=>{
-    console.log(email)
-    
-    const data ={
-      Email:email,
-      Message:message,
-    }
-      axios.post('https://sheet.best/api/sheets/00eab23e-ab27-4413-b033-ce75e35eb3d3', data). then ((response)=>{
-      console.log(response);
-      
-      
-      }) 
-    }
-
   return (
 
   <>  
       <div>
           <main role="main" className="container-fluid px-0">
               <div className=" header-wrapper text-center">
-              
-
               <Card className="bg-dark card-wrapper h-100" style={{ borderRadius: "0" }}>
                 <Card.Img  src={contactImg} />
                 <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
@@ -106,16 +85,16 @@ const Contact: React.FC = () => {
               message: '',
             }}
 
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, { setSubmitting, resetForm }) => {
               setTimeout(() => {
-                console.log("Loggin in", values)
-              }, 500)
+                console.log('these are the values', values);
+                setSubmitting(false);
+                resetForm();
+                toast.success('We have received your message, We will get back to you shortly');
+              }, 400);
             }}
 
-            // onSubmit={(values, actions) => handleSubmit(values.email, values.message)
-            //   // console.log(values)
-            //   }
-            validationSchema={schema}
+            validationSchema={validationSchema}
           >
             {({
               handleSubmit,
@@ -124,8 +103,6 @@ const Contact: React.FC = () => {
               errors,
               handleBlur,
               isSubmitting
-
-
             }) => (
           
             <Form noValidate onSubmit={handleSubmit} className="row form-wrapper">
@@ -138,7 +115,6 @@ const Contact: React.FC = () => {
                   value={values.firstName}
                   onChange={handleChange}
                   onBlur={handleBlur}
-
                   isInvalid={!!errors.firstName}
               />
                 <Form.Control.Feedback type="invalid">
@@ -217,7 +193,7 @@ const Contact: React.FC = () => {
                 </Form.Group>
               </div>
                 <div className="col-10"></div>
-                <Button className="btn-primary col-2 send-btn"  disabled={isSubmitting} variant="success" type="submit" onClick={notify} style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
+                <Button className="btn-primary col-2 send-btn"  disabled={isSubmitting} variant="success" type="submit" style={{ border: "none", borderRadius: "50px", backgroundColor: "#00ff38", color: "#121212", fontWeight: "600" }}>Send </Button>
 
                 <ToastContainer />
             </Form>

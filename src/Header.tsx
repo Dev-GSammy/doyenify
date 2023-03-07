@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <Nav.Link href="/About_us" className="ms-5 text-black" >About Us</Nav.Link>
             <Nav.Link href="/Services" className="ms-5 text-black">What We Do</Nav.Link>
             <Nav.Link href="/Our_Team" className="ms-5 text-black">Our Team</Nav.Link>
-            <Button href="#" className="ms-5" variant="success">Contact Us</Button>
+            <Button href="/Contact" className="ms-5" variant="success">Contact Us</Button>
           </Nav>
           </Navbar.Collapse>
         </Container>
