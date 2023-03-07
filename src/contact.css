@@ -29,14 +29,33 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding-top: 20px;
 }
 
-a {
+.social-media {
     margin-left: 50px;
+    transition: 0.5s;
 }
 
-a:first-child {
+.social-media:first-child {
     margin-left: 0;
+}
+
+.social-media:hover {
+    transform: translate(0, -8px);
+}
+
+.submit {
+    border: none;
+    border-radius: 50px;
+    background-color: #00ff38;
+    color: #121212;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.submit:hover {
+    background-color: #0cc935;
 }
 
 
@@ -50,14 +69,14 @@ a:first-child {
         margin-bottom: 5px;
     }
 
-    a {
+    .social-media {
         
         display: flex;
         justify-content: space-between;
     
     }
 
-    a img {
+    .social-media img {
         width: 20px;
     }
 
