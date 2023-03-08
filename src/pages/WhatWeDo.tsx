@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
+import "../whatwedo.css";
 
 const sections = [
   {
@@ -48,9 +49,9 @@ const WhatWeDo = () => (
       </div>
       <div className="mt-5">
         <Container>
-          <Row className="mb-5 text-center">
+          <Row className="mb-5 text-center gx-2 justify-content-center">
             {sections.map(({ url, title, text, buttonText }) => (
-              <Col>
+              <Col className="whatwedo_card" style={{ maxWidth: "fit-content" }}>
                 <Card style={{ width: "18rem" }} className="mb-3">
                   <img src={url} alt={title} className="rounded" />
                   <Card.Body>

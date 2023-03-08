@@ -1,0 +1,8 @@
+.whatwedo_card {
+    transition: 0.5s;
+}
+
+.whatwedo_card:hover {
+    cursor: pointer;
+    transform: scale(1.03, 1.03);
+}
