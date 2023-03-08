@@ -12,18 +12,18 @@ const navigationData = [
   { label: "Our Team", path: "/our_Team" },
 ];
 
-const HomeView = React.lazy(() => import("./pages/Homepage"));
-const OurWorkView = React.lazy(() => import("./pages/OurWork"));
-const AboutUsView = React.lazy(() => import("./pages/AboutUs"));
-const WhatWeDoView = React.lazy(() => import("./pages/WhatWeDo"));
-const ContactView = React.lazy(() => import("./pages/Contact"));
-const OurTeamView = React.lazy(() => import("./pages/OurTeam"));
+const HomeView = React.lazy(() => import("./Pages/Homepage"));
+const OurWorkView = React.lazy(() => import("./Pages/OurWork"));
+const AboutUsView = React.lazy(() => import("./Pages/AboutUs"));
+const WhatWeDoView = React.lazy(() => import("./Pages/WhatWeDo"));
+const ContactView = React.lazy(() => import("./Pages/Contact"));
+const OurTeamView = React.lazy(() => import("./Pages/OurTeam"));
 
 export const App = () => (
   <>
     <Header navigation={navigationData} />
     <Container fluid className="px-0">
-      <React.Suspense fallback={<Spinner />}>
+      <React.Suspense fallback={<Spinner animation={"border"} />}>
         <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/our_work" element={<OurWorkView />} />
