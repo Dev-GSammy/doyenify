@@ -7,6 +7,12 @@
 
 }
 
+.header-link {
+    transition: 0.3s;
+    color: #fff;
+    font-size: 24px;
+}
+
 .contact-input {
     border: 1px solid #c1c1c1 !important;
     border-top: none !important;

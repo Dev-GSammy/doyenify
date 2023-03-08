@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col, Form, Button } from "react-bootstrap";
+import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram} from 'react-bootstrap-icons';
 import axios from "axios";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -8,7 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../contact.css";
 
-const schema = Yup.object().shape({
+const validationSchema = Yup.object().shape({
   firstName: Yup.string().required(),
   lastName: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
@@ -16,26 +17,7 @@ const schema = Yup.object().shape({
   message: Yup.string().required(),
 });
 
-const Contact = () => {
-  const notify = () =>
-    toast("We have recieved your message, We would get back to you shortly!");
-
-  const handleSubmit = (email: string, message: string) => {
-    console.log(email);
-
-    const data = {
-      Email: email,
-      Message: message,
-    };
-    axios
-      .post(
-        "https://sheet.best/api/sheets/00eab23e-ab27-4413-b033-ce75e35eb3d3",
-        data
-      )
-      .then((response) => {
-        console.log(response);
-      });
-  };
+const Contact: React.FC = () => {
 
   return (
     <>
@@ -67,26 +49,31 @@ const Contact = () => {
                     href="https://www.linkedin.com/company/doyenify/"
                     target="_blank"
                   >
-                    <img src="./img/linkedin_logo.png" alt="ld"></img>
+                    <Linkedin className='header-link'/>
                   </a>
                   <a className="social-media"
                     href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09"
                     target="_blank"
                   >
-                    <img src="./img/twitter_logo.png" alt="tw"></img>
-                  </a>
-                  <a className="social-media"
-                    href="#" target="_blank">
-                    <img src="../img/fb_logo.png" alt="fb"></img>
+                    <Twitter className='header-link'/>
                   </a>
                   <a className="social-media" href="#" target="_blank">
-                    <img src="./img/youtube_logo.png" alt="yt"></img>
+                    <Whatsapp className='header-link'/>
+                  </a>
+                  <a className="social-media" href="#" target="_blank">
+                    <Telegram className='header-link'/>
+                  </a>
+                  <a className="social-media" href="#" target="_blank">
+                    <Youtube className='header-link'/>
+                  </a>
+                  <a className="social-media" href="#" target="_blank">
+                    <Facebook className='header-link'/>
                   </a>
                   <a className="social-media"
                     href="https://instagram.com/doyenify?igshid=ZDdkNTZiNTM="
                     target="_blank"
                   >
-                    <img src="./img/ig_logo.png" alt="ig"></img>
+                    <Instagram className='header-link'/>
                   </a>
                 </div>
               </Card.ImgOverlay>
@@ -120,7 +107,7 @@ const Contact = () => {
                         <div className="text-white">hello@doyenify.tech</div>
                         <br></br>
                         <div className="text-white pb-5">
-                          61, community road, Akoka, Yaba, Lagos
+                        Juhan Sutiste tee 52 - 65 Tallinn Estonia
                         </div>
                       </div>
                     </div>
@@ -136,15 +123,17 @@ const Contact = () => {
                     phone: "",
                     message: "",
                   }}
-                  onSubmit={(values, { setSubmitting }) => {
+
+                  onSubmit={(values, { setSubmitting, resetForm }) => {
                     setTimeout(() => {
-                      console.log("Loggin in", values);
-                    }, 500);
+                      console.log('loggin in', values);
+                      setSubmitting(false);
+                      resetForm();
+                      toast.success('We have received your message, We will get back to you shortly');
+                    }, 400);
                   }}
-                  // onSubmit={(values, actions) => handleSubmit(values.email, values.message)
-                  //   // console.log(values)
-                  //   }
-                  validationSchema={schema}
+                 
+                  validationSchema={validationSchema}
                 >
                   {({
                     handleSubmit,
@@ -152,7 +141,7 @@ const Contact = () => {
                     values,
                     errors,
                     handleBlur,
-                    isSubmitting,
+                    isSubmitting
                   }) => (
                     <Form
                       noValidate
@@ -275,13 +264,11 @@ const Contact = () => {
                         disabled={isSubmitting}
                         variant="success"
                         type="submit"
-                        onClick={notify}
-                        
                       >
-                        Send{" "}
+                        Send
                       </Button>
 
-                      {/* <ToastContainer /> */}
+                      <ToastContainer /> 
                     </Form>
                   )}
                 </Formik>

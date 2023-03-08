@@ -37,15 +37,18 @@ const Footer: React.FC = () => {
       </Col>
 
      
-      <Col sm={3} className="text-start" style={{ padding: "0 80px" }}><h5 className="text-black mb-5 mt-5"> Social Media </h5>
-      <p><span></span></p>
+      <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Social Media </h5>
+      
       <a href="#" className="text-black " target="_blank"><Whatsapp className="footer-link" /> </a>
+      <div className="spacer20"></div>
       <a href="#" className="text-black " target="_blank"><Telegram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="https://www.linkedin.com/company/doyenify/" className="text-black " target="_blank"><Linkedin className="footer-link" /> </a>
+      <div className="spacer20"></div>
       <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="text-black" target="_blank"><Instagram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="#" className="text-black" target="_blank"><Facebook className="footer-link" /> </a>
+      <div className="spacer20"></div>
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
       <a href="#" className="text-black" target="_blank"><Youtube className="footer-link" /> </a>
