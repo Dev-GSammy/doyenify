@@ -1,6 +1,6 @@
-.img-row {
+/* .img-row {
     overflow-x: hidden;
-}
+} */
 
 .img-wrapper {
     width: 350px;
@@ -42,7 +42,12 @@
 }
 
 @media screen and (max-width: 640px) {
-    .header-wrapper {
+    .whatwedo-header-wrapper {
         height: 100vh;
+    }
+
+    .whatwedo-card-text {
+        line-height: 30px;
+        letter-spacing: 2px;
     }
 }
