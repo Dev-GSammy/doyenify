@@ -23,12 +23,12 @@ const Contact: React.FC = () => {
     <>
       <div>
         <main role="main" className="container-fluid px-0">
-          <div className=" header-wrapper text-center">
+          <div className=" contact-header-wrapper text-center">
             <Card
               className="bg-dark card-wrapper h-100"
-              style={{ borderRadius: "0" }}
+              style={{ borderRadius: "0", height: "100%" }}
             >
-              <Card.Img src="../img/contactImg.jpg" alt="ct" />
+              <Card.Img src="../img/contactImg.jpg" alt="ct" style={{ height: "100%", objectFit: "cover" }}/>
               <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
                 <Card.Title
                   className="text-center"
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
                   <h2> We'd love to hear from you </h2>
                 </Card.Title>
                 <Card.Text
-                  className="small-text"
+                  className="contact-card-text"
                   style={{ fontSize: "1.25em" }}
                 >
                   Whether you have a question about services and products, our

@@ -26,14 +26,14 @@ import "../whatwedo.css";
 const WhatWeDo = () => (
   <>
     <main role="main" className="container-fluid px-0">
-      <div className="text-center header-wrapper">
+      <div className="text-center whatwedo-header-wrapper">
         <Card className="bg-dark text-white" style={{ borderRadius: 0, height: "100%" }}>
           <Card.Img src="./img/about.png" alt="about" style={{ height: "100%", objectFit: "cover" }} />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               <h2>What We Do</h2>
             </Card.Title>
-            <Card.Text className="card_text" style={{ fontSize: "20px" }}>
+            <Card.Text className="whatwedo-card-text mt-4" style={{ fontSize: "20px" }}>
               We would be responsible for coding and building the platform that
               <br /> 
               allows users to access educational content.<div className="spacer13"></div> This would likely

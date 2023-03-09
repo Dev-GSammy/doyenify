@@ -67,6 +67,15 @@
 
 
 @media screen and (max-width: 640px) {
+    .contact-header-wrapper {
+        height: 100vh;
+    }
+
+    .contact-card-text {
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
+
     .icon-container {
         bottom: 5px;
         left: 5px;
