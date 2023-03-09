@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../homepage.css';
+import { Link } from 'react-router-dom';
 
 const divStyle = {
   backgroundColor: "#F4FDF4",
@@ -30,9 +31,9 @@ const Home = () => (
             solutions to improve business profitability.
           </p>
           </Card.Text>
+          <Link to="/our_work" className="brand">
             <Button
               className="mt-5 px-5 py-1 home-button"
-              href="/our_work"
               style={{
               backgroundColor: "#757F77",
               color: "#ffffff",
@@ -44,6 +45,7 @@ const Home = () => (
               {" "}
               View Our Work{" "}
             </Button>
+            </Link>
           </Card.ImgOverlay>
         </Card>
       </div>
