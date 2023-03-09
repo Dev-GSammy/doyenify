@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../homepage.css';
 
 const divStyle = {
   backgroundColor: "#F4FDF4",
@@ -21,21 +22,23 @@ const Home = () => (
               {" "}
               <h2> Welcome to Doyenify Technologies </h2>
             </Card.Title>
-            <Card.Text>
-              <br />
-              At Doyenify, we help organisations solve problems with <br />{" "}
-              bespoke IT solutions by providing the most efficient technological{" "}
-              <br /> solutions to improve business profitability
-            </Card.Text>
+            <Card.Text >
+          <br />
+          <p style={{ fontSize: "20px" }}> You  are ready to join our global clients of 10,000+ network
+            we help Individuals and organizations solve problems with
+            bespoke IT solutions by providing the most efficient technological
+            solutions to improve business profitability.
+          </p>
+          </Card.Text>
             <Button
-              className="mt-5 px-5 py-1"
+              className="mt-5 px-5 py-1 home-button"
               href="/Ourwork"
               style={{
-                backgroundColor: "#757F77",
-                color: "#ffffff",
-                borderRadius: " 50px",
-                border: " 2px solid #ffffff",
-                fontWeight: "600",
+              backgroundColor: "#757F77",
+              color: "#ffffff",
+              borderRadius: " 50px",
+              border: " 2px solid #ffffff",
+              fontWeight: "600",
               }}
             >
               {" "}
@@ -44,89 +47,68 @@ const Home = () => (
           </Card.ImgOverlay>
         </Card>
       </div>
-      <div style={{ backgroundColor: "#D9D7F8" }}>
-        <Row>
-          <Col>
-            <img src="./img/web.png" alt="Web" />
-          </Col>
-          <Col className="mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center">
-            <h4>RESPONSIVE AND CREATIVE</h4>
-            <h2 style={{ color: "#387846" }}>Web Design</h2>
-            <p>
-              Web design is the creation of websites and pages to reflect a
-              company's brand and information and ensure a user-friendly
-              experience. Appearance and design are incorporated as vital
-              elements whether you're designing a website, mobile app or
-              maintaining content on a web page{" "}
-            </p>
-          </Col>
-        </Row>
-      </div>
-      <div style={{ backgroundColor: "#757F77" }}>
-        <Row>
-          <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center">
-            <h4>CREATIVE AND SMART</h4>
-            <h2 style={{ color: "#387846" }}>Graphic Design</h2>
-            <p>
-              Graphic design is a craft where professionals create visual
-              content to communicate messages. By applying visual hierarchy and
-              page layout techniques, designers use typography and pictures to
-              meet users' specific needs and focus on the logic of displaying
-              elements in interactive designs, to optimize the user experience
-            </p>
-          </Col>
-          <Col>
-            <img src="./img/graphic.png" alt="graphic design" />
-          </Col>
-        </Row>
-      </div>
-      <div style={{ backgroundColor: "#D9D7F8" }}>
-        <Row>
-          <Col className="mx-5">
-            <img src="./img/video.png" alt="Video Editing" />
-          </Col>
-          <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center">
-            <h4>GOOD AND NICE</h4>
-            <h2 style={{ color: "#387846" }}>Video Editing</h2>
-            <p>
-              Video editing is the manipulation and arrangement of video shots.
-              Video editing is used to structure and present all video
-              information, including films and television shows, video
-              advertisements and video essays
-            </p>
-          </Col>
-        </Row>
-      </div>
-
-      <div>
-        <h2 className="text-center mt-5"> Explore Our Products</h2>
-        <Row className=" mt-5 mx-5">
-          <Col className="d-flex justify-content-center">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="./img/imageone.png" />
-              <Card.Body>
-                <Card.Title>Booking App</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className="d-flex justify-content-center">
-            <Card style={{ width: "18rem" }} className="">
-              <Card.Img variant="top" src="./img/imagetwo.png" />
-              <Card.Body>
-                <Card.Title>Pay Roll App</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className="d-flex justify-content-center">
-            <Card style={{ width: "18rem" }} className="">
-              <Card.Img variant="top" src="./img/imagethree.png" />
-              <Card.Body>
-                <Card.Title>Pharmacy App</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </div>
+      <div style={{backgroundColor: "#D9D7F8"}}>
+            <Row >
+              <Col className="do-content">
+              < img src= "./img/web.png" alt="Web" />
+              </Col>
+              <Col className="mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center do-content"> 
+              <h4 style={{fontSize: "36px"}}>RESPONSIVE AND CREATIVE</h4>
+              <h2 style={{color: "#387846", fontSize: "36px"}}>Web Design</h2>
+                <p style={{fontSize: "20px"}}>We analyze your business to design and create a befitting website 
+                  which increases online conversation rate and produces positive results. </p>
+              </Col>
+            </Row>
+          </div>
+          <div style={{backgroundColor: "#DFE2E3"}}>
+            <Row >
+              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
+                <h4 style={{fontSize: "36px"}}> CREATIVE AND SMART</h4>
+                <h2 style={{color: "#387846", fontSize: "36px"}}>Graphic Design</h2>
+                <p style={{fontSize: "20px"}}> Our Graphics design aims for one thing: positive results. We use a unique approach to 
+                  communicate visual art ideas which helps to boost identity and gives classic brand recognition.</p>
+              </Col>
+              <Col className="do-content">
+                  < img src="./img/graphic.png" alt="graphic design" />
+              </Col>
+            </Row>
+          </div>
+          <div style={{backgroundColor: "#D9D7F8"}}>
+            <Row>
+              <Col className="mx-5 do-content">
+              < img src="./img/video.png" alt="Video Editing" />
+              </Col>
+              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
+                <h4 style={{fontSize: "36px"}}>GOOD AND NICE</h4>
+                <h2 style={{color: "#387846", fontSize: "36px"}}>Video Editing</h2>
+                <p style={{fontSize: "20px"}}>Our 5-star Video editing services are highly rated because we blend images, 
+                  sound and videos effectively using top notch tools. 
+                  This gives our clients optimum satisfaction and a competitive edge.</p>
+              </Col>
+            </Row>
+          </div>
+          <div>
+            <h2 className="text-center mt-5"> Explore Our Products</h2>
+             <div className='text-center container ourhome-container pt-3' >
+               <Row className='ourhome-row'>
+                <Col className=' img-col col-12 col-md-4'>
+                <a  href="" className='ourhome-link'> <div className='img-container'> <img src="./img/imageone.png" alt="" /> </div>
+                <div className='text-wrapa'> <h4> Booking App</h4> </div>
+                  </a>
+                  </Col>
+                  <Col className=' img-col col-12 col-md-4'>
+                  <a  href="" className='ourhome-link'> <div className='img-container'> <img src="./img/imagetwo.png" alt="" /> </div>
+                  <div className='text-wrapa'> <h4> Pay Roll App</h4>  </div>
+                  </a>
+                  </Col>
+                <Col className=' img-col col-12 col-md-4'>
+                <a  href="" className='ourhome-link'> <div className='img-container'> <img src="./img/imagethree.png" alt="" /> </div>
+                  <div className='text-wrapa'> <h4> Pharmacy App</h4>  </div>
+                  </a>
+                  </Col>
+              </Row>
+             </div>
+             </div>
     </main>
   </div>
 );

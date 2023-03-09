@@ -30,7 +30,7 @@ const OurTeam = () => (
       <Row className="gx-5 mb-3">
         <Col>
           <Card className="border-0">
-            <Card.Img src="./img/Rectangle73.png" />
+            <Card.Img src="./img/Rectangle73.png"/>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Gbenga Oluyide</Card.Title>
               <Card.Text className="font-italic">Founder & CEO</Card.Text>
