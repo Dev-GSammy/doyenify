@@ -1,13 +1,21 @@
-@media screen and (max-width: 768px) {
-    .header-wrapper {
-        /* height: 100vh; */
+@media screen and (max-width: 640px) {
+    .team-header-wrapper {
+        height: 100vh;
     }
 
-    .small-text {
-        font-size: 1rem;
+    .team-card-text {
+        line-height: 50px;
+        letter-spacing: 2px;
     }
 }
 
 * {
     box-sizing: border-box;
+}
+
+.team-profile-img {
+    width: 322px;
+    height: 338px;
+    object-fit: cover;
+    object-position: 50% 20%;
 }
