@@ -15,7 +15,7 @@ const OurWork = () => (
           </Card.Title>
           <Card.Text>
             <br />
-            <p style={{ fontStyle: "30px" }}>
+            <p style={{ fontSize: "20px" }}>
               {" "}
               Doyenify Technologies offer a range of IT services including Web design, Graphic Design, and Video Editing. <br /> We also have a travel consultancy arm. 
               Generally, we offer only high-quality services and are focused on maintaining the standard.
