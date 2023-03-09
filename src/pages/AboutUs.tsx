@@ -11,14 +11,14 @@ const AboutUs = () => (
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               {" "}
-              <h2>About Us </h2>
+              <h1>About Us </h1>
             </Card.Title>
-            <Card.Text>
-              <br />
-              At Doyenify, we help organisations solve problems with <br />{" "}
-              bespoke IT solutions by providing the most efficient technological{" "}
-              <br /> solutions to improve business profitability
-            </Card.Text>
+            <Card.Text >
+          <br />
+          <p style={{ fontSize: "20px" }}>Doyenify Technologies is an Information Technology (IT) and Consulting Company <br />
+           that provides top-notch services to businesses and individuals. 
+          </p>
+          </Card.Text>
           </Card.ImgOverlay>
         </Card>
       </div>
@@ -35,18 +35,12 @@ const AboutUs = () => (
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <h2 className="mt-5"> Who We Are </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse nisi
-              nisi nunc arcu consectetur in. Suspendisse nunc sodales commodo
-              sed eu auctor porta pulvinar quisque. Tristique lacus et nisi sed
-              vitae dolor urna. Malesuada ac et eu pellentesque gravida
-              suscipit.
-              <br />
-              Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse nisi
-              nisi nunc arcu consectetur in. Suspendisse nunc sodales commodo
-              sed eu auctor porta pulvinar quisque. Tristique lacus et nisi sed
-              vitae dolor urna. Malesuada ac et eu pellentesque gravida
-              suscipit.
+            <p>We are a team of IT experts focused on helping brands by boosting recognition and compelling patronage.
+             We proffer expert solutions and develop new methods to improve business growth. 
+             <br />
+            We also offer consultancy services by providing strategic advice in relation to travel and relocation.
+            Our specialist advice helps to aid decision making.
+
             </p>
           </Col>
         </Row>
@@ -74,19 +68,15 @@ const AboutUs = () => (
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse
-                nisi nisi nunc arcu consectetur in. Suspendisse nunc sodales
-                commodo sed eu auctor porta pulvinar quisque. Tristique lacus et
-                nisi sed vitae dolor urna. Malesuada ac et eu pellentesque
-                gravida suscipit.
-                <br />
-                Lorem ipsum dolor sit amet consectetur. Urna amet suspendisse
-                nisi nisi nunc arcu consectetur in. Suspendisse nunc sodales
-                commodo sed eu auctor porta pulvinar quisque. Tristique lacus et
-                nisi sed vitae dolor urna. Malesuada ac et eu pellentesque
-                gravida suscipit.
-              </p>
+            <p>Our IT services work together to build brand recognition.
+             A well-recognized business differentiates from the others and can give a competitive edge. 
+             Our goal is to take your business to a level where customers instantly recognize your brand. 
+             <br />
+             If you’re looking to relocate to a new Country for work, our professional consultancy services can help 
+             you to make informed decisions. Relocation can be very stressful, but with our help the process 
+             can be made much easier.
+
+            </p>
             </div>
           </Col>
         </Row>

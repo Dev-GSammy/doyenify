@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../ourwork.css';
 
 const OurWork = () => (
   <main role="main" className="container-fluid px-0">
@@ -14,89 +15,69 @@ const OurWork = () => (
           </Card.Title>
           <Card.Text>
             <br />
-            <p style={{ fontStyle: "30px" }}>
+            <p style={{ fontSize: "20px" }}>
               {" "}
-              At Doyenify, we help organisations solve problems with bespoke IT
-              solutions by providing the most efficient technological solutions
-              to improve business profitability
+              Doyenify Technologies offer a range of IT services including Web design, Graphic Design, and Video Editing. <br /> We also have a travel consultancy arm. 
+              Generally, we offer only high-quality services and are focused on maintaining the standard.
             </p>
           </Card.Text>
         </Card.ImgOverlay>
       </Card>
     </div>
-    <div className="text-center">
-      <Row className=" mt-5 mx-5">
-        <Col className="d-flex justify-content-center mb-5gi">
-          <Card style={{ width: "18rem", backgroundColor: "#D9D7F8" }}>
-            <Card.Img variant="top" src="./img/brain.png" />
-            <Card.Body>
-              <Card.Title>Shining Brain</Card.Title>
-              <p>SCHOOL WEBSITE</p>
-            </Card.Body>
-          </Card>
+    <div className='text-center container ourwork-container pt-3' >
+     <Row className='ourwork-row'>
+        <Col className=' img-col col-12 col-md-4'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src= "./img/mason.jpg" alt="mason" /> </div>
+        <div className='text-wrapa'> <h4> Youtube Thumbnail</h4> <h5>GRAPHIC DESIGN</h5> </div>
+        </a>
         </Col>
-        <Col className="d-flex justify-content-center mb-5">
-          <Card
-            style={{ width: "18rem", backgroundColor: "#D9D7F8" }}
-            className=""
-          >
-            <Card.Img variant="top" src="./img/sola.png" />
-            <Card.Body>
-              <Card.Title>Sola Enitilo</Card.Title>
-              <p>PHOTOGRAPHY WEBSITE</p>
-            </Card.Body>
-          </Card>
+        <Col className=' img-col col-12 col-md-4'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/pharmacy.png" alt="pharmacy" /> </div>
+        <div className='text-wrapa'> <h4> Sola Enitilo</h4> <h5>PHOTOGRAPHY WEBSITE</h5> </div>
+        </a>
         </Col>
-        <Col className="d-flex justify-content-center mb-5">
-          <Card
-            style={{ width: "18rem", backgroundColor: "#D9D7F8" }}
-            className=""
-          >
-            <Card.Img variant="top" src="./img/book.png" />
-            <Card.Body>
-              <Card.Title>Pharmacy App</Card.Title>
-              <p>WEB APP</p>
-            </Card.Body>
-          </Card>
+       <Col className=' img-col col-12 col-md-4'>
+       <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/arteta.jpg" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Youtube Video</h4> <h5>VIDEO EDITING</h5> </div>
+        </a>
         </Col>
-      </Row>
-    </div>
-    <div className="text-center">
-      <Row className=" mt-5 mx-5 mb-5">
-        <Col className="d-flex justify-content-center mb-5">
-          <Card style={{ width: "18rem", backgroundColor: "#D9D7F8" }}>
-            <Card.Img variant="top" src="./img/pharmacy.png" />
-            <Card.Body>
-              <Card.Title>Bookly</Card.Title>
-              <p>BOOKING APP</p>
-            </Card.Body>
-          </Card>
+     </Row>
+     <Row className='ourwork-row'>
+        <Col  className='img-col col-12 col-sm-5'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/sola.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Sola Enitilo</h4> <h5>PHOTOGRAPHY WEBSITE</h5> </div>
+        </a>
         </Col>
-        <Col className="d-flex justify-content-center mb-5">
-          <Card
-            style={{ width: "18rem", backgroundColor: "#D9D7F8" }}
-            className=""
-          >
-            <Card.Img variant="top" src="./img/payment.png" />
-            <Card.Body>
-              <Card.Title>Payment Website</Card.Title>
-              <p>WEBSITE</p>
-            </Card.Body>
-          </Card>
+        <Col className=' img-col col-12 col-sm-7'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img  className="img-work" src="./img/book2.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Bookly</h4> <h5>BOOKING APP</h5> </div>
+        </a>
         </Col>
-        <Col className="d-flex justify-content-center mb-5">
-          <Card
-            style={{ width: "18rem", backgroundColor: "#D9D7F8" }}
-            className=""
-          >
-            <Card.Img variant="top" src="./img/makeup.png" />
-            <Card.Body>
-              <Card.Title>Makeup Website</Card.Title>
-              <p>MAKEUP WEBSITE</p>
-            </Card.Body>
-          </Card>
+     </Row>
+     <Row className='ourwork-row'>
+        <Col  className='img-col col-12 col-sm-8'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/brain2.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Shining Brains</h4> <h5>SCHOOL WEBSITE</h5> </div>
+        </a>
         </Col>
-      </Row>
+        <Col className=' img-col col-12 col-sm-4'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/brain.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Sola Enitilo</h4> <h5>PHOTOGRAPHY WEBSITE</h5> </div>
+        </a>
+        </Col>
+     </Row>
+     <Row className='ourwork-row'>
+        <Col  className='img-col col-12 col-sm-5'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/pharmacy.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Pharmacy</h4> <h5>PHARMACY WEBSITE</h5> </div>
+        </a>
+        </Col>
+        <Col className=' img-col col-12 col-sm-7'>
+        <a  href="#" className='ourwork-link'> <div className='img-container'> <img className="img-work" src="./img/makeup2.png" alt="" /> </div>
+        <div className='text-wrapa'> <h4> Makeup</h4> <h5>MAKEUP WEBSITE</h5> </div>
+        </a>
+        </Col>
+     </Row>
     </div>
   </main>
 );
