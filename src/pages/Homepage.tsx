@@ -32,7 +32,7 @@ const Home = () => (
           </Card.Text>
             <Button
               className="mt-5 px-5 py-1 home-button"
-              href="/Ourwork"
+              href="/our_work"
               style={{
               backgroundColor: "#757F77",
               color: "#ffffff",
