@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col, Form, Button } from "react-bootstrap";
-import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram} from 'react-bootstrap-icons';
+import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Telephone, Envelope} from 'react-bootstrap-icons';
 import axios from "axios";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -57,16 +57,16 @@ const Contact: React.FC = () => {
                   >
                     <Twitter className='header-link'/>
                   </a>
-                  <a className="social-media" href="#" target="_blank">
+                  <a className="social-media" href="#">
                     <Whatsapp className='header-link'/>
                   </a>
-                  <a className="social-media" href="#" target="_blank">
+                  <a className="social-media" href="#">
                     <Telegram className='header-link'/>
                   </a>
-                  <a className="social-media" href="#" target="_blank">
+                  <a className="social-media" href="#">
                     <Youtube className='header-link'/>
                   </a>
-                  <a className="social-media" href="#" target="_blank">
+                  <a className="social-media" href="#">
                     <Facebook className='header-link'/>
                   </a>
                   <a className="social-media"
@@ -102,9 +102,16 @@ const Contact: React.FC = () => {
                           within 24hours
                         </div>
                         <br></br>
-                        <div className="text-white">+98085643697</div>
+                        <div className="mb-3"><a href="tel:+37256704920" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +37256704920</a>
+                        </div>
+                        <div><a href="tel:+2348071005481" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +2348071005481</a>
+                        </div>
                         <br></br>
-                        <div className="text-white">hello@doyenify.tech</div>
+                        <div><a href="mailto:info@doyenify.tech"  className="text-white" style={{ textDecoration: "none" }}>
+                          <Envelope /> info@doyenify.tech</a>
+                        </div>
                         <br></br>
                         <div className="text-white pb-5">
                         Juhan Sutiste tee 52 - 65 Tallinn Estonia

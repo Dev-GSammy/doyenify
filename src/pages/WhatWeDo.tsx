@@ -72,19 +72,19 @@ const WhatWeDo = () => (
             <Col className="imgCol">
               <div className="img-wrapper">
                 <img src="../img/whatwedoimg_1.png"></img>
-                <h3>Graphic <br></br> Design</h3>
+                <h3>Booking <br></br>App</h3>
               </div>
             </Col>
             <Col className="imgCol">
               <div className="img-wrapper">
                 <img src="../img/whatwedoimg_2.png"></img>
-                <h3>Video <br></br> Editing</h3>
+                <h3>Pay Roll <br></br>App</h3>
               </div>
             </Col>
             <Col className="imgCol">
               <div className="img-wrapper">
                 <img src="../img/whatwedoimg_3.png"></img>
-                <h3>Website <br></br> Development</h3>
+                <h3>Pharmacy <br></br>App</h3>
               </div>
             </Col>
           </Row>

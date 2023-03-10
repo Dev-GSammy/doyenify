@@ -13,9 +13,48 @@
     box-sizing: border-box;
 }
 
+.team-profile-card {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.team-profile-card:hover .overlay-desc-top {
+    bottom: 0;
+    height: 338px;
+}
+
 .team-profile-img {
     width: 322px;
     height: 338px;
     object-fit: cover;
     object-position: 50% 20%;
 }
+
+.overlay-desc-top {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 0px;
+    width: 322;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.overlay-desc-top h3 {
+    margin-top: 16px;
+}
+
+
+
+
+
