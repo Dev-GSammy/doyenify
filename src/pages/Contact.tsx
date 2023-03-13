@@ -95,18 +95,11 @@ const Contact: React.FC = () => {
                       className="rounded-4"
                       style={{ backgroundColor: "#000000" }}
                     >
-                      <div className="p-4 rounded shadow-sm">
+                      <div className="p-4 rounded shadow-sm contact-info">
                         <h5 className="text-white"> Contact Information</h5>
                         <div className="text-white mt-0">
                           Fill up the form and our team will get back to you
                           within 24hours
-                        </div>
-                        <br></br>
-                        <div className="mb-3"><a href="tel:+37256704920" className="text-white" style={{ textDecoration: "none" }}>
-                          <Telephone /> +37256704920</a>
-                        </div>
-                        <div><a href="tel:+2348071005481" className="text-white" style={{ textDecoration: "none" }}>
-                          <Telephone /> +2348071005481</a>
                         </div>
                         <br></br>
                         <div><a href="mailto:info@doyenify.tech"  className="text-white" style={{ textDecoration: "none" }}>
@@ -114,7 +107,16 @@ const Contact: React.FC = () => {
                         </div>
                         <br></br>
                         <div className="text-white pb-5">
-                        Juhan Sutiste tee 52 - 65 Tallinn Estonia
+                          <h6>Head Office</h6>
+                          Juhan Sutiste tee 52 - 65 Tallinn Estonia
+                          <div className="mb-3"><a href="tel:+37256704920" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +37256704920</a>
+                          </div>
+                          <h6 className="mt-2">Nigeria Office</h6>
+                          3, Agboola Kolawole Str, Awoyaya, Lagos
+                          <div><a href="tel:+2348071005481" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +2348071005481</a>
+                          </div>
                         </div>
                       </div>
                     </div>

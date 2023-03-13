@@ -13,6 +13,14 @@
     font-size: 24px;
 }
 
+.contact-info a.text-white {
+    transition: 0.3s;
+}
+
+.contact-info a.text-white:hover {
+    color: #00FF38 !important;
+}
+
 .contact-input {
     border: 1px solid #c1c1c1 !important;
     border-top: none !important;
@@ -23,6 +31,7 @@
     /* margin-bottom: 50px; */
     outline: none;
 }
+
 
 .input-label {
     font-weight: 600 !important;
