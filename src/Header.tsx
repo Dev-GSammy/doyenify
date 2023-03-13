@@ -29,7 +29,7 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      style={{ backgroundColor: "#e6ffcc" }}
+      style={{ backgroundColor: "#e6ffcc", width: "100vw", position: "fixed", zIndex: "10" }}
       variant="dark"
     >
       <Container>
