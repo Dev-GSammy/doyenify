@@ -5,15 +5,15 @@ import '../ourwork.css';
 
 const OurWork = () => (
   <main role="main" className="container-fluid px-0">
-    <div className="text-center">
-      <Card className="bg-dark text-white" style={{ borderRadius: 0 }}>
-        <Card.Img src="./img/work.png" alt="work" />
+    <div className="text-center work-header-wrapper">
+      <Card className="bg-dark text-white" style={{ borderRadius: '0' , height: "100%" }}>
+        <Card.Img src="./img/work.png" style={{ height: "100%", objectFit: "cover"}} alt="work" />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>
             {" "}
             <h1>Our Work </h1>
           </Card.Title>
-          <Card.Text>
+          <Card.Text className="work-card-text">
             <br />
             <p style={{ fontSize: "20px" }}>
               {" "}

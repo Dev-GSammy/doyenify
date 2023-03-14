@@ -1,19 +1,21 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../aboutus.css';
+
 
 const AboutUs = () => (
   <>
     <main role="main" className="container-fluid px-0">
-      <div className="text-center">
-        <Card className="bg-dark text-white" style={{ borderRadius: 0 }}>
-          <Card.Img src="./img/about.png" alt="about" />
+      <div className="text-center about-header-wrapper">
+        <Card className="bg-dark text-white" style={{ borderRadius:  "0" , height: "100%"  }}>
+          <Card.Img src="./img/about.png" style={{ height: "100%", objectFit: "cover"}} alt="about" />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               {" "}
               <h1>About Us </h1>
             </Card.Title>
-            <Card.Text >
+            <Card.Text  className='about-card-text'>
           <br />
           <p style={{ fontSize: "20px" }}>Doyenify Technologies is an Information Technology (IT) and Consulting Company <br />
            that provides top-notch services to businesses and individuals. 
@@ -24,16 +26,16 @@ const AboutUs = () => (
       </div>
       <div>
         <Row className="mt-5 mb-5 mx-3">
-          <Col>
+          <Col className="col-12 col-sm-6" >
             {" "}
             <img
               src="./img/who.png"
-              width="600px"
+              width="100%"
               height=""
               alt="who we are"
             />{" "}
           </Col>
-          <Col className="d-flex flex-column align-items-center justify-content-center">
+          <Col className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
             <h2 className="mt-5"> Who We Are </h2>
             <p>We are a team of IT experts focused on helping brands by boosting recognition and compelling patronage.
              We proffer expert solutions and develop new methods to improve business growth. 
@@ -47,11 +49,11 @@ const AboutUs = () => (
       </div>
       <div>
         <Row className="mt-5 mx-3">
-          <Col>
+          <Col className=" why-choose-us-circle col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
             <div
               style={{
-                width: "460px",
-                height: "460px",
+                width: "400px",
+                height: "400px",
                 borderRadius: "50%",
                 backgroundColor: "#B0FFC1",
                 textAlign: "center",
@@ -66,7 +68,7 @@ const AboutUs = () => (
               </h1>
             </div>
           </Col>
-          <Col className="d-flex flex-column align-items-center justify-content-center">
+          <Col className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
             <div>
             <p>Our IT services work together to build brand recognition.
              A well-recognized business differentiates from the others and can give a competitive edge. 
@@ -85,14 +87,14 @@ const AboutUs = () => (
         <Row className="mt-5 mx-3">
           <Col
             style={{ textAlign: "center" }}
-            className="d-flex flex-column align-items-center justify-content-center"
+            className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center"
           >
             <h2>What We Do</h2>
             <div
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                width: "400px ",
+                width: "100% ",
                 margin: "0 auto",
               }}
             >
@@ -104,9 +106,9 @@ const AboutUs = () => (
               </div>
             </div>
           </Col>
-          <Col>
+          <Col className="col-12 col-sm-6">
             {" "}
-            <img src="./img/what.png" width="600px" alt="what we do" />{" "}
+            <img src="./img/what.png" width="100%" height="auto" alt="what we do" />{" "}
           </Col>
         </Row>
       </div>

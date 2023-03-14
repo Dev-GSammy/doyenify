@@ -49,6 +49,13 @@
 }
  @media screen and (max-width: 640px) {
 
+    .work-header-wrapper{
+        height: 100vh;
+       }
+    .work-card-text{
+        line-height: 30px;
+        letter-spacing: 2px;
+}
     .ourwork-container{
       margin-bottom: 450px;
 
