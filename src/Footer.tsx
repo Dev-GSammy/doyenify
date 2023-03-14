@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram} from 'react-bootstrap-icons';
+import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram,} from 'react-bootstrap-icons';
 import "./footer.css";
 
 
@@ -18,13 +18,13 @@ const Footer: React.FC = () => {
         <p><span></span></p>
         <a href="/" className="text-black" style={{ display: "block" }}>Home</a>
         <p><span></span></p>
-        <a href="/About_us" className="text-black">Our Work</a>
+        <a href="/our_work" className="text-black">Our Work</a>
         <p><span></span></p>
-        <a href="/Services" className="text-black">About Us</a>
+        <a href="/about_us" className="text-black">About Us</a>
         <p><span></span></p>
-        <a href="#team" className="text-black">What We Do</a>
+        <a href="/services" className="text-black">What We Do</a>
         <p><span></span></p>
-        <a href="#team" className="text-black">Our Team</a>
+        <a href="our_team" className="text-black">Our Team</a>
     </Col>
 
       <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
@@ -39,19 +39,19 @@ const Footer: React.FC = () => {
      
       <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Social Media </h5>
       
-      <a href="#" className="text-black " target="_blank"><Whatsapp className="footer-link" /> </a>
+      <a href="#" className="text-black" ><Whatsapp className="footer-link" /> </a>
       <div className="spacer20"></div>
-      <a href="#" className="text-black " target="_blank"><Telegram className="footer-link" /> </a>
+      <a href="#" className="text-black "><Telegram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="https://www.linkedin.com/company/doyenify/" className="text-black " target="_blank"><Linkedin className="footer-link" /> </a>
       <div className="spacer20"></div>
       <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="text-black" target="_blank"><Instagram className="footer-link" /> </a>
       <p><span></span></p>
-      <a href="#" className="text-black" target="_blank"><Facebook className="footer-link" /> </a>
+      <a href="#" className="text-black" ><Facebook className="footer-link" /> </a>
       <div className="spacer20"></div>
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
-      <a href="#" className="text-black" target="_blank"><Youtube className="footer-link" /> </a>
+      <a href="#" className="text-black" ><Youtube className="footer-link" /> </a>
       </Col>
     
       <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Address </h5>

@@ -29,30 +29,57 @@ const OurTeam = () => (
     >
       <Row className="gx-5 mb-3">
         <Col>
-          <Card className="border-0">
+          <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img" src="./img/oluyide_ourteam_img.jpg" />
+            <div className="overlay-desc-top">
+              <h3>Gbenga Oluyide</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Gbenga Oluyide</Card.Title>
-              <Card.Text className="font-italic">Founder & CEO</Card.Text>
+              <Card.Text className="font-italic" >Founder & CEO</Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card className="border-0">
+          <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img" src="./img/solagbade_ourteam_img.jpg" />
+            <div className="overlay-desc-top">
+              <h3>Enitilo Solagbade</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Enitilo Solagbade</Card.Title>
-              <Card.Text>Founder & CEO</Card.Text>
+              <Card.Text>Tech Lead</Card.Text>
             </Card.Body>
           </Card>
         </Col>
 
         <Col>
-          <Card className="border-0">
+          <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img" src="./img/timmy_ourteam_img.jpg" />
+            <div className="overlay-desc-top">
+              <h3>Timilehin Ogunwole</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Timilehin Ogunwole</Card.Title>
-              <Card.Text>Product Designer</Card.Text>
+              <Card.Text>Business Analyst/Product Owner</Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -60,8 +87,17 @@ const OurTeam = () => (
 
       <Row className="gx-5 mb-3">
         <Col className="col-sm-4">
-          <Card className="border-0">
+          <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img"src="./img/ifedolapo_ourteam_img.jpg" />
+            <div className="overlay-desc-top">
+              <h3>Ifedolapo Ayoola</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifedolapo Ayoola</Card.Title>
               <Card.Text className="font-italic">Software Developer</Card.Text>
@@ -69,8 +105,17 @@ const OurTeam = () => (
           </Card>
         </Col>
         <Col className="col-sm-4">
-          <Card className="border-0">
+          <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img" src="./img/Rectangle80.png" />
+            <div className="overlay-desc-top">
+              <h3>Ifeoluwa Olagbemi</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifeoluwa Olagbemi</Card.Title>
               <Card.Text>Product Designer</Card.Text>
