@@ -7,7 +7,7 @@ import "../ourTeam.css";
 const OurTeam = () => (
   <main role="main">
     <div className=" team-header-wrapper text-center">
-      <Card className="bg-dark text-white h-100" style={{ borderRadius: "0", height: "100%" }}>
+      <Card className="bg-dark text-white h-100" style={{ borderRadius: "0", height: "100%"}}>
         <Card.Img src="./img/teamImg.jpg" style={{ height: "100%", objectFit: "cover", objectPosition: "center" }} />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>
@@ -16,7 +16,7 @@ const OurTeam = () => (
           </Card.Title>
           <Card.Text className="team-card-text mt-4" style={{ fontSize: "1.25em" }}>
             Meet our team of developers, creators, designers, and world-class{" "}
-            <br /> problem solver To the company our customers want us to be ,
+            <br /> problem solvers. To be the company our customers want us to be,
             it takes an eclectic of passionate operators.
             <br /> Get to know the people leading the way at Doyenify
           </Card.Text>
