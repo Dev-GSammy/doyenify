@@ -31,6 +31,8 @@ const Home = () => (
             solutions to improve business profitability.
           </p>
           </Card.Text>
+          <div className="button-wrapa">
+            <div className="button-wrapa-one" >
           <Link to="/our_work" className="brand">
             <Button
               className="mt-5 px-5 py-1 home-button"
@@ -46,15 +48,34 @@ const Home = () => (
               View Our Work{" "}
             </Button>
             </Link>
+            </div>
+            <div>
+            <Link to="/Contact" className="brand">
+            <Button
+              className="mt-5 px-5 py-1 home-button"
+              style={{
+              backgroundColor: "#387846",
+              color: "#ffffff",
+              borderRadius: " 50px",
+              border: " 2px solid #ffffff",
+              fontWeight: "600",
+              }}
+            >
+              {" "}
+              Request A Quote{" "}
+            </Button>
+            </Link>
+            </div>
+            </div>
           </Card.ImgOverlay>
         </Card>
       </div>
       <div style={{backgroundColor: "#D9D7F8"}}>
             <Row >
-              <Col className=" col-12 col-sm-6 do-content">
-              < img src= "./img/web.png" width="100%" height= "auto" alt="Web" />
+              <Col className=" col-12 col-sm-6 do-content mx-5 d-flex flex-column align-items-left justify-content-center">
+              < img src= "./img/web.png" width="400px" height= "400px" alt="Web" />
               </Col>
-              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center do-content"> 
+              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content"> 
               <h4 style={{fontSize: "36px"}}>RESPONSIVE AND CREATIVE</h4>
               <h2 style={{color: "#387846", fontSize: "36px"}}>Web Design</h2>
                 <p style={{fontSize: "20px"}}>We analyze your business to design and create a befitting website 
@@ -64,21 +85,21 @@ const Home = () => (
           </div>
           <div style={{backgroundColor: "#DFE2E3"}}>
             <Row >
-              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
+              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items-right justify-content-center do-content">
                 <h4 style={{fontSize: "36px"}}> CREATIVE AND SMART</h4>
                 <h2 style={{color: "#387846", fontSize: "36px"}}>Graphic Design</h2>
                 <p style={{fontSize: "20px"}}> Our Graphics design aims for one thing: positive results. We use a unique approach to 
                   communicate visual art ideas which helps to boost identity and gives classic brand recognition.</p>
               </Col>
-              <Col className=" col-12 col-sm-6 do-content">
-                  < img src="./img/graphic.png" width="100%" height= "auto"  alt="graphic design" />
+              <Col className=" col-12 col-sm-6 do-content d-flex flex-column align-items justify-content-center">
+                  < img src="./img/graphic.png" width="400px" height= "400px"  alt="graphic design" />
               </Col>
             </Row>
           </div>
           <div style={{backgroundColor: "#D9D7F8"}}>
             <Row>
-              <Col className=" col-12 col-sm-6 do-content">
-              < img src="./img/video.png" width="100%" height= "auto"  alt="Video Editing" />
+              <Col className=" col-12 col-sm-6 do-content d-flex flex-column align-items-left justify-content-center">
+              < img src="./img/video.png" width="400px" height= "400px"  alt="Video Editing" />
               </Col>
               <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
                 <h4 style={{fontSize: "36px"}}>GOOD AND NICE</h4>
