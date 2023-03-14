@@ -15,15 +15,15 @@ const divStyle = {
 const Home = () => (
   <div>
     <main role="main" className="container-fluid px-0">
-      <div className="text-center">
-        <Card className="bg-dark text-white" style={{ borderRadius: 0 }}>
-          <Card.Img src="./img/home.png" alt="Home" />
+      <div className="text-center home-header-wrapper">
+        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "100%" }}>
+          <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               {" "}
               <h2> Welcome to Doyenify Technologies </h2>
             </Card.Title>
-            <Card.Text >
+            <Card.Text className="home-card-text">
           <br />
           <p style={{ fontSize: "20px" }}> You  are ready to join our global clients of 10,000+ network
             we help Individuals and organizations solve problems with
@@ -51,10 +51,10 @@ const Home = () => (
       </div>
       <div style={{backgroundColor: "#D9D7F8"}}>
             <Row >
-              <Col className="do-content">
-              < img src= "./img/web.png" alt="Web" />
+              <Col className=" col-12 col-sm-6 do-content">
+              < img src= "./img/web.png" width="100%" height= "auto" alt="Web" />
               </Col>
-              <Col className="mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center do-content"> 
+              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items-leftgit justify-content-center do-content"> 
               <h4 style={{fontSize: "36px"}}>RESPONSIVE AND CREATIVE</h4>
               <h2 style={{color: "#387846", fontSize: "36px"}}>Web Design</h2>
                 <p style={{fontSize: "20px"}}>We analyze your business to design and create a befitting website 
@@ -64,23 +64,23 @@ const Home = () => (
           </div>
           <div style={{backgroundColor: "#DFE2E3"}}>
             <Row >
-              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
+              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
                 <h4 style={{fontSize: "36px"}}> CREATIVE AND SMART</h4>
                 <h2 style={{color: "#387846", fontSize: "36px"}}>Graphic Design</h2>
                 <p style={{fontSize: "20px"}}> Our Graphics design aims for one thing: positive results. We use a unique approach to 
                   communicate visual art ideas which helps to boost identity and gives classic brand recognition.</p>
               </Col>
-              <Col className="do-content">
-                  < img src="./img/graphic.png" alt="graphic design" />
+              <Col className=" col-12 col-sm-6 do-content">
+                  < img src="./img/graphic.png" width="100%" height= "auto"  alt="graphic design" />
               </Col>
             </Row>
           </div>
           <div style={{backgroundColor: "#D9D7F8"}}>
             <Row>
-              <Col className="mx-5 do-content">
-              < img src="./img/video.png" alt="Video Editing" />
+              <Col className=" col-12 col-sm-6 do-content">
+              < img src="./img/video.png" width="100%" height= "auto"  alt="Video Editing" />
               </Col>
-              <Col className="mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
+              <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
                 <h4 style={{fontSize: "36px"}}>GOOD AND NICE</h4>
                 <h2 style={{color: "#387846", fontSize: "36px"}}>Video Editing</h2>
                 <p style={{fontSize: "20px"}}>Our 5-star Video editing services are highly rated because we blend images, 
@@ -89,10 +89,10 @@ const Home = () => (
               </Col>
             </Row>
           </div>
-          <div>
+          <div className="ourhome-container">
             <h2 className="text-center mt-5"> Explore Our Products</h2>
-             <div className='text-center container ourhome-container pt-3' >
-               <Row className='ourhome-row'>
+             <div className='text-center container  pt-3' >
+               <Row >
                 <Col className=' img-col col-12 col-md-4'>
                 <a  href="" className='ourhome-link'> <div className='img-container'> <img src="./img/imageone.png" alt="" /> </div>
                 <div className='text-wrapa'> <h4> Booking App</h4> </div>
