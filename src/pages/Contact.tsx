@@ -134,12 +134,18 @@ const Contact: React.FC = () => {
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    setTimeout(() => {
-                      console.log('loggin in', values);
+                    axios.post('https://sheet.best/api/sheets/4277a4e2-dd21-4507-bfa8-42375ac14e97', values)
+                    .then(response => {
+                      console.log('loggin in', response);
                       setSubmitting(false);
                       resetForm();
                       toast.success('We have received your message, We will get back to you shortly');
-                    }, 400);
+                    })
+
+                    .catch(error => {
+                      console.error('error submitting form', error);
+                      setSubmitting(false);
+                    });
                   }}
                  
                   validationSchema={validationSchema}
