@@ -18,7 +18,6 @@ const validationSchema = Yup.object().shape({
 });
 
 const Contact: React.FC = () => {
-
   return (
     <>
       <div>
@@ -84,6 +83,8 @@ const Contact: React.FC = () => {
             className="container"
             style={{ paddingTop: "6.25rem", marginBottom: "6.25rem" }}
           >
+
+              <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
             <Row>
               <Col
                 className="col-12 order-2 col-md-4 order-md-1 h-100"
@@ -211,7 +212,7 @@ const Contact: React.FC = () => {
                         <Form.Group
                           className="mb-3"
                           controlId="validationCustom01"
-                        >
+                      >
                           <Form.Label className="input-label">
                             Last Name
                           </Form.Label>
@@ -230,7 +231,7 @@ const Contact: React.FC = () => {
                         </Form.Group>
 
                         <Form.Group
-                          className="mb-3"
+                          className="mb-5"
                           controlId="validationCustom01"
                         >
                           <Form.Label className="input-label">Phone</Form.Label>
@@ -245,6 +246,45 @@ const Contact: React.FC = () => {
                           />
                           <Form.Control.Feedback type="invalid">
                             {errors.phone}
+                          </Form.Control.Feedback>
+                        </Form.Group>
+                      </div>
+
+                      <div className="col-12">
+                        <Form.Group
+                          className="mb-5"
+                          controlId="validationCustom01"
+                        >
+                          <Form.Label className="input-label">
+                            Choose one or more services
+                          </Form.Label>
+                          <Form.Check
+                            label="Graphic design"
+                            className="contact-input"
+                            name="servicesCheckBox"
+                            value="graphicDesign"
+                            
+                          />
+                          <Form.Check
+                            label="Video Editing"
+                            className="contact-input"
+                            name="servicesCheckBox"
+                            value="videoEditing"
+                          />
+                          <Form.Check
+                            label="Web Design (UI/UX)"
+                            className="contact-input"
+                            name="servicesCheckBox"
+                            value="webDesign"
+                          />
+                          <Form.Check
+                            label="Web Development"
+                            className="contact-input"
+                            name="servicesCheckBox"
+                            value="webDevelopment"
+                          />
+                          <Form.Control.Feedback type="invalid">
+                            {errors.message}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -280,7 +320,7 @@ const Contact: React.FC = () => {
                         variant="success"
                         type="submit"
                       >
-                        Send
+                        Request
                       </Button>
 
                       <ToastContainer /> 
