@@ -29,8 +29,9 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      style={{ backgroundColor: "#e6ffcc", width: "100vw", position: "fixed", zIndex: "10" }}
+      style={{ backgroundColor: "#e6ffcc", width: "100vw" }}
       variant="dark"
+      fixed="top"
     >
       <Container>
         <Navbar.Brand onClick={() => navigate("/")}>
