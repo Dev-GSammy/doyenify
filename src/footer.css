@@ -23,6 +23,11 @@ a.text-black {
     color: black;
 }
 
+
+.contact_linktree_footer_icon {
+    filter: brightness(0);
+}
+
 .footer-terms {
     display: flex;
     justify-content: center;
@@ -36,4 +41,9 @@ a.text-black {
 .spacer20 {
     display: inline-block;
     width: 16px;
+}
+
+.spacer10 {
+    display: inline-block;
+    width: 10px;
 }

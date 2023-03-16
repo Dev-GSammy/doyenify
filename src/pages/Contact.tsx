@@ -74,6 +74,12 @@ const Contact: React.FC = () => {
                   >
                     <Instagram className='header-link'/>
                   </a>
+                  <a className="social-media contact_linktree_icon"
+                    href="https://linktr.ee/doyenify"
+                    target="_blank"
+                  >
+                    <img src="../img/linktree_logo.png"></img>
+                  </a>
                 </div>
               </Card.ImgOverlay>
             </Card>
@@ -135,7 +141,7 @@ const Contact: React.FC = () => {
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    axios.post('https://sheet.best/api/sheets/4277a4e2-dd21-4507-bfa8-42375ac14e97', values)
+                    axios.post('https://sheet.best/api/sheets/3d3daed8-f416-44c0-b33b-8da2fcce6814', values)
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
@@ -146,6 +152,7 @@ const Contact: React.FC = () => {
                     .catch(error => {
                       console.error('error submitting form', error);
                       setSubmitting(false);
+                      toast.error("Sorry we could not receive your message. Please check your connection and try again")
                     });
                   }}
                  
@@ -263,7 +270,7 @@ const Contact: React.FC = () => {
                             className="contact-input contact_checkboxes"
                             name="servicesCheckBox"
                             value="graphicDesign"
-                            
+
                           />
                           <Form.Check
                             label="Video Editing"
