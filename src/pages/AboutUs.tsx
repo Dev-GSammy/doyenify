@@ -37,12 +37,13 @@ const AboutUs = () => (
           </Col>
           <Col className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
             <h2 className="mt-5"> Who We Are </h2>
-            <p>We are a team of IT experts focused on helping brands by boosting recognition and compelling patronage.
-             We proffer expert solutions and develop new methods to improve business growth. 
+            <p>We are a team of IT experts focused on website design, graphic design, video editing, 
+               website development which help brands by boosting recognition and compelling patronage.
+               We proffer expert solutions and develop new methods to improve business growth technically.
              <br />
-            We also offer consultancy services by providing strategic advice in relation to travel and relocation.
-            Our specialist advice helps to aid decision making.
-
+              We also offer consultancy services by providing strategic advice in relation to travel and relocation. 
+              Our specialist advice helps to aid Skills
+              acquisition for individuals which will make life easier in their various destinations.
             </p>
           </Col>
         </Row>
