@@ -3,18 +3,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col, Form, Button } from "react-bootstrap";
 import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Telephone, Envelope} from 'react-bootstrap-icons';
 import axios from "axios";
-import { Formik } from "formik";
+import { Formik, Field, FieldArray} from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../contact.css";
 
 const validationSchema = Yup.object().shape({
-  firstName: Yup.string().required(),
+  firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.number().required(),
-  message: Yup.string().required(),
+  phone: Yup.number().required("Required"),
+  message: Yup.string().required("Required"),
+  servicesCheckbox: Yup.array().required()
 });
 
 const Contact: React.FC = () => {
@@ -132,6 +133,7 @@ const Contact: React.FC = () => {
                     email: "",
                     phone: "",
                     message: "",
+                    servicesCheckbox: []
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -139,7 +141,14 @@ const Contact: React.FC = () => {
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
-                      resetForm();
+                      resetForm({ values: {
+                        firstName: "",
+                        lastName: "",
+                        email: "",
+                        phone: "",
+                        message: "",
+                        servicesCheckbox: []
+                      }});
                       toast.success('We have received your message, We will get back to you shortly');
                     })
 
@@ -258,31 +267,33 @@ const Contact: React.FC = () => {
                           <Form.Label className="input-label">
                             Choose one or more services
                           </Form.Label>
-                          <Form.Check
-                            label="Graphic design"
-                            className="contact-input"
-                            name="servicesCheckBox"
-                            value="graphicDesign"
-                            
-                          />
-                          <Form.Check
-                            label="Video Editing"
-                            className="contact-input"
-                            name="servicesCheckBox"
-                            value="videoEditing"
-                          />
-                          <Form.Check
-                            label="Web Design (UI/UX)"
-                            className="contact-input"
-                            name="servicesCheckBox"
-                            value="webDesign"
-                          />
-                          <Form.Check
-                            label="Web Development"
-                            className="contact-input"
-                            name="servicesCheckBox"
-                            value="webDevelopment"
-                          />
+                          <FieldArray name="servicesCheckbox">
+                            {() => (
+                              <div>
+                              <label>
+                                <Field type="checkbox" name="servicesCheckbox" value="graphicDesign" isInvalid={!!errors.email}></Field>
+                                  Graphic Design
+                              </label>
+                              <label>
+                                <Field type="checkbox" name="servicesCheckbox" value="videoEditing" isInvalid={!!errors.email}></Field>
+                                  Video Editing
+                              </label>
+                              <label>
+                                <Field type="checkbox" name="servicesCheckbox" value="webDesign" isInvalid={!!errors.email}></Field>
+                                  Web Design (UI/UX)
+                              </label>
+                              <label>
+                                <Field type="checkbox" name="servicesCheckbox" value="webDevelopment" isInvalid={!!errors.email}></Field>
+                                  Web Development
+                              </label>
+                              <Form.Control.Feedback type="invalid">
+                            {errors.phone}
+                          </Form.Control.Feedback>
+                              </div>
+                              
+                            )}
+                          </FieldArray>
+                          
                           <Form.Control.Feedback type="invalid">
                             {errors.message}
                           </Form.Control.Feedback>

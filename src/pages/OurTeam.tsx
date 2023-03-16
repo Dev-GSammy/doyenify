@@ -86,14 +86,12 @@ const OurTeam = () => {
             <div className="overlay-desc-top">
               <h3>Enitilo Solagbade</h3>
               <p>
-                My name is Sola, and I am a software engineer with a passion for creating
-                innovative and efficient software solutions. In my free time, I enjoy
-                indulging in my other hobbies, photography and DJing.
-                Combining my technical skills with my creative passions 
-                has been a fulfilling and rewarding journey, and I am excited 
-                to continue exploring new ways to express myself through software, 
-                photography, and music.
-                </p>
+              Sola is a software engineer with a passion for creating innovative 
+              and efficient software solutions. “Combining my technical skills 
+              with my creative passions has been a fulfilling and rewarding journey, 
+              and I am excited to continue exploring new ways to express myself 
+              through software, photography, and music.”
+              </p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Enitilo Solagbade</Card.Title>
@@ -137,7 +135,7 @@ const OurTeam = () => {
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifedolapo Ayoola</Card.Title>
-              <Card.Text className="font-italic">Software Developer</Card.Text>
+              <Card.Text className="font-italic">Full Stack Software Developer</Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -146,17 +144,16 @@ const OurTeam = () => {
             <Card.Img className="team-profile-img" src="./img/ifeoluwa_ourteam.jpg" />
             <div className="overlay-desc-top">
               <h3>Ifeoluwa Olagbemi</h3>
-              <p>Ifeoluwa is a skilled product designer with expertise in 
-                user-centered design and product development. With a 
-                passion for solving complex problems, he leverages his 
-                strong visual design and prototyping skills to create 
-                innovative products that meet user needs. He has a keen 
-                eye for detail and a collaborative spirit, making him an 
-                invaluable asset to any team.</p>
+              <p>Ifeoluwa is a full stack software developer and skilled product 
+                designer with expertise in user-centered design and product development. 
+                With a passion for solving complex problems, he leverages his strong 
+                visual design and prototyping skills to create innovative products 
+                that meet user needs. He has a keen eye for detail and a collaborative 
+                spirit, making him an invaluable asset to any team.</p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifeoluwa Olagbemi</Card.Title>
-              <Card.Text>Product Designer</Card.Text>
+              <Card.Text>Full Stack Software Developer/Product Designer</Card.Text>
             </Card.Body>
           </Card>
         </Col>
