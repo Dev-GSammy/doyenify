@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
         <Link to="our_team" className="link_tag"><a className="text-black">Our Team</a></Link>
     </Col>
 
-      <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
+      <Col sm={3} className="text-start footer" style={{ padding: "0 70px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
       <p><span></span></p>
-      <a href="mailto:info@doyenify.tech" className="text-black"><Envelope />info@doyenify.tech</a>
+      <a href="mailto:info@doyenify.tech" className="text-black"><Envelope /><div className="spacer10"></div>info@doyenify.tech</a>
       <p><span></span></p>
-      <a href="tel:+2348135361806" className="text-black"><Telephone />+37256704920</a>
+      <a href="tel:+2348135361806" className="text-black"><Telephone /><div className="spacer10"></div>+37256704920</a>
       <p><span></span></p>
-      <a href="tel:+2348135361806" className="text-black"><Telephone />+2348071005481</a>
+      <a href="tel:+2348135361806" className="text-black"><Telephone /><div className="spacer10"></div>+2348071005481</a>
       </Col>
 
      
@@ -53,6 +53,8 @@ const Footer: React.FC = () => {
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
       <a href="#" className="text-black" ><Youtube className="footer-link" /> </a>
+      <div className="spacer20"></div>
+      <a className="social-media contact_linktree_footer_icon footer-link text-black" href="https://linktr.ee/doyenify" target="_blank"><img src="../img/linktree_logo.png"></img></a>
       </Col>
     
       <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Address </h5>
