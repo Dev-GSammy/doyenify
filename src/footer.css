@@ -1,3 +1,7 @@
+.link_tag {
+    text-decoration: none;
+}
+
 a.text-black {
     text-decoration: none;
     transition: 0.3s;
@@ -19,7 +23,27 @@ a.text-black {
     color: black;
 }
 
+
+.contact_linktree_footer_icon {
+    filter: brightness(0);
+}
+
+.footer-terms {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-terms a {
+    text-decoration: none;
+    color: black;
+}
+
 .spacer20 {
     display: inline-block;
     width: 16px;
+}
+
+.spacer10 {
+    display: inline-block;
+    width: 10px;
 }

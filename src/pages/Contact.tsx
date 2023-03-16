@@ -21,7 +21,7 @@ const validationSchema = Yup.object().shape({
 const Contact: React.FC = () => {
   return (
     <>
-      <div>
+      <div style={{ overflowX: "hidden" }}>
         <main role="main" className="container-fluid px-0">
           <div className=" contact-header-wrapper text-center">
             <Card
@@ -74,6 +74,12 @@ const Contact: React.FC = () => {
                     target="_blank"
                   >
                     <Instagram className='header-link'/>
+                  </a>
+                  <a className="social-media contact_linktree_icon"
+                    href="https://linktr.ee/doyenify"
+                    target="_blank"
+                  >
+                    <img src="../img/linktree_logo.png"></img>
                   </a>
                 </div>
               </Card.ImgOverlay>
@@ -137,7 +143,7 @@ const Contact: React.FC = () => {
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    axios.post('https://sheet.best/api/sheets/4277a4e2-dd21-4507-bfa8-42375ac14e97', values)
+                    axios.post('https://sheet.best/api/sheets/3d3daed8-f416-44c0-b33b-8da2fcce6814', values)
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
@@ -155,6 +161,7 @@ const Contact: React.FC = () => {
                     .catch(error => {
                       console.error('error submitting form', error);
                       setSubmitting(false);
+                      toast.error("Sorry we could not receive your message. Please check your connection and try again")
                     });
                   }}
                  
@@ -259,7 +266,7 @@ const Contact: React.FC = () => {
                         </Form.Group>
                       </div>
 
-                      <div className="col-12">
+                      <div className="col-12" style={{ paddingLeft: "20px" }}>
                         <Form.Group
                           className="mb-5"
                           controlId="validationCustom01"

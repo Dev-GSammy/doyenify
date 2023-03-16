@@ -1,8 +1,9 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram,} from 'react-bootstrap-icons';
+import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Envelope, Telephone} from 'react-bootstrap-icons';
 import "./footer.css";
+import { Link } from 'react-router-dom';
 
 
 const Footer: React.FC = () => {
@@ -16,24 +17,24 @@ const Footer: React.FC = () => {
     <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}>
         <h5 className="text-black mb-5 mt-5">Doyenify</h5>
         <p><span></span></p>
-        <a href="/" className="text-black" style={{ display: "block" }}>Home</a>
+        <Link to="/" className="link_tag"><a className="text-black" style={{ display: "block" }}>Home</a></Link>
         <p><span></span></p>
-        <a href="/our_work" className="text-black">Our Work</a>
+        <Link to="/our_work" className="link_tag"><a className="text-black">Our Work</a></Link> 
         <p><span></span></p>
-        <a href="/about_us" className="text-black">About Us</a>
+        <Link to="/about_us" className="link_tag"><a className="text-black">About Us</a></Link>
         <p><span></span></p>
-        <a href="/services" className="text-black">What We Do</a>
+        <Link to="/services" className="link_tag"><a className="text-black">What We Do</a></Link>
         <p><span></span></p>
-        <a href="our_team" className="text-black">Our Team</a>
+        <Link to="our_team" className="link_tag"><a className="text-black">Our Team</a></Link>
     </Col>
 
-      <Col sm={3} className="text-start footer" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
+      <Col sm={3} className="text-start footer" style={{ padding: "0 70px" }}><h5 className="text-black mb-5 mt-5">Contact</h5>
       <p><span></span></p>
-      <a href="mailto:info@doyenify.tech" className="text-black">info@doyenify.tech</a>
+      <a href="mailto:info@doyenify.tech" className="text-black"><Envelope /><div className="spacer10"></div>info@doyenify.tech</a>
       <p><span></span></p>
-      <a href="tel:+2348135361806" className="text-black">08034657796</a>
+      <a href="tel:+2348135361806" className="text-black"><Telephone /><div className="spacer10"></div>+37256704920</a>
       <p><span></span></p>
-      <a href="tel:+2348135361806" className="text-black">78697840600</a>
+      <a href="tel:+2348135361806" className="text-black"><Telephone /><div className="spacer10"></div>+2348071005481</a>
       </Col>
 
      
@@ -52,6 +53,8 @@ const Footer: React.FC = () => {
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
       <a href="#" className="text-black" ><Youtube className="footer-link" /> </a>
+      <div className="spacer20"></div>
+      <a className="social-media contact_linktree_footer_icon footer-link text-black" href="https://linktr.ee/doyenify" target="_blank"><img src="../img/linktree_logo.png"></img></a>
       </Col>
     
       <Col sm={3} className="text-start" style={{ padding: "0 100px" }}><h5 className="text-black mb-5 mt-5"> Address </h5>
@@ -70,8 +73,14 @@ const Footer: React.FC = () => {
     </Row>
     
     </div>
-    <p className="text-center pb-3">&copy; 2023. All right reserved.</p>
-     </div>
+      <div className="d-flex footer-terms">
+        <p className="text-center pb-3 px-3">&copy; 2023. All right reserved.</p>
+        <p className="text-center pb-3 fs-5">I</p>
+        <a href="#"><p className="text-center pb-3 px-3">Terms and Conditions</p></a>
+        <p className="text-center pb-3 fs-5">I</p>
+        <a href="#"><p className="text-center pb-3 px-3">Privacy Policy</p></a>
+      </div>
+    </div>
       </main>
       </div>
      
