@@ -32,6 +32,10 @@
     outline: 0;
 }
 
+.contact_checkboxes {
+    margin-left: 20px;
+}
+
 
 .input-label {
     font-weight: 600 !important;
@@ -107,7 +111,7 @@
     }
 
     .submit {
-        width: 100%;
+        width: 95vw;
         margin-left: 10px;
         margin-right: 10px;
     }

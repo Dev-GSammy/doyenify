@@ -1,3 +1,7 @@
+.link_tag {
+    text-decoration: none;
+}
+
 a.text-black {
     text-decoration: none;
     transition: 0.3s;
@@ -16,6 +20,16 @@ a.text-black {
 
 .footer-link:hover {
     transform: scale(0.85, 0.85);
+    color: black;
+}
+
+.footer-terms {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-terms a {
+    text-decoration: none;
     color: black;
 }
 

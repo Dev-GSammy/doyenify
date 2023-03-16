@@ -20,7 +20,7 @@ const validationSchema = Yup.object().shape({
 const Contact: React.FC = () => {
   return (
     <>
-      <div>
+      <div style={{ overflowX: "hidden" }}>
         <main role="main" className="container-fluid px-0">
           <div className=" contact-header-wrapper text-center">
             <Card
@@ -250,7 +250,7 @@ const Contact: React.FC = () => {
                         </Form.Group>
                       </div>
 
-                      <div className="col-12">
+                      <div className="col-12" style={{ paddingLeft: "20px" }}>
                         <Form.Group
                           className="mb-5"
                           controlId="validationCustom01"
@@ -260,26 +260,26 @@ const Contact: React.FC = () => {
                           </Form.Label>
                           <Form.Check
                             label="Graphic design"
-                            className="contact-input"
+                            className="contact-input contact_checkboxes"
                             name="servicesCheckBox"
                             value="graphicDesign"
                             
                           />
                           <Form.Check
                             label="Video Editing"
-                            className="contact-input"
+                            className="contact-input contact_checkboxes"
                             name="servicesCheckBox"
                             value="videoEditing"
                           />
                           <Form.Check
                             label="Web Design (UI/UX)"
-                            className="contact-input"
+                            className="contact-input contact_checkboxes"
                             name="servicesCheckBox"
                             value="webDesign"
                           />
                           <Form.Check
                             label="Web Development"
-                            className="contact-input"
+                            className="contact-input contact_checkboxes"
                             name="servicesCheckBox"
                             value="webDevelopment"
                           />
