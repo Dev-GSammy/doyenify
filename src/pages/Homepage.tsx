@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import { ArrowRightShort} from 'react-bootstrap-icons';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../homepage.css';
 import { Link } from 'react-router-dom';
@@ -25,10 +26,10 @@ const Home = () => (
             </Card.Title>
             <Card.Text className="home-card-text">
           <br />
-          <p style={{ fontSize: "20px" }}> You  are ready to join our global clients of 10,000+ network
-            we help Individuals and organizations solve problems with
-            bespoke IT solutions by providing the most efficient technological
-            solutions to improve business profitability.
+          <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
+           We help Individuals and organizations solve problems with bespoke IT solutions 
+           by providing the most efficient technological solutions to improve business profitability.
+
           </p>
           </Card.Text>
           <div className="button-wrapa">
@@ -72,7 +73,7 @@ const Home = () => (
       </div>
       <div style={{backgroundColor: "#D9D7F8"}}>
             <Row >
-              <Col className=" col-12 col-sm-6 do-content mx-5 d-flex flex-column align-items-left justify-content-center">
+              <Col className=" col-12 col-sm-6 do-content ms-3 d-flex flex-column align-items-left justify-content-center">
               < img src= "./img/web.png" width="400px" height= "400px" alt="Web" />
               </Col>
               <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content"> 
@@ -92,14 +93,14 @@ const Home = () => (
                   communicate visual art ideas which helps to boost identity and gives classic brand recognition.</p>
               </Col>
               <Col className=" col-12 col-sm-6 do-content d-flex flex-column align-items justify-content-center">
-                  < img src="./img/graphic.png" width="400px" height= "400px"  alt="graphic design" />
+                  < img src="./img/graphic.png" width="400px" height= "400px" style={{margin: "0 auto"}} alt="graphic design" />
               </Col>
             </Row>
           </div>
           <div style={{backgroundColor: "#D9D7F8"}}>
             <Row>
-              <Col className=" col-12 col-sm-6 do-content d-flex flex-column align-items-left justify-content-center">
-              < img src="./img/video.png" width="400px" height= "400px"  alt="Video Editing" />
+              <Col className=" col-12 col-sm-6 ms-3 do-content d-flex flex-column align-items-left justify-content-center">
+              < img src="./img/video.png" width="400px" height= "400px"   alt="Video Editing" />
               </Col>
               <Col className=" text-wrap mt-5 mx-5 d-flex flex-column align-items justify-content-center do-content">
                 <h4 style={{fontSize: "36px"}}>GOOD AND NICE</h4>
@@ -131,6 +132,7 @@ const Home = () => (
                   </Col>
               </Row>
              </div>
+             <div className="text-center mt-5 mb-5 "> <Link to="/Contact" className="qoute-wrapa"> <h4 >Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4> </Link></div>
              </div>
     </main>
   </div>
