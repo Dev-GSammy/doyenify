@@ -39,6 +39,15 @@
     margin-left: 20px;
 }
 
+.checkbox_container {
+    height: 150px;
+}
+
+.checkbox_label {
+    margin: 5px 5px;
+    display: block;
+}
+
 
 .input-label {
     font-weight: 600 !important;
@@ -130,9 +139,6 @@
     
     } */
 
-    .social-media img {
-    
-    }
 
     .submit {
         width: 95vw;

@@ -3,18 +3,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col, Form, Button } from "react-bootstrap";
 import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Telephone, Envelope} from 'react-bootstrap-icons';
 import axios from "axios";
-import { Formik } from "formik";
+import { Formik, Field, FieldArray} from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../contact.css";
 
 const validationSchema = Yup.object().shape({
-  firstName: Yup.string().required(),
+  firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.number().required(),
-  message: Yup.string().required(),
+  phone: Yup.number().required("Required"),
+  message: Yup.string().required("Required"),
+  servicesCheckbox: Yup.array().required()
 });
 
 const Contact: React.FC = () => {
@@ -40,8 +41,10 @@ const Contact: React.FC = () => {
                   className="contact-card-text"
                   style={{ fontSize: "1.25em" }}
                 >
-                  Whether you have a question about services and products, our
-                  team is ready to answer all your questions.
+                  Do you have enquiries about our services and products? 
+                  Our Customer Relation Personnel is willing to answer all your questions.  
+                  Please click any of the icons below to contact us through your preferred 
+                  social platform.
                 </Card.Text>
                 <div className="icon-container">
                   <a className="social-media"
@@ -89,8 +92,13 @@ const Contact: React.FC = () => {
             className="container"
             style={{ paddingTop: "6.25rem", marginBottom: "6.25rem" }}
           >
-
-              <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
+            <div style={{ textAlign: "center" }}>
+              <p className="fs-4">Are you sold on our expertise and would you like to hire 
+                us for your website, mobile app, video editing, or design?
+                Kindly fill the form below to request a quote.
+              </p>
+            </div>
+            <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
             <Row>
               <Col
                 className="col-12 order-2 col-md-4 order-md-1 h-100"
@@ -138,6 +146,7 @@ const Contact: React.FC = () => {
                     email: "",
                     phone: "",
                     message: "",
+                    servicesCheckbox: []
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -145,6 +154,7 @@ const Contact: React.FC = () => {
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
+                      resetForm();
                       resetForm();
                       toast.success('We have received your message, We will get back to you shortly');
                     })
@@ -154,6 +164,7 @@ const Contact: React.FC = () => {
                       setSubmitting(false);
                       toast.error("Sorry we could not receive your message. Please check your connection and try again")
                     });
+                    resetForm();
                   }}
                  
                   validationSchema={validationSchema}
@@ -164,7 +175,7 @@ const Contact: React.FC = () => {
                     values,
                     errors,
                     handleBlur,
-                    isSubmitting
+                    isSubmitting,
                   }) => (
                     <Form
                       noValidate
@@ -265,33 +276,36 @@ const Contact: React.FC = () => {
                           <Form.Label className="input-label">
                             Choose one or more services
                           </Form.Label>
-                          <Form.Check
-                            label="Graphic design"
-                            className="contact-input contact_checkboxes"
-                            name="servicesCheckBox"
-                            value="graphicDesign"
-
-                          />
-                          <Form.Check
-                            label="Video Editing"
-                            className="contact-input contact_checkboxes"
-                            name="servicesCheckBox"
-                            value="videoEditing"
-                          />
-                          <Form.Check
-                            label="Web Design (UI/UX)"
-                            className="contact-input contact_checkboxes"
-                            name="servicesCheckBox"
-                            value="webDesign"
-                          />
-                          <Form.Check
-                            label="Web Development"
-                            className="contact-input contact_checkboxes"
-                            name="servicesCheckBox"
-                            value="webDevelopment"
-                          />
+                          <FieldArray name="servicesCheckbox">
+                            {() => (
+                              <div className="checkbox_container" style={{display: "flex", flexDirection: "column",
+                                justifyContent: "space-between" }}>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="graphicDesign" ></Field>
+                                  Graphic Design
+                              </label>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="videoEditing"></Field>
+                                  Video Editing
+                              </label>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDesign" ></Field>
+                                  Web Design (UI/UX)
+                              </label>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDevelopment" ></Field>
+                                  Web Development
+                              </label>
+                              <Form.Control.Feedback type="invalid">
+                            {errors.phone}
+                          </Form.Control.Feedback>
+                              </div>
+                              
+                            )}
+                          </FieldArray>
+                          
                           <Form.Control.Feedback type="invalid">
-                            {errors.message}
+                            {errors.servicesCheckbox}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
