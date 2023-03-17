@@ -47,8 +47,15 @@ const WhatWeDo = () => (
         </Card>
       </div>
       <div className="mt-5">
-        <Container style={{ marginBottom: "200px", marginTop: "130px"}} >
-          <Row className="text-center gx-1 gy-0 px-0 justify-content-center img-row">
+        <Container style={{ marginBottom: "200px", marginTop: "60px"}} >
+          <div className="whatwedo_title">
+            <h3>Our range of services</h3>
+            <p>At Doyenify, we are committed to delivering exceptional 
+              service to our clients. We understand that each client has 
+              unique needs, and we tailor our services to meet those specific 
+              requirements. </p>
+          </div>
+          <Row className="text-center gx-1 gy-0 px-0 mb-5 justify-content-center img-row">
             <Col className="imgCol">
               <div className="img-wrapper">
                 <img src="../img/whatwedoimg_1.png"></img>
@@ -68,22 +75,29 @@ const WhatWeDo = () => (
               </div>
             </Col>
           </Row>
+          <div className="whatwedo_title">
+            <h3>Our range of products</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Turpis nisi nibh phasellus aliquam risus erat nunc, nibh. 
+              Odio vitae  morbi. Sit interdum faucibus urna, aliquam risus 
+              erat nunc, nibh. Odio vitae </p>
+          </div>
           <Row className="text-center gx-1 gy-0 justify-content-center">
             <Col className="imgCol">
               <div className="img-wrapper">
-                <img src="../img/whatwedoimg_1.png"></img>
+                <img src="../img/booking_img.jpg"></img>
                 <h3>Booking <br></br>App</h3>
               </div>
             </Col>
             <Col className="imgCol">
               <div className="img-wrapper">
-                <img src="../img/whatwedoimg_2.png"></img>
+                <img src="../img/payroll_img.jpg"></img>
                 <h3>Pay Roll <br></br>App</h3>
               </div>
             </Col>
             <Col className="imgCol">
               <div className="img-wrapper">
-                <img src="../img/whatwedoimg_3.png"></img>
+                <img src="../img/pharmacy_img.jpg"></img>
                 <h3>Pharmacy <br></br>App</h3>
               </div>
             </Col>

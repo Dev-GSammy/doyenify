@@ -1,13 +1,45 @@
 import React from "react";
-
+import { useEffect, useState, useRef } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col } from "react-bootstrap";
 import "../ourTeam.css";
 
-const OurTeam = () => (
+
+const OurTeam = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const targetRef = useRef(null);
+
+  const options = {
+    rootMargin: '0px',
+    threshold: 0
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    }, options);
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+    }
+
+    return () => {
+      if (targetRef.current) {
+        observer.unobserve(targetRef.current);
+      }
+    };
+  }, [options]);
+
+  return (
+
   <main role="main">
     <div className=" team-header-wrapper text-center">
-      <Card className="bg-dark text-white h-100" style={{ borderRadius: "0", height: "100%" }}>
+      <Card className="bg-dark text-white h-100" style={{ borderRadius: "0", height: "100%"}}>
         <Card.Img src="./img/teamImg.jpg" style={{ height: "100%", objectFit: "cover", objectPosition: "center" }} />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>
@@ -16,7 +48,7 @@ const OurTeam = () => (
           </Card.Title>
           <Card.Text className="team-card-text mt-4" style={{ fontSize: "1.25em" }}>
             Meet our team of developers, creators, designers, and world-class{" "}
-            <br /> problem solver To the company our customers want us to be ,
+            <br /> problem solvers. To be the company our customers want us to be,
             it takes an eclectic of passionate operators.
             <br /> Get to know the people leading the way at Doyenify
           </Card.Text>
@@ -24,21 +56,23 @@ const OurTeam = () => (
       </Card>
     </div>
     <div
-      className="container-fluid mt-5"
-      style={{ marginTop: "6.3rem", padding: "50px 100px 100px 100px" }}
+      className="container-fluid mt-5 ourteam_section"
+      style={{ marginTop: "2rem", padding: "16px 50px 100px 50px" }}
     >
+      <div className= {`ourteam_title fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}><h3>Meet the doyens</h3></div>
       <Row className="gx-5 mb-3">
-        <Col>
-          <Card className="border-0 team-profile-card">
+        <Col className="col-12 col-sm-4">
+          <Card className=  {`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
             <Card.Img className="team-profile-img" src="./img/oluyide_ourteam_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Gbenga Oluyide</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>
+                Gbenga (CEO) is a guru in Building interactive and user-centered web 
+                applications to scale. Also he is vast in Contributing and participating 
+                in the qualitative advancement of an already existing business, systems, 
+                and new inventions/ideas; to give back qualitative service work based on 
+                the rigorous personal skills and educational training and to learn more 
+                daily in the entire process.</p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Gbenga Oluyide</Card.Title>
@@ -46,17 +80,20 @@ const OurTeam = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card className="border-0 team-profile-card">
+        <Col className="col-12 col-sm-4">
+          <Card className={`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
             <Card.Img className="team-profile-img" src="./img/solagbade_ourteam_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Enitilo Solagbade</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>
+                My name is Sola, and I am a software engineer with a passion for creating
+                innovative and efficient software solutions. In my free time, I enjoy
+                indulging in my other hobbies, photography and DJing.
+                Combining my technical skills with my creative passions 
+                has been a fulfilling and rewarding journey, and I am excited 
+                to continue exploring new ways to express myself through software, 
+                photography, and music.
+                </p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Enitilo Solagbade</Card.Title>
@@ -65,17 +102,18 @@ const OurTeam = () => (
           </Card>
         </Col>
 
-        <Col>
-          <Card className="border-0 team-profile-card">
+        <Col className="col-12 col-sm-4">
+          <Card className={`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
             <Card.Img className="team-profile-img" src="./img/timmy_ourteam_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Timilehin Ogunwole</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Timilehin is a business analyst with a wide Scope For thought. 
+                He helps the organization to identify, analyze, and solve business 
+                problems and improve processes. He is responsible for gathering and 
+                analyzing data, identifying areas for improvement, and developing 
+                recommendations to enhance business operations. He also  creates 
+                reports, dashboards, and visualizations to communicate his findings 
+                and recommendations with the team.</p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Timilehin Ogunwole</Card.Title>
@@ -86,17 +124,16 @@ const OurTeam = () => (
       </Row>
 
       <Row className="gx-5 mb-3">
-        <Col className="col-sm-4">
+        <Col className="col-12 col-sm-4">
           <Card className="border-0 team-profile-card">
             <Card.Img className="team-profile-img"src="./img/ifedolapo_ourteam_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Ifedolapo Ayoola</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Ifedolapo is a web developer/Frontend Engineer with a vast array of 
+                knowledge and experience in many different front end and back end 
+                languages, responsive frameworks, databases, and best code practices. 
+                He loves to speak about CSS, React, Git, Github. "I'm just making the 
+                world an easier place a day at a time with code".</p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifedolapo Ayoola</Card.Title>
@@ -104,17 +141,18 @@ const OurTeam = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col className="col-sm-4">
+        <Col className="col-12 col-sm-4">
           <Card className="border-0 team-profile-card">
-            <Card.Img className="team-profile-img" src="./img/Rectangle80.png" />
+            <Card.Img className="team-profile-img" src="./img/ifeoluwa_ourteam.jpg" />
             <div className="overlay-desc-top">
               <h3>Ifeoluwa Olagbemi</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Ifeoluwa is a skilled product designer with expertise in 
+                user-centered design and product development. With a 
+                passion for solving complex problems, he leverages his 
+                strong visual design and prototyping skills to create 
+                innovative products that meet user needs. He has a keen 
+                eye for detail and a collaborative spirit, making him an 
+                invaluable asset to any team.</p>
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Ifeoluwa Olagbemi</Card.Title>
@@ -125,6 +163,7 @@ const OurTeam = () => (
       </Row>
     </div>
   </main>
-);
+  )
+};
 
 export default OurTeam;

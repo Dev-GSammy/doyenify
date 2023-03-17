@@ -18,10 +18,9 @@ const validationSchema = Yup.object().shape({
 });
 
 const Contact: React.FC = () => {
-
   return (
     <>
-      <div>
+      <div style={{ overflowX: "hidden" }}>
         <main role="main" className="container-fluid px-0">
           <div className=" contact-header-wrapper text-center">
             <Card
@@ -84,6 +83,8 @@ const Contact: React.FC = () => {
             className="container"
             style={{ paddingTop: "6.25rem", marginBottom: "6.25rem" }}
           >
+
+              <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
             <Row>
               <Col
                 className="col-12 order-2 col-md-4 order-md-1 h-100"
@@ -95,18 +96,11 @@ const Contact: React.FC = () => {
                       className="rounded-4"
                       style={{ backgroundColor: "#000000" }}
                     >
-                      <div className="p-4 rounded shadow-sm">
+                      <div className="p-4 rounded shadow-sm contact-info">
                         <h5 className="text-white"> Contact Information</h5>
                         <div className="text-white mt-0">
                           Fill up the form and our team will get back to you
                           within 24hours
-                        </div>
-                        <br></br>
-                        <div className="mb-3"><a href="tel:+37256704920" className="text-white" style={{ textDecoration: "none" }}>
-                          <Telephone /> +37256704920</a>
-                        </div>
-                        <div><a href="tel:+2348071005481" className="text-white" style={{ textDecoration: "none" }}>
-                          <Telephone /> +2348071005481</a>
                         </div>
                         <br></br>
                         <div><a href="mailto:info@doyenify.tech"  className="text-white" style={{ textDecoration: "none" }}>
@@ -114,7 +108,16 @@ const Contact: React.FC = () => {
                         </div>
                         <br></br>
                         <div className="text-white pb-5">
-                        Juhan Sutiste tee 52 - 65 Tallinn Estonia
+                          <h6>Head Office</h6>
+                          Juhan Sutiste tee 52 - 65 Tallinn Estonia
+                          <div className="mb-3"><a href="tel:+37256704920" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +37256704920</a>
+                          </div>
+                          <h6 className="mt-2">Nigeria Office</h6>
+                          3, Agboola Kolawole Str, Awoyaya, Lagos
+                          <div><a href="tel:+2348071005481" className="text-white" style={{ textDecoration: "none" }}>
+                          <Telephone /> +2348071005481</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -132,12 +135,18 @@ const Contact: React.FC = () => {
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    setTimeout(() => {
-                      console.log('loggin in', values);
+                    axios.post('https://sheet.best/api/sheets/4277a4e2-dd21-4507-bfa8-42375ac14e97', values)
+                    .then(response => {
+                      console.log('loggin in', response);
                       setSubmitting(false);
                       resetForm();
                       toast.success('We have received your message, We will get back to you shortly');
-                    }, 400);
+                    })
+
+                    .catch(error => {
+                      console.error('error submitting form', error);
+                      setSubmitting(false);
+                    });
                   }}
                  
                   validationSchema={validationSchema}
@@ -203,7 +212,7 @@ const Contact: React.FC = () => {
                         <Form.Group
                           className="mb-3"
                           controlId="validationCustom01"
-                        >
+                      >
                           <Form.Label className="input-label">
                             Last Name
                           </Form.Label>
@@ -222,7 +231,7 @@ const Contact: React.FC = () => {
                         </Form.Group>
 
                         <Form.Group
-                          className="mb-3"
+                          className="mb-5"
                           controlId="validationCustom01"
                         >
                           <Form.Label className="input-label">Phone</Form.Label>
@@ -237,6 +246,45 @@ const Contact: React.FC = () => {
                           />
                           <Form.Control.Feedback type="invalid">
                             {errors.phone}
+                          </Form.Control.Feedback>
+                        </Form.Group>
+                      </div>
+
+                      <div className="col-12" style={{ paddingLeft: "20px" }}>
+                        <Form.Group
+                          className="mb-5"
+                          controlId="validationCustom01"
+                        >
+                          <Form.Label className="input-label">
+                            Choose one or more services
+                          </Form.Label>
+                          <Form.Check
+                            label="Graphic design"
+                            className="contact-input contact_checkboxes"
+                            name="servicesCheckBox"
+                            value="graphicDesign"
+                            
+                          />
+                          <Form.Check
+                            label="Video Editing"
+                            className="contact-input contact_checkboxes"
+                            name="servicesCheckBox"
+                            value="videoEditing"
+                          />
+                          <Form.Check
+                            label="Web Design (UI/UX)"
+                            className="contact-input contact_checkboxes"
+                            name="servicesCheckBox"
+                            value="webDesign"
+                          />
+                          <Form.Check
+                            label="Web Development"
+                            className="contact-input contact_checkboxes"
+                            name="servicesCheckBox"
+                            value="webDevelopment"
+                          />
+                          <Form.Control.Feedback type="invalid">
+                            {errors.message}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -272,7 +320,7 @@ const Contact: React.FC = () => {
                         variant="success"
                         type="submit"
                       >
-                        Send
+                        Request
                       </Button>
 
                       <ToastContainer /> 

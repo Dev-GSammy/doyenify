@@ -13,6 +13,14 @@
     font-size: 24px;
 }
 
+.contact-info a.text-white {
+    transition: 0.3s;
+}
+
+.contact-info a.text-white:hover {
+    color: #00FF38 !important;
+}
+
 .contact-input {
     border: 1px solid #c1c1c1 !important;
     border-top: none !important;
@@ -21,8 +29,13 @@
     border-radius: 0 !important;
     padding-left: 0 !important;
     /* margin-bottom: 50px; */
-    outline: none;
+    outline: 0;
 }
+
+.contact_checkboxes {
+    margin-left: 20px;
+}
+
 
 .input-label {
     font-weight: 600 !important;
@@ -54,10 +67,12 @@
 .submit {
     border: none;
     border-radius: 50px;
-    background-color: #00ff38;
-    color: #121212;
+    background-color: #387846;
+    color: #ffffff;
     font-weight: 600;
     transition-duration: 0.3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .submit:hover {
@@ -93,6 +108,12 @@
 
     .social-media img {
         width: 20px;
+    }
+
+    .submit {
+        width: 95vw;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
