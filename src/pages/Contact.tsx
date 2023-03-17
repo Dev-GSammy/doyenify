@@ -41,8 +41,10 @@ const Contact: React.FC = () => {
                   className="contact-card-text"
                   style={{ fontSize: "1.25em" }}
                 >
-                  Whether you have a question about services and products, our
-                  team is ready to answer all your questions.
+                  Do you have enquiries about our services and products? 
+                  Our Customer Relation Personnel is willing to answer all your questions.  
+                  Please click any of the icons below to contact us through your preferred 
+                  social platform.
                 </Card.Text>
                 <div className="icon-container">
                   <a className="social-media"
@@ -90,8 +92,13 @@ const Contact: React.FC = () => {
             className="container"
             style={{ paddingTop: "6.25rem", marginBottom: "6.25rem" }}
           >
-
-              <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
+            <div style={{ textAlign: "center" }}>
+              <p className="fs-4">Are you sold on our expertise and would you like to hire 
+                us for your website, mobile app, video editing, or design?
+                Kindly fill the form below to request a quote.
+              </p>
+            </div>
+            <div style={{ textAlign: "center", marginBottom: "40px"}}><h4>Request A Quote</h4></div>
             <Row>
               <Col
                 className="col-12 order-2 col-md-4 order-md-1 h-100"
@@ -147,14 +154,8 @@ const Contact: React.FC = () => {
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
-                      resetForm({ values: {
-                        firstName: "",
-                        lastName: "",
-                        email: "",
-                        phone: "",
-                        message: "",
-                        servicesCheckbox: []
-                      }});
+                      resetForm();
+                      resetForm();
                       toast.success('We have received your message, We will get back to you shortly');
                     })
 
@@ -163,6 +164,7 @@ const Contact: React.FC = () => {
                       setSubmitting(false);
                       toast.error("Sorry we could not receive your message. Please check your connection and try again")
                     });
+                    resetForm();
                   }}
                  
                   validationSchema={validationSchema}
@@ -173,7 +175,7 @@ const Contact: React.FC = () => {
                     values,
                     errors,
                     handleBlur,
-                    isSubmitting
+                    isSubmitting,
                   }) => (
                     <Form
                       noValidate
@@ -276,21 +278,22 @@ const Contact: React.FC = () => {
                           </Form.Label>
                           <FieldArray name="servicesCheckbox">
                             {() => (
-                              <div>
-                              <label>
-                                <Field type="checkbox" name="servicesCheckbox" value="graphicDesign" isInvalid={!!errors.email}></Field>
+                              <div className="checkbox_container" style={{display: "flex", flexDirection: "column",
+                                justifyContent: "space-between" }}>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="graphicDesign" ></Field>
                                   Graphic Design
                               </label>
-                              <label>
-                                <Field type="checkbox" name="servicesCheckbox" value="videoEditing" isInvalid={!!errors.email}></Field>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="videoEditing"></Field>
                                   Video Editing
                               </label>
-                              <label>
-                                <Field type="checkbox" name="servicesCheckbox" value="webDesign" isInvalid={!!errors.email}></Field>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDesign" ></Field>
                                   Web Design (UI/UX)
                               </label>
-                              <label>
-                                <Field type="checkbox" name="servicesCheckbox" value="webDevelopment" isInvalid={!!errors.email}></Field>
+                              <label className="checkbox_label">
+                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDevelopment" ></Field>
                                   Web Development
                               </label>
                               <Form.Control.Feedback type="invalid">
@@ -302,7 +305,7 @@ const Contact: React.FC = () => {
                           </FieldArray>
                           
                           <Form.Control.Feedback type="invalid">
-                            {errors.message}
+                            {errors.servicesCheckbox}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>

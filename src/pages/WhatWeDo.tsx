@@ -77,10 +77,9 @@ const WhatWeDo = () => (
           </Row>
           <div className="whatwedo_title">
             <h3>Our range of products</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Turpis nisi nibh phasellus aliquam risus erat nunc, nibh. 
-              Odio vitae  morbi. Sit interdum faucibus urna, aliquam risus 
-              erat nunc, nibh. Odio vitae </p>
+            <p>Our team of IT experts have worked on a number of projects 
+              to deliver top-quality products including effective and unique applications.
+              Check out some of our works highlighted below. </p>
           </div>
           <Row className="text-center gx-1 gy-0 justify-content-center">
             <Col className="imgCol">

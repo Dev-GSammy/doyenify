@@ -44,7 +44,8 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
             style={{ cursor: "pointer" }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{filter: "invert(40%) sepia(37%) saturate(561%) hue-rotate(81deg) brightness(91%) contrast(94%)"}}>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end flex-grow-1 pe-3">
             {navigation.map(({ label, path }) => (
