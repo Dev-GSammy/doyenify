@@ -17,9 +17,9 @@ const Home = () => (
   <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "100%" }}>
+        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "100vh" }}>
           <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
-          <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
+          <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               {" "}
               <h2> Welcome to Doyenify Technologies </h2>
@@ -67,6 +67,11 @@ const Home = () => (
             </Button>
             </Link>
             </div>
+            </div>
+            <div className="linktree-container"> 
+             <Link to="/Contact" className= "linktree-wrapa"> 
+             <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
+             </Link>
             </div>
           </Card.ImgOverlay>
         </Card>
@@ -132,7 +137,10 @@ const Home = () => (
                   </Col>
               </Row>
              </div>
-             <div className="text-center mt-5 mb-5 "> <Link to="/Contact" className="qoute-wrapa"> <h4 >Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4> </Link></div>
+             <div className="text-center mt-5 mb-5 "> 
+             <Link to="/Contact" className="qoute-wrapa"> 
+             <h4 >Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
+            </Link></div>
              </div>
     </main>
   </div>

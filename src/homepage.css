@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .ourhome-link { text-decoration: none;
 
     color: white;
@@ -21,6 +22,43 @@
     opacity: 0.8;
 
 }
+.linktree-container{
+    position: relative;
+    top: 80px;
+    left: 35vw;
+}
+
+.linktree-wrapa{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.linktree-wrapa:hover{
+    color: #387846;
+}
+
+.linktree-icon{
+    position: relative;
+    animation-name: linktreeicon;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes linktreeicon{
+    0% { left: 0;
+
+    }
+    50%{ left: 15px;
+
+    }
+    100%{
+        left:0
+    }
+}
+
+
 .do-content{
     transition: 0.3s;
 }
@@ -104,6 +142,7 @@
     .ourhome-container{
       margin-bottom: 20px;
     }
+  
 
     .button-wrapa{
         display: inline-block;
@@ -111,6 +150,12 @@
     }
     .button-wrapa-one{
         padding-right: 0px;
+    }
+
+    .linktree-container{
+        position: relative;
+        top: 80px;
+        left: 30vw;
     }
     
     .img-col{
