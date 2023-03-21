@@ -1,3 +1,18 @@
+.about-button:hover{
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  opacity: 0.8;
+
+}
+
+.wordcloud{
+  transform: rotate(360deg);
+  transition: transform 5s ease-in-out;
+
+}
+.wordcloud:hover{
+transform: rotate(0deg);}
+
 @media screen and (max-width: 640px) {
 
     .about-header-wrapper{
@@ -12,4 +27,9 @@
   height: 350px;
   margin-bottom: 60px;
 }
+.wordcloud-img{
+  width: 400px;
+  height: auto;
+}
+
   }

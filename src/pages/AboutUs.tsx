@@ -1,7 +1,8 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../aboutus.css';
+import { Link } from 'react-router-dom';
 
 
 const AboutUs = () => (
@@ -21,6 +22,23 @@ const AboutUs = () => (
            that provides top-notch services to businesses and individuals. 
           </p>
           </Card.Text>
+          <div>
+            <Link to="/Contact" className="brand">
+            <Button
+              className="mt-5 px-5 py-1 about-button"
+              style={{
+              backgroundColor: "#387846",
+              color: "#ffffff",
+              borderRadius: " 50px",
+              border: " 2px solid #ffffff",
+              fontWeight: "600",
+              }}
+            >
+              {" "}
+              Request A Quote{" "}
+            </Button>
+            </Link>
+            </div>
           </Card.ImgOverlay>
         </Card>
       </div>
@@ -86,7 +104,7 @@ const AboutUs = () => (
       </div>
       <div>
         <Row className="mt-5 mx-3">
-          <Col
+          {/* <Col
             style={{ textAlign: "center" }}
             className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center"
           >
@@ -106,6 +124,13 @@ const AboutUs = () => (
                 <h3>Graphic Design</h3> <h3>Web Design</h3>
               </div>
             </div>
+          </Col> */}
+          <h2 className="text-center mb-3">What We Do</h2>
+           <Col className=" wordcloud-col col-12 col-sm-6  d-flex flex-column align-items-center justify-content-center">
+          
+            {" "}
+            <Link to="/services" className="wordcloud"> <img className="wordcloud-img" src="./img/whatwedo.png" width="600px" height="600px" alt="what we do" /> </Link>
+           {" "}
           </Col>
           <Col className="col-12 col-sm-6">
             {" "}
