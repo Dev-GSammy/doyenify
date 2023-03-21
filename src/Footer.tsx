@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
       
       <a href="#" className="text-black" ><Whatsapp className="footer-link" /> </a>
       <div className="spacer20"></div>
-      <a href="#" className="text-black "><Telegram className="footer-link" /> </a>
+      <a href="https://t.me/doyenify" className="text-black" target="_blank" ><Telegram className="footer-link" /> </a>
       <p><span></span></p>
       <a href="https://www.linkedin.com/company/doyenify/" className="text-black " target="_blank"><Linkedin className="footer-link" /> </a>
       <div className="spacer20"></div>

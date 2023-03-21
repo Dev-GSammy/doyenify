@@ -46,6 +46,17 @@ const Contact: React.FC = () => {
                   Please click any of the icons below to contact us through your preferred 
                   social platform.
                 </Card.Text>
+
+                  <div className="scroll_button_container">
+                    <a href="#requestAQuoteText">
+                    <img src="../img/scroll-down-icon.png" 
+                      width="40px" 
+                      height="auto"
+                      style={{ filter: "invert(100%) sepia(7%) saturate(2%) hue-rotate(41deg) brightness(105%) contrast(100%)" }}>
+                    </img>
+                    </a>
+                  </div>
+
                 <div className="icon-container">
                   <a className="social-media"
                     href="https://www.linkedin.com/company/doyenify/"
@@ -62,7 +73,9 @@ const Contact: React.FC = () => {
                   <a className="social-media" href="#">
                     <Whatsapp className='header-link'/>
                   </a>
-                  <a className="social-media" href="#">
+                  <a className="social-media" href="https://t.me/doyenify"
+                    target="_blank"
+                  >
                     <Telegram className='header-link'/>
                   </a>
                   <a className="social-media" href="#">
@@ -92,7 +105,7 @@ const Contact: React.FC = () => {
             className="container"
             style={{ paddingTop: "6.25rem", marginBottom: "6.25rem" }}
           >
-            <div style={{ textAlign: "center" }}>
+            <div id="requestAQuoteText"  style={{ textAlign: "center" }}>
               <p className="fs-4">Are you sold on our expertise and would you like to hire 
                 us for your website, mobile app, video editing, or design?
                 Kindly fill the form below to request a quote.

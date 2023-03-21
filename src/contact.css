@@ -53,6 +53,22 @@
     font-weight: 600 !important;
 }
 
+.scroll_button_container img {
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes blink {
+    0% {opacity: 0.2;}
+    25% {opacity: 0.5;}
+    50% {opacity: 1;}
+    75% {opacity: 0.5;}
+    100% {opacity: 0.2;}
+}
+
 .icon-container {
     position: absolute;
     width: 100vw;
