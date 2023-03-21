@@ -3,6 +3,7 @@ import { Card, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../aboutus.css';
 import { Link } from 'react-router-dom';
+import { ArrowRightShort} from 'react-bootstrap-icons';
 
 
 const AboutUs = () => (
@@ -63,6 +64,11 @@ const AboutUs = () => (
               Our specialist advice helps to aid Skills
               acquisition for individuals which will make life easier in their various destinations.
             </p>
+            <div className="about-quote-container"> 
+             <Link to="/Contact" className="about-quote-link"> 
+             <h4>Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
+            </Link>
+            </div>
           </Col>
         </Row>
       </div>
@@ -96,8 +102,12 @@ const AboutUs = () => (
              If you’re looking to relocate to a new Country for work, our professional consultancy services can help 
              you to make informed decisions. Relocation can be very stressful, but with our help the process 
              can be made much easier.
-
             </p>
+            </div>
+            <div className="about-quote-container"> 
+             <Link to="/Contact" className="about-quote-link"> 
+             <h4>Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
+            </Link>
             </div>
           </Col>
         </Row>

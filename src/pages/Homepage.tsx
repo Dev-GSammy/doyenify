@@ -69,7 +69,7 @@ const Home = () => (
             </div>
             </div>
             <div className="linktree-container"> 
-             <Link to="/Contact" className= "linktree-wrapa"> 
+             <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
              <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
              </Link>
             </div>
@@ -140,7 +140,8 @@ const Home = () => (
              <div className="text-center mt-5 mb-5 "> 
              <Link to="/Contact" className="qoute-wrapa"> 
              <h4 >Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
-            </Link></div>
+            </Link>
+            </div>
              </div>
     </main>
   </div>
