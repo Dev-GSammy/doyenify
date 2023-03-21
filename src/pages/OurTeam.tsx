@@ -157,6 +157,24 @@ const OurTeam = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col className="col-12 col-sm-4">
+          <Card className="border-0 team-profile-card">
+            <Card.Img className="team-profile-img otegbayo_img " src="./img/otegbayo_ourteam_img.jpg" />
+            <div className="overlay-desc-top">
+              <h3>Temitayo Otegbayo</h3>
+              <p>T. Otegbayo is a Software QA Engineer Lead with years of 
+                experience in both manual and automation testing. He has 
+                led many automation teams in setting up automation framework. 
+                Tayo has extensive experience in mobile and web applications testing.  
+                He is a leader par excellence who is committed to seeing a team delivers 
+                quality software products.</p>
+            </div>
+            <Card.Body className="px-0">
+              <Card.Title className="mb-2">Temitayo Otegbayo</Card.Title>
+              <Card.Text>Founder/QA Lead</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </div>
   </main>
