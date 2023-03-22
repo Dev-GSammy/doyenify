@@ -1,3 +1,52 @@
+.about-button:hover{
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  opacity: 0.8;
+
+}
+
+.about-quote-container{
+  width: 100%;
+}
+.about-quote-link{
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+.about-quote-link:hover{
+  color: #387846;
+}
+.qoute-arrow{
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  animation-name: arrowright;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes arrowright{
+  0% { left: 0;
+
+  }
+  50%{ left: 15px;
+
+  }
+  100%{
+      left:0
+  }
+}
+
+.wordcloud{
+  transform: rotate(360deg);
+  transition: transform 5s ease-in-out;
+
+}
+.wordcloud:hover{
+transform: rotate(0deg);}
+
 @media screen and (max-width: 640px) {
 
     .about-header-wrapper{
@@ -12,4 +61,9 @@
   height: 350px;
   margin-bottom: 60px;
 }
+.wordcloud-img{
+  width: 400px;
+  height: auto;
+}
+
   }

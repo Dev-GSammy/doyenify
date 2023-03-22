@@ -1,7 +1,9 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../aboutus.css';
+import { Link } from 'react-router-dom';
+import { ArrowRightShort} from 'react-bootstrap-icons';
 
 
 const AboutUs = () => (
@@ -21,6 +23,23 @@ const AboutUs = () => (
            that provides top-notch services to businesses and individuals. 
           </p>
           </Card.Text>
+          <div>
+            <Link to="/Contact" className="brand">
+            <Button
+              className="mt-5 px-5 py-1 about-button"
+              style={{
+              backgroundColor: "#387846",
+              color: "#ffffff",
+              borderRadius: " 50px",
+              border: " 2px solid #ffffff",
+              fontWeight: "600",
+              }}
+            >
+              {" "}
+              Request A Quote{" "}
+            </Button>
+            </Link>
+            </div>
           </Card.ImgOverlay>
         </Card>
       </div>
@@ -45,6 +64,11 @@ const AboutUs = () => (
               Our specialist advice helps to aid Skills
               acquisition for individuals which will make life easier in their various destinations.
             </p>
+            <div className="about-quote-container"> 
+             <Link to="/Contact" className="about-quote-link"> 
+             <h4>Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
+            </Link>
+            </div>
           </Col>
         </Row>
       </div>
@@ -78,15 +102,19 @@ const AboutUs = () => (
              If you’re looking to relocate to a new Country for work, our professional consultancy services can help 
              you to make informed decisions. Relocation can be very stressful, but with our help the process 
              can be made much easier.
-
             </p>
+            </div>
+            <div className="about-quote-container"> 
+             <Link to="/Contact" className="about-quote-link"> 
+             <h4>Request A Quote <ArrowRightShort className="qoute-arrow"/> </h4>
+            </Link>
             </div>
           </Col>
         </Row>
       </div>
       <div>
         <Row className="mt-5 mx-3">
-          <Col
+          {/* <Col
             style={{ textAlign: "center" }}
             className=" col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center"
           >
@@ -106,6 +134,13 @@ const AboutUs = () => (
                 <h3>Graphic Design</h3> <h3>Web Design</h3>
               </div>
             </div>
+          </Col> */}
+          <h2 className="text-center mb-3">What We Do</h2>
+           <Col className=" wordcloud-col col-12 col-sm-6  d-flex flex-column align-items-center justify-content-center">
+          
+            {" "}
+            <Link to="/services" className="wordcloud"> <img className="wordcloud-img" src="./img/whatwedo.png" width="600px" height="600px" alt="what we do" /> </Link>
+           {" "}
           </Col>
           <Col className="col-12 col-sm-6">
             {" "}

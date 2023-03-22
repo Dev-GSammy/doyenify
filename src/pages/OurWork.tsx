@@ -11,7 +11,7 @@ const OurWork = () => (
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>
             {" "}
-            <h1>Our Work </h1>
+            <h1>Our Portfolio </h1>
           </Card.Title>
           <Card.Text className="work-card-text">
             <br />

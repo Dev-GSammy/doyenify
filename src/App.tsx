@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const navigationData = [
   { label: "Home", path: "/" },
-  { label: "Our Work", path: "/our_work" },
+  { label: "Portfolio", path: "/our_work" },
   { label: "About Us", path: "/about_us" },
   { label: "What We Do", path: "/services" },
   { label: "Our Team", path: "/our_Team" },
