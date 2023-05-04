@@ -33,6 +33,7 @@ export const App = () => (
           <Route path="our_team" element={<OurTeamView />} />
         </Routes>
       </React.Suspense>
+      <p>loremipsum uhishjos jnidjd jnidi knid jn j jj  jbiihf </p>
     </Container>
     <Footer />
   </>
