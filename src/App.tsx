@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Container, Spinner } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
+import Chatwoot from "./pages/Chatwoot";
 
 const navigationData = [
   { label: "Home", path: "/" },
@@ -33,7 +34,7 @@ export const App = () => (
           <Route path="our_team" element={<OurTeamView />} />
         </Routes>
       </React.Suspense>
-      <p>loremipsum uhishjos jnidjd jnidi knid jn j jj  jbiihf </p>
+      <Chatwoot />
     </Container>
     <Footer />
   </>
