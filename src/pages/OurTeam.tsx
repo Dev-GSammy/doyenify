@@ -38,7 +38,7 @@ const OurTeam = () => {
   return (
 
   <main role="main">
-    <div className=" team-header-wrapper text-center">
+    {/* <div className=" team-header-wrapper text-center">
       <Card className="bg-dark text-white h-100" style={{ borderRadius: "0", height: "100%"}}>
         <Card.Img src="./img/teamImg.jpg" style={{ height: "100%", objectFit: "cover", objectPosition: "center" }} />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
@@ -54,7 +54,7 @@ const OurTeam = () => {
           </Card.Text>
         </Card.ImgOverlay>
       </Card>
-    </div>
+    </div> */}
     <div
       className="container-fluid mt-5 ourteam_section"
       style={{ marginTop: "2rem", padding: "16px 50px 100px 50px" }}
