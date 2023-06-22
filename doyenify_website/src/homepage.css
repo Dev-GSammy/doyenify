@@ -137,7 +137,7 @@
  @media screen and (max-width: 640px) {
 
    .home-header-wrapper{
-    height: 100vh;
+    height: 0px;
    }
     .ourhome-container{
       margin-bottom: 20px;

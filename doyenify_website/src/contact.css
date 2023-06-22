@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 640px) {
     .contact-header-wrapper {
-        height: 100vh;
+        height: 0px;
     }
 
     .contact-card-text {

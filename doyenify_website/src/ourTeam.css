@@ -1,6 +1,6 @@
 @media screen and (max-width: 640px) {
     .team-header-wrapper {
-        height: 100vh;
+        height: 0px;
     }
 
     .team-card-text {

@@ -50,7 +50,7 @@ transform: rotate(0deg);}
 @media screen and (max-width: 640px) {
 
     .about-header-wrapper{
-     height: 100vh;
+     height: 0px;
     }
     .about-card-text{
         line-height: 30px;
