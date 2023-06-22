@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 640px) {
     .whatwedo-header-wrapper {
-        height: 100vh;
+        height: 0px;
     }
 
     .whatwedo-card-text {

@@ -27,7 +27,7 @@ const WhatWeDo = () => (
   <>
     <main role="main" className="container-fluid px-0">
       <div className="text-center whatwedo-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius: 0, height: "100%" }}>
+        <Card className="bg-dark text-white" style={{ borderRadius: 0, height: "495px" }}>
           <Card.Img src="./img/about.png" alt="about" style={{ height: "100%", objectFit: "cover" }} />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>

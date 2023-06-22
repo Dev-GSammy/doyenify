@@ -13,11 +13,11 @@ const divStyle = {
   marginLeft: "115px",
 };
 
-const Home = () => (
+const Home = () => 
   <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "100vh" }}>
+        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "495px" }}>
           <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
           <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
@@ -36,7 +36,7 @@ const Home = () => (
             <div className="button-wrapa-one" >
           <Link to="/our_work" className="brand">
             <Button
-              className="mt-5 px-5 py-1 home-button"
+              className="mt-1 px-5 py-1 home-button"
               style={{
               backgroundColor: "#757F77",
               color: "#ffffff",
@@ -53,7 +53,7 @@ const Home = () => (
             <div>
             <Link to="/Contact" className="brand">
             <Button
-              className="mt-5 px-5 py-1 home-button"
+              className="mt-1 px-5 py-1 home-button"
               style={{
               backgroundColor: "#387846",
               color: "#ffffff",
@@ -68,11 +68,12 @@ const Home = () => (
             </Link>
             </div>
             </div>
-            <div className="linktree-container"> 
+            {/* linkree */}
+            {/* <div className="linktree-container"> 
              <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
              <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
              </Link>
-            </div>
+            </div> */}
           </Card.ImgOverlay>
         </Card>
       </div>
@@ -144,7 +145,7 @@ const Home = () => (
             </div>
              </div>
     </main>
-  </div>
-);
+  </div>  
+;
 
 export default Home;
