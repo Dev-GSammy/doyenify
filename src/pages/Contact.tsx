@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
         <main role="main" className="container-fluid px-0">
           <div className=" contact-header-wrapper text-center">
             <Card
-              className="bg-dark card-wrapper h-100"
+              className="bg-dark card-wrapper "
               style={{ borderRadius: "0", height: "495px" }}
             >
               <Card.Img src="../img/contactImg.jpg" alt="ct" style={{ height: "100%", objectFit: "cover" }}/>
