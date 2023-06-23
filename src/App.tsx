@@ -4,6 +4,7 @@ import { Container, Spinner } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 
+
 const navigationData = [
   { label: "Home", path: "/" },
   { label: "Portfolio", path: "/our_work" },
