@@ -63,11 +63,11 @@ const OurTeam = () => {
       <Row className="gx-5 mb-3">
         <Col className="col-12 col-sm-4">
           <Card className=  {`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
-            <Card.Img className="team-profile-img" src="./img/oluyide_ourteam_img.jpg" />
+            <Card.Img className="team-profile-img" src="./img/oluyide_ourteam1_img.jpg" />
             <div className="overlay-desc-top">
-              <h3>Gbenga Oluyide</h3>
+              <h3>Omolola Oluyide</h3>
               <p>
-                Gbenga (CEO) is a guru in Building interactive and user-centered web 
+                Omolola (CEO) is a guru in Building interactive and user-centered web 
                 applications to scale. Also he is vast in Contributing and participating 
                 in the qualitative advancement of an already existing business, systems, 
                 and new inventions/ideas; to give back qualitative service work based on 
@@ -75,14 +75,14 @@ const OurTeam = () => {
                 daily in the entire process.</p>
             </div>
             <Card.Body className="px-0">
-              <Card.Title className="mb-2">Gbenga Oluyide</Card.Title>
+              <Card.Title className="mb-2">Omolola Oluyide</Card.Title>
               <Card.Text className="font-italic" >Founder & CEO</Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col className="col-12 col-sm-4">
           <Card className={`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
-            <Card.Img className="team-profile-img" src="./img/solagbade_ourteam_img.jpg" />
+            <Card.Img className="team-profile-img" src="./img/solagbade_ourteam2_img.png" />
             <div className="overlay-desc-top">
               <h3>Enitilo Solagbade</h3>
               <p>
@@ -159,7 +159,7 @@ const OurTeam = () => {
         </Col>
         <Col className="col-12 col-sm-4">
           <Card className="border-0 team-profile-card">
-            <Card.Img className="team-profile-img otegbayo_img " src="./img/otegbayo_ourteam_img.jpg" />
+            <Card.Img className="team-profile-img otegbayo_img " src="./img/otegbayo_ourteam2_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Temitayo Otegbayo</h3>
               <p>T. Otegbayo is a Software QA Engineer Lead with years of 
@@ -171,7 +171,7 @@ const OurTeam = () => {
             </div>
             <Card.Body className="px-0">
               <Card.Title className="mb-2">Temitayo Otegbayo</Card.Title>
-              <Card.Text>Founder/QA Lead</Card.Text>
+              <Card.Text>Software Tester</Card.Text>
             </Card.Body>
           </Card>
         </Col>
