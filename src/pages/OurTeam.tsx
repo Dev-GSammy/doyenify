@@ -63,7 +63,7 @@ const OurTeam = () => {
       <Row className="gx-5 mb-3">
         <Col className="col-12 col-sm-4">
           <Card className=  {`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
-            <Card.Img className="team-profile-img" src="./img/oluyide_ourteam1_img.jpg" />
+            <Card.Img className="team-profile-img" src="./img/oluyide_ourteam2_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Omolola Oluyide</h3>
               <p>
@@ -82,7 +82,7 @@ const OurTeam = () => {
         </Col>
         <Col className="col-12 col-sm-4">
           <Card className={`border-0 team-profile-card fade-in ${isVisible ? 'visible'  : ''}`} ref={targetRef}>
-            <Card.Img className="team-profile-img" src="./img/solagbade_ourteam2_img.png" />
+            <Card.Img className="team-profile-img" src="./img/solagbade_ourteam1_img.jpg" />
             <div className="overlay-desc-top">
               <h3>Enitilo Solagbade</h3>
               <p>

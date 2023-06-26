@@ -17,8 +17,8 @@ const Home = () =>
   <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "495px" }}>
-          <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+        <Card className="bg-dark text-white card-home-wrapper"  style={{ borderRadius: "0", height: "495px" }}>
+          <Card.Img className="img-home-wrapper" src="./img/home.png"  alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
           <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
               {" "}

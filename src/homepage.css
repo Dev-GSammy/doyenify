@@ -126,7 +126,7 @@
     0% { left: 0;
 
     }
-    50%{ left: 15px;
+    50% { left: 15px;
 
     }
     100%{
@@ -136,14 +136,18 @@
 
  @media screen and (max-width: 640px) {
 
-   .home-header-wrapper{
-    height: 0px;
+   /* .home-header-wrapper {
+    height: 100vh;
+    
+   } */
+   .card-home-wrapper{
+    height: 100px;
    }
+  
     .ourhome-container{
-      margin-bottom: 20px;
+    margin-bottom: 20px;
     }
   
-
     .button-wrapa{
         display: inline-block;
        
