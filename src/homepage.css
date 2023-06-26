@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
 .ourhome-link { text-decoration: none;
 
     color: white;
@@ -11,6 +17,8 @@
 }
 .button-wrapa{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 .button-wrapa-one{
@@ -171,3 +179,40 @@
     }
     
  }
+
+ .fade-in {
+    transition: opacity 5s ease;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.cardcon {
+    border-radius: 0; 
+    height: 495px;
+}
+
+.cardcont1 {
+    margin-top: 120px;
+}
+
+
+@media (min-width: 100px) and (max-width: 567px){
+    .cardcon {
+        height: 775px;
+    }
+
+    .cardcont1 {
+        margin-top: 150px;
+    }
+
+    
+    
+
+    
+    
+} 
+
+
+  
