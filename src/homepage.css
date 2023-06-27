@@ -180,11 +180,59 @@ body {
     
  }
 
- .fade-in {
+ /* .fade-in {
+    transition: opacity 5s ease;
+    aspect-ratio: 1;
+    animation: spin 2s linear infinite;
+} */
+
+.card23 {
+    transition: opacity 5s ease;
+    animation: spin 2s linear;
+}
+
+.card24 {
+    transition: opacity 5s ease;
+    animation: spin2 2s linear;
+}
+
+.card232 {
+    transition: opacity 5s ease;
+    animation: spin22 2s linear;
+}
+
+.card242 {
+    transition: opacity 5s ease;
+    animation: spin222 2s linear;
+}
+
+.card23:hover {
+    transition: opacity 2s ease;
+    transform: scale(.9, .9);
+}
+
+.card24:hover {
+    transition: opacity 2s ease;
+    transform: scale(.9, .9);
+}
+
+.card232:hover {
+    transition: opacity 2s ease;
+    transform: scale(.9, .9);
+}
+
+.card242:hover {
+    transition: opacity 2s ease;
+    transform: scale(.9, .9);
+}
+
+.fade-in {
     transition: opacity 5s ease;
 }
 .fade-out {
     opacity: 0;
+    transform: scale(0.5, 0.5);
+    /* transform: skewY(25deg); */
     transition: opacity 1s ease;
 }
 
@@ -194,19 +242,37 @@ body {
 }
 
 .cardcont1 {
-    margin-top: 120px;
+    margin-top: 0;
 }
 
+@keyframes spin {
+    100% {transform: rotate(25deg); }
+}
+
+@keyframes spin2 {
+    100% {transform: rotate(-25deg); }
+}
+
+@keyframes spin22 {
+    100% {transform: rotate(-25deg); }
+}
+
+@keyframes spin222 {
+    100% {transform: rotate(25deg); }
+}
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
-        height: 775px;
+        height: 678px;
     }
 
     .cardcont1 {
-        margin-top: 150px;
+        margin-top: 0;
     }
 
+    .eng {
+        margin-top: 620px;
+    }
     
     
 

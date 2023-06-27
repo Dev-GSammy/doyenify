@@ -17,19 +17,19 @@ const Home = () => {
   const [defaults, setDefaults] = useState(true);
   const [academy, setAcademy] = useState(false);
   const [jakpa, setJakpa] = useState(false);
-  const [emanagement, setEmanagement] = useState(false);
-  const [hrsolution, setHrsolution] = useState(false);
+  const [doyentalent, setDoyentalent] = useState(false);
+  const [doyenhr, setDoyenhr] = useState(false);
 
 
   const [defaults2, setDefaults2] = useState(false);
   const [academy2, setAcademy2] = useState(false);
   const [jakpa2, setJakpa2] = useState(false);
-  const [emanagement2, setEmanagement2] = useState(false)
-  const [hrsolution2, setHrsolution2] = useState(false);
+  const [doyentalent2, setDoyentalent2] = useState(false)
+  const [doyenhr2, setDoyenhr2] = useState(false);
   
 
   var count = useRef(0);
-  const liststore:any = ["default", "academy", "jakpa", "emanagement", "hrsolution"];
+  const liststore:any = ["default", "academy", "jakpa", "doyentalent", "doyenhr"];
   const len:number = liststore.length;
 
 
@@ -59,12 +59,12 @@ const Home = () => {
         getacademy2();
       } else if (liststore[count.current] === "jakpa"){
         getjakpa2();
-      } else if (liststore[count.current] === "emanagement"){
-        getemanagement2();
-      } else if (liststore[count.current] === "hrsolution"){
-        gethrsolution2();
+      } else if (liststore[count.current] === "doyentalent"){
+        getdoyentalent2();
+      } else if (liststore[count.current] === "doyenhr"){
+        getdoyenhr2();
       }
-    }, 9000)
+    }, 13000)
 
     return () => clearInterval(loop)
   }, [])
@@ -74,13 +74,13 @@ const Home = () => {
     setDefaults(true);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
     setAcademy2(false);
     setJakpa2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
 
     const timeout = setTimeout(() => {
       setDefaults2(true)
@@ -95,15 +95,15 @@ const Home = () => {
     setDefaults(false);
     setAcademy(true);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
 
     
     setDefaults2(false)
     setJakpa2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
 
     const timeout = setTimeout(() => {
       setAcademy2(true)
@@ -120,12 +120,12 @@ const Home = () => {
     setDefaults(false);
     setAcademy(false);
     setJakpa(true);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
     setDefaults2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
     setAcademy2(false);
 
     
@@ -138,41 +138,41 @@ const Home = () => {
     
   }
 
-  const getemanagement = () => {
+  const getdoyentalent = () => {
     count.current = 3;
     setDefaults(false);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(true);
-    setHrsolution(false);
+    setDoyentalent(true);
+    setDoyenhr(false);
 
     setDefaults2(false);
     setAcademy2(false);
-    setHrsolution2(false);
+    setDoyenhr2(false);
     setJakpa2(false);
 
     const timeout = setTimeout(() => {
-      setEmanagement2(true)
+      setDoyentalent2(true)
     }, 400)
 
     return () => clearTimeout(timeout)
 
   }
 
-  const gethrsolution = () => {
+  const getdoyenhr = () => {
     count.current = 4
     setDefaults(false);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(true);
+    setDoyentalent(false);
+    setDoyenhr(true);
 
     setDefaults2(false);
     setAcademy2(false);
     setJakpa2(false);
-    setEmanagement2(false);
+    setDoyentalent2(false);
     const timeout = setTimeout(() => {
-      setHrsolution2(true)
+      setDoyenhr2(true)
     }, 400)
 
     return () => clearTimeout(timeout)
@@ -186,13 +186,13 @@ const Home = () => {
     setDefaults(true);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
     setAcademy2(false);
     setJakpa2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
 
     const timeout = setTimeout(() => {
       setDefaults2(true)
@@ -207,15 +207,15 @@ const Home = () => {
     setDefaults(false);
     setAcademy(true);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
 
     
     setDefaults2(false)
     setJakpa2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
 
     const timeout = setTimeout(() => {
       setAcademy2(true)
@@ -231,12 +231,12 @@ const Home = () => {
     setDefaults(false);
     setAcademy(false);
     setJakpa(true);
-    setEmanagement(false);
-    setHrsolution(false);
+    setDoyentalent(false);
+    setDoyenhr(false);
 
     setDefaults2(false);
-    setEmanagement2(false);
-    setHrsolution2(false);
+    setDoyentalent2(false);
+    setDoyenhr2(false);
     setAcademy2(false);
 
     
@@ -249,39 +249,39 @@ const Home = () => {
     
   }
 
-  const getemanagement2 = () => {
+  const getdoyentalent2 = () => {
     setDefaults(false);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(true);
-    setHrsolution(false);
+    setDoyentalent(true);
+    setDoyenhr(false);
 
     setDefaults2(false);
     setAcademy2(false);
-    setHrsolution2(false);
+    setDoyenhr2(false);
     setJakpa2(false);
 
     const timeout = setTimeout(() => {
-      setEmanagement2(true)
+      setDoyentalent2(true)
     }, 400)
 
     return () => clearTimeout(timeout)
 
   }
 
-  const gethrsolution2 = () => {
+  const getdoyenhr2 = () => {
     setDefaults(false);
     setAcademy(false);
     setJakpa(false);
-    setEmanagement(false);
-    setHrsolution(true);
+    setDoyentalent(false);
+    setDoyenhr(true);
 
     setDefaults2(false);
     setAcademy2(false);
     setJakpa2(false);
-    setEmanagement2(false);
+    setDoyentalent2(false);
     const timeout = setTimeout(() => {
-      setHrsolution2(true)
+      setDoyenhr2(true)
     }, 400)
 
     return () => clearTimeout(timeout)
@@ -293,43 +293,39 @@ const Home = () => {
     <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white cardcon">
-          <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
-          <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
-            
-          
+        
           
           {defaults ? (
             <>
-              <div className="row cardcont1">
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
+              <div className="cardcont1">
+                
+                
+                  <div  >
+                  <Card className="bg-dark text-white cardcon">
+          
+                  <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
 
-                    
-                        <ChevronDoubleLeft onClick={gethrsolution} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div  className={defaults2 ? 'fade-in' : 'fade-out'}>
-                      <Card.Title className="text-center" style={{ color: "#00FF38" }}>
+                      <Card.ImgOverlay  className="fade-in overlay-container d-flex flex-column align-items-center justify-content-center">
+                      
+          
+                      <Card.Title  className={defaults2 ? 'fade-in text-center card23' : 'fade-out text-center'} style={{marginTop: "120px", color: "#00FF38" }}>
                       {" "}
                       
                       
-                      <h2> Welcome to Doyenify Technologies </h2>
+                      <h2 > Welcome to Doyenify Technologies </h2>
                     </Card.Title>
-                    <Card.Text className="home-card-text">
+                    <Card.Text className={defaults2 ? 'fade-in home-card-text card24' : 'fade-out home-card-text'} >
                   <br />
-                  <p style={{ fontSize: "20px" }} > You are ready to join our global network of happy and excited clients.
+                 
+                  <p  style={{ fontSize: "20px" }} > You are ready to join our global network of happy and excited clients.
                   We help Individuals and organizations solve problems with bespoke IT solutions 
                   by providing the most efficient technological solutions to improve business profitability.
 
                   </p>
-
-
+                   
                   </Card.Text>
                   <br/>
-                  <div className="button-wrapa">
+                  <div className={defaults2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'} >
                     <div className="button-wrapa-one" >
                   <Link to="/our_work" className="brand">
                     <Button
@@ -371,27 +367,26 @@ const Home = () => {
                     <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
                     </Link>
                     </div>
+                    <br/>
+    
+                    <div >
+                      <span style={{cursor: "pointer", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}} onClick={getdefaults}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getacademy}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getjakpa}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyentalent}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyenhr}></span>
+                      
+                    </div>
+                    </Card.ImgOverlay>
+                    
+                  </Card>
                   </div>
                
             
-                </div>
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-                    <ChevronDoubleRight onClick={getacademy} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
+              
               </div>
               
-              <br/>
-              <div >
-                <span style={{padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                
-          </div>
+             
             </>
           ):(
             <></>
@@ -404,35 +399,33 @@ const Home = () => {
 
           {academy ? (
             <>
-              <div className="row cardcont1">
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
+              <div className="cardcont1">
+                
+                  <div>
+                  <Card className="bg-dark text-white cardcon">
+          
+                  <Card.Img className={academy2 ? 'fade-in' : 'fade-out'} src="./img/doyenacademy.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                    <Card.ImgOverlay className="fade-in overlay-container d-flex flex-column align-items-center justify-content-center" >
+            
 
-                    
-                        <ChevronDoubleLeft onClick={getdefaults} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div  className={academy2 ? 'fade-in' : 'fade-out'}>
-                        <Card.Title className="text-center" style={{ color: "#00FF38" }}>
+                        <Card.Title className={academy2 ? 'fade-in text-center card232' : 'fade-out text-center'} style={{marginTop: "120px", color: "#00FF38" }}>
                         {" "}
                         
                         
-                        <h2> Doyenify Academy </h2>
+                        <h2 > Doyenify Academy </h2>
                       </Card.Title>
-                      <Card.Text className="home-card-text">
+                      <Card.Text className={academy2 ? 'fade-in home-card-text card242' : 'fade-out home-card-text'}>
                     <br />
-                    <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
-                    We help Individuals and organizations solve problems with bespoke IT solutions 
-                    by providing the most efficient technological solutions to improve business profitability.
+                    <p style={{ fontSize: "20px", paddingLeft: "15px", paddingRight: "15px"}}> At this Academy we offer you courses that will help you thrieve in the job market,
+                      remember You don't have to be great to start, but you have to start to be great - zig Ziglar.
 
                     </p>
 
 
                     </Card.Text>
                     <br/>
-                    <div className="button-wrapa">
+
+                    <div className={academy2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'}>
                       <div className="button-wrapa-one" >
                     <Link to="/our_work" className="brand">
                       <Button
@@ -474,27 +467,25 @@ const Home = () => {
                       <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
                       </Link>
                       </div>
+                      <br/>
+                      
+                        <div >
+                            <span style={{cursor: "pointer", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdefaults}></span>
+                            <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}} onClick={getacademy}></span>
+                            <span style={{cursor: "pointer", marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getjakpa}></span>
+                            <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyentalent}></span>
+                            <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyenhr}></span>
+                            
+                      </div>
+                      </Card.ImgOverlay>
+                    </Card>
                    </div> 
                 
             
-                </div>
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-                    <ChevronDoubleRight onClick={getjakpa} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
+                
               </div>
               
-              <br/>
-              <div >
-                <span style={{padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                
-          </div>
+              
             </>
           ):(
             <></>
@@ -505,35 +496,35 @@ const Home = () => {
           {/* jakpa */}
           {jakpa ? (
             <>
-              <div className="row cardcont1">
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-
-                    
-                        <ChevronDoubleLeft onClick={getacademy} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div className={jakpa2 ? 'fade-in' : 'fade-out'}>
-                      <Card.Title className="text-center" style={{ color: "#00FF38" }}>
+                      
+              <div className="cardcont1">
+                
+                  <div >
+                  <Card className="bg-dark text-white cardcon">
+          
+                  <Card.Img className={jakpa2 ? 'fade-in' : 'fade-out'} src="./img/jakpaim.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                      <Card.ImgOverlay className="overlay-container d-flex flex-column align-items-center justify-content-center" >
+            
+          
+                      <Card.Title className={jakpa2 ? 'fade-in text-center card23' : 'fade-out text-center'} style={{marginTop: "120px", color: "#00FF38" }}>
                       {" "}
                       
                       
-                      <h2> Jakpa With A Plan </h2>
+                      <a style={{textDecoration: "none", color: "#00FF38"}} href="https://jakpawithaplan.com/"><h2> Jakpa With A Plan </h2></a>
                     </Card.Title>
-                    <Card.Text className="home-card-text">
+                    <Card.Text className={jakpa2 ? 'fade-in home-card-text card24' : 'fade-out home-card-text'}>
                   <br />
-                  <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
-                  We help Individuals and organizations solve problems with bespoke IT solutions 
-                  by providing the most efficient technological solutions to improve business profitability.
+                  <p style={{ fontSize: "20px" }}> Moving To Greener Pastures Is Not
+                  An Escape From Your Current Situation,  
+                  But Rather A Step Towards Your Desired Destination
 
                   </p>
 
 
                   </Card.Text>
                   <br/>
-                  <div className="button-wrapa">
+                    
+                  <div className={jakpa2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'} >
                     <div className="button-wrapa-one" >
                   <Link to="/our_work" className="brand">
                     <Button
@@ -575,27 +566,23 @@ const Home = () => {
                     <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
                     </Link>
                     </div>
-            
+                    <br/>
+                    <div >
+                      <span style={{cursor: "pointer", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdefaults}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getacademy}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}} onClick={getjakpa}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyentalent}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyenhr}></span>
+                      
+                    </div>
+                    </Card.ImgOverlay>
+                    </Card>
                   </div>
                 
-                </div>
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-                    <ChevronDoubleRight onClick={getemanagement} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
+               
               </div>
               
-              <br/>
-              <div >
-                <span style={{padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                
-          </div>
+              
             </>
           ):(
             <></>
@@ -605,54 +592,35 @@ const Home = () => {
           
 
           {/* emanagement */}
-          {emanagement ? (
+          {doyentalent ? (
             <>
-              <div className="row cardcont1">
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-
+              <div className="cardcont1">
+                
+                  <div >
                     
-                        <ChevronDoubleLeft onClick={getjakpa} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div className={emanagement2 ? 'fade-in' : 'fade-out'}>
-                    <Card.Title className="text-center" style={{ color: "#00FF38" }}>
+                  <Card className="bg-dark text-white cardcon">
+          
+                  <Card.Img  className={doyentalent2 ? 'fade-in' : 'fade-out'} src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                      <Card.ImgOverlay  className=" overlay-container d-flex flex-column align-items-center justify-content-center">
+            
+                    <Card.Title className={doyentalent2 ? 'fade-in text-center card232' : 'fade-out text-center'}  style={{marginTop: "120px", color: "#00FF38" }}>
                     {" "}
                     
                     
-                    <h2> Employee Management </h2>
+                    <h2> Doyen Talent</h2>
                   </Card.Title>
-                  <Card.Text className="home-card-text">
+                  <Card.Text className={doyentalent2 ? 'fade-in home-card-text card242' : 'fade-out home-card-text'}>
                 <br />
-                <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
-                We help Individuals and organizations solve problems with bespoke IT solutions 
-                by providing the most efficient technological solutions to improve business profitability.
+                <p  style={{ fontSize: "20px" }}> Employees are the heart and soul of any organizations. Treat them well 
+                nurture their growth, and watch your business thrieve.
 
                 </p>
 
 
                 </Card.Text>
                 <br/>
-                <div className="button-wrapa">
-                  <div className="button-wrapa-one" >
-                <Link to="/our_work" className="brand">
-                  <Button
-                    className="mt-1 px-5 py-1 home-button"
-                    style={{
-                    backgroundColor: "#757F77",
-                    color: "#ffffff",
-                    borderRadius: " 50px",
-                    border: " 2px solid #ffffff",
-                    fontWeight: "600",
-                    }}
-                  >
-                    {" "}
-                    View Our Work{" "}
-                  </Button>
-                  </Link>
-                  </div>
+                <div  className={doyentalent2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'} >
+                  
                   <div>
                   <Link to="/Contact" className="brand">
                   <Button
@@ -677,27 +645,23 @@ const Home = () => {
                   <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
                   </Link>
                   </div>
-            
+                  <br/>
+                    <div >
+                      <span style={{cursor: "pointer", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdefaults}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getacademy}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getjakpa}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyentalent}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}  onClick={getdoyenhr}></span>
+                      
+                    </div>
+                  </Card.ImgOverlay>
+                  </Card>
                   </div>
                 
-                </div>
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-                    <ChevronDoubleRight onClick= {gethrsolution} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
+               
               </div>
               
-              <br/>
-              <div >
-                <span style={{padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                
-          </div>
+              
             </>
           ):(
             <></>
@@ -707,37 +671,33 @@ const Home = () => {
           
 
           {/* hrsolution */}
-          {hrsolution ? (
+          {doyenhr ? (
             <>
-              <div className="row  cardcont1">
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-
-                    
-                        <ChevronDoubleLeft onClick={getemanagement} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div className={hrsolution2 ? 'fade-in' : 'fade-out'}>
-                      <Card.Title className="text-center" style={{ color: "#00FF38" }}>
+              <div className=" cardcont1">
+               
+                  <div >
+                  <Card className="bg-dark text-white cardcon">
+          
+                  <Card.Img className={doyenhr2 ? 'fade-in' : 'fade-out'} src="./img/doyenhr.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                      <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
+            
+                      <Card.Title className={doyenhr2 ? 'fade-in text-center card23' : 'fade-out text-center'}  style={{marginTop: "120px", color: "#00FF38" }}>
                       {" "}
                       
                       
-                      <h2> Doyenify HR Solution </h2>
+                      <h2> DoyenHR </h2>
                     </Card.Title>
-                    <Card.Text className="home-card-text">
+                    <Card.Text className={doyenhr2 ? 'fade-in home-card-text card24' : 'fade-out home-card-text'} >
                   <br />
-                  <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
-                  We help Individuals and organizations solve problems with bespoke IT solutions 
-                  by providing the most efficient technological solutions to improve business profitability.
+                  <p style={{ fontSize: "20px" }}> Unlock the full potential of your workforce with DoyenHR tailored to your unique needs.
+                   Empower your employees, streamline processes and cultivate a culture of success.
 
                   </p>
 
 
                   </Card.Text>
                   <br/>
-                  <div className="button-wrapa">
+                  <div className={doyenhr2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'} >
                     
                     <div>
                     <Link to="/Contact" className="brand">
@@ -763,27 +723,24 @@ const Home = () => {
                     <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
                     </Link>
                     </div>
-            
+                    <br/>
+                    <div >
+                      <span style={{cursor: "pointer", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdefaults}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getacademy}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getjakpa}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyentalent}></span>
+                      <span style={{cursor: "pointer", marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}} onClick={getdoyenhr}></span>
+                      
+                    </div>
+                    </Card.ImgOverlay>
+          
+                  </Card>  
                   </div>
                 
-                </div>
-                <div className="col-2">
-                  <div style={{marginTop: "50%"}}>
-                    <ChevronDoubleRight onClick={getdefaults} style={{fontSize: "25px", fontWeight: "510", width: "40px", height: "40px", backgroundColor: "#B0FFC1", borderRadius: "100px", padding: "9px"}} />
-                    
-                  </div>
-                </div>
+                
               </div>
               
-              <br/>
-              <div >
-                <span style={{ padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px",padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#D9D9D9", width: "10px", height: "10px", display: "inline-block"}}></span>
-                <span style={{marginLeft: "9px", padding: "10px", borderRadius: "40px", backgroundColor: "#00FF38", width: "10px", height: "10px", display: "inline-block"}}></span>
-                
-          </div>
+              
             </>
           ):(
             <></>
@@ -791,12 +748,9 @@ const Home = () => {
 
           }
           
-
-          </Card.ImgOverlay>
           
-        </Card>
       </div>
-      <div style={{backgroundColor: "#D9D7F8"}}>
+      <div className="eng" style={{backgroundColor: "#D9D7F8"}}>
             <Row >
               <Col className=" col-12 col-sm-6 do-content ms-3 d-flex flex-column align-items-left justify-content-center">
               < img src= "./img/web.png" width="400px" height= "400px" alt="Web" />
