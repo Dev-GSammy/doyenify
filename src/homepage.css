@@ -186,24 +186,17 @@ body {
     animation: spin 2s linear infinite;
 } */
 
-.card23 {
+
+.card24 {
     transition: opacity 5s ease;
     animation: spin 2s linear;
 }
 
-.card24 {
-    transition: opacity 5s ease;
-    animation: spin2 2s linear;
-}
 
-.card232 {
-    transition: opacity 5s ease;
-    animation: spin22 2s linear;
-}
 
 .card242 {
     transition: opacity 5s ease;
-    animation: spin222 2s linear;
+    animation: spin2 2s linear;
 }
 
 .card23:hover {
@@ -246,20 +239,14 @@ body {
 }
 
 @keyframes spin {
-    100% {transform: rotate(25deg); }
+    100% {transform: rotate(2deg); }
 }
 
 @keyframes spin2 {
-    100% {transform: rotate(-25deg); }
+    100% {transform: rotate(-2deg); }
 }
 
-@keyframes spin22 {
-    100% {transform: rotate(-25deg); }
-}
 
-@keyframes spin222 {
-    100% {transform: rotate(25deg); }
-}
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
