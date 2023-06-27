@@ -39,7 +39,7 @@ const OurTeam = () => {
 
   <main role="main">
     <div className=" team-header-wrapper text-center">
-      <Card className="bg-dark text-white " style={{ borderRadius: "0", height: "495px"}}>
+      <Card className="bg-dark text-white card-team-wrapper" style={{ borderRadius: "0"}}>
         <Card.Img src="./img/teamImg.jpg" style={{ height: "100%", objectFit: "cover", objectPosition: "center" }} />
         <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center imgoverlay">
           <Card.Title className="text-center" style={{ color: "#00FF38" }}>

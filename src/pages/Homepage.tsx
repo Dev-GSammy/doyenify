@@ -17,7 +17,7 @@ const Home = () =>
   <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius: "0", height: "495px" }}>
+        <Card className="bg-dark text-white card-home-wrapper" style={{ borderRadius: "0"}}>
           <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
           <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>
@@ -50,7 +50,7 @@ const Home = () =>
             </Button>
             </Link>
             </div>
-            <div>
+            <div className="button-wrapa-two">
             <Link to="/Contact" className="brand">
             <Button
               className="mt-1 px-5 py-1 home-button"

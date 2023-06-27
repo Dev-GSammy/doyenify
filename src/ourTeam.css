@@ -1,8 +1,14 @@
+.card-team-wrapper{
+    height: 495px;
+   }
+
 @media screen and (max-width: 640px) {
     .team-header-wrapper {
-        height: 0px;
+        height: 100vh;
     }
-
+    .card-team-wrapper{
+        height: 100%;
+       }
     .team-card-text {
         line-height: 50px;
         letter-spacing: 2px;

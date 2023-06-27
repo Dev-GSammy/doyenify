@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.card-home-wrapper{
+    height: 495px;
+}
 
 .ourhome-link { text-decoration: none;
 
@@ -137,19 +140,29 @@
  @media screen and (max-width: 640px) {
 
    .home-header-wrapper{
-    height: 0px;
+    height: 100vh;
+   }
+
+   .card-home-wrapper{
+    height: 100%;
    }
     .ourhome-container{
       margin-bottom: 20px;
     }
-  
+   
 
     .button-wrapa{
         display: inline-block;
        
     }
+    .home-button{
+        margin-top: 20px;
+    }
     .button-wrapa-one{
         padding-right: 0px;
+    }
+    .button-wrapa-two{
+        margin-top: 20px;
     }
 
     .linktree-container{
