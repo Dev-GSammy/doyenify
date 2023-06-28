@@ -180,61 +180,7 @@ body {
     
  }
 
- /* .fade-in {
-    transition: opacity 5s ease;
-    aspect-ratio: 1;
-    animation: spin 2s linear infinite;
-} */
 
-
-.card24 {
-    transition: opacity 5s ease;
-    animation: spin 2s linear;
-}
-
-
-
-.card242 {
-    transition: opacity 5s ease;
-    animation: spin2 2s linear;
-}
-
-.card23:hover {
-    transition: opacity 2s ease;
-    transform: scale(.9, .9);
-}
-
-.card24:hover {
-    transition: opacity 2s ease;
-    transform: scale(.9, .9);
-}
-
-.card232:hover {
-    transition: opacity 2s ease;
-    transform: scale(.9, .9);
-}
-
-.card242:hover {
-    transition: opacity 2s ease;
-    transform: scale(.9, .9);
-}
-
-.fade-in {
-    transition: opacity 5s ease;
-    animation: leaves 2s linear;
-}
-
-.fade-in2 {
-    transition: opacity 5s ease;
-    animation: leaves2 2s linear;
-}
-
-.fade-out {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-    /* transform: skewY(25deg); */
-    transition: opacity 1s ease;
-}
 
 .cardcon {
     border-radius: 0; 
@@ -245,34 +191,23 @@ body {
     margin-top: 0;
 }
 
-@keyframes spin {
-    100% {transform: rotate(2deg); }
+
+
+
+.marg {
+    margin-top: 180px; 
+    color: #00FF38;
 }
 
-@keyframes spin2 {
-    100% {transform: rotate(-2deg); }
+.caroimg {
+    width: 100%;
+    height: 100%;
 }
 
-
-@keyframes leaves {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+.caroheight {
+    height: 495px; 
+    width: 100%;
 }
-
-@keyframes leaves2 {
-    0% {
-        transform: scale(0, 0);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
-
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
@@ -283,8 +218,18 @@ body {
         margin-top: 0;
     }
 
+    .caroheight {
+        height: 679px; 
+        
+    }
+
     .eng {
-        margin-top: 620px;
+        margin-top: 768px;
+    }
+
+    .marg {
+        margin-top: 160px; 
+        
     }
     
     

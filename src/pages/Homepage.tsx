@@ -25,8 +25,8 @@ const Home = () => {
       <div className="text-center home-header-wrapper">
       <Carousel>
               <Carousel.Item>
-                <div className='carousel-div' style={{height: "495px", width: "100%"}}>
-                <img src="./img/home.png" alt="...">
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/home.png" alt="...">
 
                 </img>
                   <Carousel.Caption className='caption'>
@@ -39,13 +39,13 @@ const Home = () => {
                           <Card.ImgOverlay  className="overlay-container d-flex flex-column align-items-center justify-content-center">
                            */}
               
-                          <Card.Title  className="text-center card23" style={{marginTop: "170px", color: "#00FF38" }}>
+                          <Card.Title  className="text-center  marg">
                           {" "}
                           
                           
                           <h2 > Welcome to Doyenify Technologies </h2>
                         </Card.Title>
-                        <Card.Text className="home-card-text card24" >
+                        <Card.Text className="home-card-text " >
                       <br />
                     
                       <p  style={{ fontSize: "20px" }} > You are ready to join our global network of happy and excited clients.
@@ -107,8 +107,8 @@ const Home = () => {
                 </div>
               </Carousel.Item>
               <Carousel.Item>
-                <div className='carousel-div' style={{height: "495px", width: "100%"}}>
-                <img src="./img/doyenacademy.png" alt="...">
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyenacademy.png" alt="...">
 
                 </img>
                   <Carousel.Caption className='caption'>
@@ -120,13 +120,13 @@ const Home = () => {
 
                           <Card.ImgOverlay  className="overlay-container d-flex flex-column align-items-center justify-content-center">
                            */}
-                          <Card.Title className="text-center card232" style={{marginTop: "170px", color: "#00FF38" }}>
+                          <Card.Title className="text-center 2 marg" >
                           {" "}
                           
                           
                           <h2 > Doyenify Academy </h2>
                         </Card.Title>
-                        <Card.Text className="home-card-text card242" >
+                        <Card.Text className="home-card-text 2" >
                       <br />
                       <p style={{ fontSize: "20px", paddingLeft: "15px", paddingRight: "15px"}}> At this Academy we offer you courses that will help you thrieve in the job market,
                         remember You don't have to be great to start, but you have to start to be great - zig Ziglar.
@@ -189,8 +189,8 @@ const Home = () => {
               </Carousel.Item>
 
               <Carousel.Item>
-              <div className='carousel-div' style={{height: "495px", width: "100%"}}>
-                <img src="./img/jakpaim.png" alt="...">
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/jakpaim.png" alt="...">
 
                 </img>
                   <Carousel.Caption className='caption'>
@@ -203,13 +203,13 @@ const Home = () => {
                         <Card.ImgOverlay className="overlay-container d-flex flex-column align-items-center justify-content-center" > */}
               
             
-                        <Card.Title className= "text-center card23" style={{marginTop: "170px", color: "#00FF38" }}>
+                        <Card.Title className= "text-center  marg" >
                         {" "}
                         
                         
                         <a style={{textDecoration: "none", color: "#00FF38"}} href="https://jakpawithaplan.com/"><h2> Jakpa With A Plan </h2></a>
                       </Card.Title>
-                      <Card.Text className="home-card-text card24">
+                      <Card.Text className="home-card-text ">
                     <br />
                     <p style={{ fontSize: "20px" }}> Moving To Greener Pastures Is Not
                     An Escape From Your Current Situation,  
@@ -271,8 +271,8 @@ const Home = () => {
                 </div>
               </Carousel.Item>
               <Carousel.Item>
-              <div className='carousel-div' style={{height: "495px", width: "100%"}}>
-                <img src="./img/doyentalent.png" alt="...">
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyentalent.png" alt="...">
 
                 </img>
                   <Carousel.Caption className='caption'>
@@ -283,13 +283,13 @@ const Home = () => {
                     {/* <Card.Img  src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
                         <Card.ImgOverlay  className=" overlay-container d-flex flex-column align-items-center justify-content-center">
                */}
-                      <Card.Title className="text-center card232"  style={{marginTop: "170px", color: "#00FF38" }}>
+                      <Card.Title className="text-center 2 marg"  >
                       {" "}
                       
                       
                       <h2> Doyen Talent</h2>
                     </Card.Title>
-                    <Card.Text className="home-card-text card242">
+                    <Card.Text className="home-card-text 2">
                   <br />
                   <p  style={{ fontSize: "20px" }}> Employees are the heart and soul of any organizations. Treat them well 
                   nurture their growth, and watch your business thrieve.
@@ -333,8 +333,8 @@ const Home = () => {
                 </div>
               </Carousel.Item>
               <Carousel.Item>
-              <div className='carousel-div' style={{height: "495px", width: "100%"}}>
-                <img src="./img/doyenhr.png" alt="...">
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyenhr.png" alt="...">
 
                 </img>
                   <Carousel.Caption className='caption'>
@@ -345,13 +345,13 @@ const Home = () => {
                     {/* <Card.Img src="./img/doyenhr.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
                         <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center"> */}
               
-                        <Card.Title className="text-center card23"  style={{marginTop: "170px", color: "#00FF38" }}>
+                        <Card.Title className="text-center  marg" >
                         {" "}
                         
                         
                         <h2> DoyenHR </h2>
                       </Card.Title>
-                      <Card.Text className="home-card-text card24" >
+                      <Card.Text className="home-card-text " >
                     <br />
                     <p style={{ fontSize: "20px" }}> Unlock the full potential of your workforce with DoyenHR tailored to your unique needs.
                     Empower your employees, streamline processes and cultivate a culture of success.
