@@ -283,7 +283,7 @@ const Home = () => {
                     {/* <Card.Img  src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
                         <Card.ImgOverlay  className=" overlay-container d-flex flex-column align-items-center justify-content-center">
                */}
-                      <Card.Title className="text-center card232"  style={{marginTop: "120px", color: "#00FF38" }}>
+                      <Card.Title className="text-center card232"  style={{marginTop: "170px", color: "#00FF38" }}>
                       {" "}
                       
                       
@@ -345,7 +345,7 @@ const Home = () => {
                     {/* <Card.Img src="./img/doyenhr.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
                         <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center"> */}
               
-                        <Card.Title className="text-center card23"  style={{marginTop: "120px", color: "#00FF38" }}>
+                        <Card.Title className="text-center card23"  style={{marginTop: "170px", color: "#00FF38" }}>
                         {" "}
                         
                         
