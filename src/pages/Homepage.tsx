@@ -404,17 +404,17 @@ const Home = () => {
                   <div>
                   <Card className="bg-dark text-white cardcon">
           
-                  <Card.Img className={academy2 ? 'fade-in' : 'fade-out'} src="./img/doyenacademy.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
-                    <Card.ImgOverlay className="fade-in overlay-container d-flex flex-column align-items-center justify-content-center" >
+                  <Card.Img className={academy2 ? 'fade-in2' : 'fade-out'} src="./img/doyenacademy.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                    <Card.ImgOverlay className="fade-in2 overlay-container d-flex flex-column align-items-center justify-content-center" >
             
 
-                        <Card.Title className={academy2 ? 'fade-in text-center card232' : 'fade-out text-center'} style={{marginTop: "120px", color: "#00FF38" }}>
+                        <Card.Title className={academy2 ? 'fade-in2 text-center card232' : 'fade-out text-center'} style={{marginTop: "120px", color: "#00FF38" }}>
                         {" "}
                         
                         
                         <h2 > Doyenify Academy </h2>
                       </Card.Title>
-                      <Card.Text className={academy2 ? 'fade-in home-card-text card242' : 'fade-out home-card-text'}>
+                      <Card.Text className={academy2 ? 'fade-in2 home-card-text card242' : 'fade-out home-card-text'}>
                     <br />
                     <p style={{ fontSize: "20px", paddingLeft: "15px", paddingRight: "15px"}}> At this Academy we offer you courses that will help you thrieve in the job market,
                       remember You don't have to be great to start, but you have to start to be great - zig Ziglar.
@@ -425,7 +425,7 @@ const Home = () => {
                     </Card.Text>
                     <br/>
 
-                    <div className={academy2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'}>
+                    <div className={academy2 ? 'fade-in2 button-wrapa' : 'fade-out button-wrapa'}>
                       <div className="button-wrapa-one" >
                     <Link to="/our_work" className="brand">
                       <Button
@@ -600,16 +600,16 @@ const Home = () => {
                     
                   <Card className="bg-dark text-white cardcon">
           
-                  <Card.Img  className={doyentalent2 ? 'fade-in' : 'fade-out'} src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                  <Card.Img  className={doyentalent2 ? 'fade-in2' : 'fade-out'} src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
                       <Card.ImgOverlay  className=" overlay-container d-flex flex-column align-items-center justify-content-center">
             
-                    <Card.Title className={doyentalent2 ? 'fade-in text-center card232' : 'fade-out text-center'}  style={{marginTop: "120px", color: "#00FF38" }}>
+                    <Card.Title className={doyentalent2 ? 'fade-in2 text-center card232' : 'fade-out text-center'}  style={{marginTop: "120px", color: "#00FF38" }}>
                     {" "}
                     
                     
                     <h2> Doyen Talent</h2>
                   </Card.Title>
-                  <Card.Text className={doyentalent2 ? 'fade-in home-card-text card242' : 'fade-out home-card-text'}>
+                  <Card.Text className={doyentalent2 ? 'fade-in2 home-card-text card242' : 'fade-out home-card-text'}>
                 <br />
                 <p  style={{ fontSize: "20px" }}> Employees are the heart and soul of any organizations. Treat them well 
                 nurture their growth, and watch your business thrieve.
@@ -619,7 +619,7 @@ const Home = () => {
 
                 </Card.Text>
                 <br/>
-                <div  className={doyentalent2 ? 'fade-in button-wrapa' : 'fade-out button-wrapa'} >
+                <div  className={doyentalent2 ? 'fade-in2 button-wrapa' : 'fade-out button-wrapa'} >
                   
                   <div>
                   <Link to="/Contact" className="brand">

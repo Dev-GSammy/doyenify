@@ -221,7 +221,14 @@ body {
 
 .fade-in {
     transition: opacity 5s ease;
+    animation: leaves 2s linear;
 }
+
+.fade-in2 {
+    transition: opacity 5s ease;
+    animation: leaves2 2s linear;
+}
+
 .fade-out {
     opacity: 0;
     transform: scale(0.5, 0.5);
@@ -244,6 +251,25 @@ body {
 
 @keyframes spin2 {
     100% {transform: rotate(-2deg); }
+}
+
+
+@keyframes leaves {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes leaves2 {
+    0% {
+        transform: scale(0, .5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
 }
 
 
