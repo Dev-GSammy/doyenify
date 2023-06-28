@@ -200,7 +200,7 @@ body {
 }
 
 .caroimg {
-    width: auto;
+    width: 100%;
     object-fit:cover;
     object-position:50% 50%;
 }
