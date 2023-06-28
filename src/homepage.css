@@ -265,7 +265,7 @@ body {
 
 @keyframes leaves2 {
     0% {
-        transform: scale(0, .5);
+        transform: scale(0, 0);
     }
     100% {
         transform: scale(1, 1);
