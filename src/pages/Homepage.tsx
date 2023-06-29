@@ -23,7 +23,7 @@ const Home = () => {
     <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-      <Carousel id="myCarousel">
+      <Carousel >
               <Carousel.Item>
               <div className='carousel-div caroheight' >
                 <img className="caroimg" src="./img/home.png" alt="...">
@@ -93,8 +93,7 @@ const Home = () => {
                         </div>
                         </div>
                         
-                        <br/>
-
+                       
                        
                         {/* </Card.ImgOverlay> */}
                       </Card>
@@ -247,8 +246,6 @@ const Home = () => {
                       </div>
                       </div>
                       
-                      <br/>
-                      
                       {/* </Card.ImgOverlay> */}
                       </Card>
                   </Carousel.Caption>
@@ -304,8 +301,6 @@ const Home = () => {
                     </div>
                     </div>
                     
-                    <br/>
-                      
                     {/* </Card.ImgOverlay> */}
                     </Card>
                   </Carousel.Caption>
@@ -361,8 +356,7 @@ const Home = () => {
                       </div>
                       </div>
                       
-                      <br/>
-                      
+                     
                       {/* </Card.ImgOverlay> */}
             
                     </Card>  
@@ -381,6 +375,8 @@ const Home = () => {
           </div>
           
       </div>
+
+      
       <div className="eng" style={{backgroundColor: "#D9D7F8"}}>
             <Row >
               <Col className=" col-12 col-sm-6 do-content ms-3 d-flex flex-column align-items-left justify-content-center">
