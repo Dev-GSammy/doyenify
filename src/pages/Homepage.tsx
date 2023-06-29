@@ -23,7 +23,7 @@ const Home = () => {
     <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-      <Carousel>
+      <Carousel id="myCarousel">
               <Carousel.Item>
               <div className='carousel-div caroheight' >
                 <img className="caroimg" src="./img/home.png" alt="...">
@@ -92,12 +92,7 @@ const Home = () => {
                         </Link>
                         </div>
                         </div>
-                        {/* linkree */}
-                        <div className="linktree-container"> 
-                        <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-                        <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-                        </Link>
-                        </div>
+                        
                         <br/>
 
                        
@@ -173,13 +168,7 @@ const Home = () => {
                         </Link>
                         </div>
                         </div>
-                        {/* linkree */}
-                        <div className="linktree-container"> 
-                        <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-                        <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-                        </Link>
-                        </div>
-                        <br/>
+                        
                         
                           
                         {/* </Card.ImgOverlay> */}
@@ -257,12 +246,7 @@ const Home = () => {
                       </Link>
                       </div>
                       </div>
-                      {/* linkree */}
-                      <div className="linktree-container"> 
-                      <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-                      <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-                      </Link>
-                      </div>
+                      
                       <br/>
                       
                       {/* </Card.ImgOverlay> */}
@@ -319,12 +303,7 @@ const Home = () => {
                     </Link>
                     </div>
                     </div>
-                    {/* linkree */}
-                    <div className="linktree-container"> 
-                    <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-                    <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-                    </Link>
-                    </div>
+                    
                     <br/>
                       
                     {/* </Card.ImgOverlay> */}
@@ -381,12 +360,7 @@ const Home = () => {
                       </Link>
                       </div>
                       </div>
-                      {/* linkree */}
-                      <div className="linktree-container"> 
-                      <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-                      <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-                      </Link>
-                      </div>
+                      
                       <br/>
                       
                       {/* </Card.ImgOverlay> */}
@@ -395,11 +369,16 @@ const Home = () => {
                   </Carousel.Caption>
                 </div>
               </Carousel.Item>
-             
+              
               
           </Carousel>
           
-          
+          {/* linkree */}
+          <div className="linktree-container"> 
+          <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
+          <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
+          </Link>
+          </div>
           
       </div>
       <div className="eng" style={{backgroundColor: "#D9D7F8"}}>

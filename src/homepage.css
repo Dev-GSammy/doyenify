@@ -32,18 +32,23 @@ body {
 }
 .linktree-container{
     position: relative;
-    top: 80px;
+    top: -100px;
     left: 35vw;
+    z-index: 1000;
 }
+
+
 
 .linktree-wrapa{
     text-decoration: none;
     color: rgb(255, 255, 255);
-
+    
+    
 }
 
 .linktree-wrapa:hover{
     color: #387846;
+    
 }
 
 .linktree-icon{
@@ -201,6 +206,7 @@ body {
 
 .caroimg {
     width: 100%;
+    height: 100%;
     object-fit:cover;
     object-position:50% 50%;
 }
@@ -209,6 +215,10 @@ body {
     height: 495px; 
     width: 100%;
 }
+
+
+ 
+
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
@@ -225,12 +235,19 @@ body {
     }
 
     .eng {
-        margin-top: 768px;
+        margin-top: 670px;
     }
 
     .marg {
         margin-top: 160px; 
         
+    }
+
+    .linktree-container{
+        position: relative;
+        top: -150px;
+        left: 35vw;
+        z-index: 1000;
     }
     
     
