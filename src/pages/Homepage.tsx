@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
 import { ArrowRightShort, ChevronDoubleLeft, ChevronDoubleRight} from 'react-bootstrap-icons';
 import {Carousel} from 'react-bootstrap';
+import { Drift } from 'react-live-chat-loader'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../homepage.css';
 import { Link } from 'react-router-dom';
@@ -445,6 +446,7 @@ const Home = () => {
             </div>
              </div>
     </main>
+    <Drift />
   </div>  
   )
 };

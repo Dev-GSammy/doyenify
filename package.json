@@ -21,6 +21,7 @@
     "react-bootstrap": "^2.0.0-rc.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "^18.2.0",
+    "react-live-chat-loader": "^2.8.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "react-scroll-motion": "^0.3.2",
