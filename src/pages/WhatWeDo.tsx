@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../whatwedo.css";
 
 // const sections = [
