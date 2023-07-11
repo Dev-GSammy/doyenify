@@ -31,8 +31,7 @@ const Home = () => {
 
                 </img>
                   <Carousel.Caption className='caption'>
-                    <br/>
-                    <br/>
+                    
                     <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
                       
                       {/* <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
@@ -40,16 +39,16 @@ const Home = () => {
                           <Card.ImgOverlay  className="overlay-container d-flex flex-column align-items-center justify-content-center">
                            */}
               
-                          <Card.Title  className="text-center  marg">
+                          <Card.Title  className="text-center  marg2">
                           {" "}
                           
                           
-                          <h2 > Welcome to Doyenify Technologies </h2>
+                          <h3 > Welcome to Doyenify Technologies </h3>
                         </Card.Title>
                         <Card.Text className="home-card-text " >
                       <br />
                     
-                      <p  style={{ fontSize: "20px" }} > You are ready to join our global network of happy and excited clients.
+                      <p  className="firstcal" > You are ready to join our global network of happy and excited clients.
                       We help Individuals and organizations solve problems with bespoke IT solutions 
                       by providing the most efficient technological solutions to improve business profitability.
 

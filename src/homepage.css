@@ -212,10 +212,23 @@ body {
     margin-top: 0;
 }
 
+.ene {
+    margin-top: 5px;
+}
+
+.firstcal {
+    font-size: 20px;
+}
+
 
 
 
 .marg {
+    margin-top: 180px; 
+    color: #00FF38;
+}
+
+.marg2 {
     margin-top: 180px; 
     color: #00FF38;
 }
@@ -253,11 +266,16 @@ body {
     }
 
     .eng {
-        margin-top: 670px;
+        margin-top: 10px;
     }
 
     .marg {
         margin-top: 160px; 
+        
+    }
+
+    .marg2 {
+        margin-top: 100px; 
         
     }
 
@@ -266,6 +284,10 @@ body {
         top: -150px;
         left: 35vw;
         z-index: 1000;
+    }
+
+    .firstcal {
+        font-size: 18px;
     }
     
     
