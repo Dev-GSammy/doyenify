@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
-import { ArrowRightShort} from 'react-bootstrap-icons';
+import { ArrowRightShort, ChevronDoubleLeft, ChevronDoubleRight} from 'react-bootstrap-icons';
+import {Carousel} from 'react-bootstrap';
+import { Drift } from 'react-live-chat-loader'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../homepage.css';
 import { Link } from 'react-router-dom';
@@ -13,71 +15,358 @@ const divStyle = {
   marginLeft: "115px",
 };
 
-const Home = () => 
-  <div>
+const Home = () => {
+  
+
+  
+
+  return (
+    <div>
     <main role="main" className="container-fluid px-0">
       <div className="text-center home-header-wrapper">
-        <Card className="bg-dark text-white card-home-wrapper" style={{ borderRadius: "0"}}>
-          <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
-          <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center">
-            <Card.Title className="text-center" style={{ color: "#00FF38" }}>
-              {" "}
-              <h2> Welcome to Doyenify Technologies </h2>
-            </Card.Title>
-            <Card.Text className="home-card-text">
-          <br />
-          <p style={{ fontSize: "20px" }}> You are ready to join our global network of happy and excited clients.
-           We help Individuals and organizations solve problems with bespoke IT solutions 
-           by providing the most efficient technological solutions to improve business profitability.
+      <Carousel >
+              <Carousel.Item>
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/home.png" alt="...">
 
-          </p>
-          </Card.Text>
-          <div className="button-wrapa">
-            <div className="button-wrapa-one" >
-          <Link to="/our_work" className="brand">
-            <Button
-              className="mt-1 px-5 py-1 home-button"
-              style={{
-              backgroundColor: "#757F77",
-              color: "#ffffff",
-              borderRadius: " 50px",
-              border: " 2px solid #ffffff",
-              fontWeight: "600",
-              }}
-            >
-              {" "}
-              View Our Work{" "}
-            </Button>
-            </Link>
-            </div>
-            <div className="button-wrapa-two">
-            <Link to="/Contact" className="brand">
-            <Button
-              className="mt-1 px-5 py-1 home-button"
-              style={{
-              backgroundColor: "#387846",
-              color: "#ffffff",
-              borderRadius: " 50px",
-              border: " 2px solid #ffffff",
-              fontWeight: "600",
-              }}
-            >
-              {" "}
-              Request A Quote{" "}
-            </Button>
-            </Link>
-            </div>
-            </div>
-            {/* linkree */}
-            <div className="linktree-container"> 
-             <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
-             <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
-             </Link>
-            </div>
-          </Card.ImgOverlay>
-        </Card>
+                </img>
+                  <Carousel.Caption className='caption'>
+                    <br/>
+                    <br/>
+                    <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
+                      
+                      {/* <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+
+                          <Card.ImgOverlay  className="overlay-container d-flex flex-column align-items-center justify-content-center">
+                           */}
+              
+                          <Card.Title  className="text-center  marg2">
+                          {" "}
+                          
+                          
+                          <h2 > Welcome to Doyenify Technologies </h2>
+                        </Card.Title>
+                        <Card.Text className="home-card-text " >
+                      <br />
+                    
+                      <p  style={{fontSize: "20px"}} > You are ready to join our global network of happy and excited clients.
+                      We help Individuals and organizations solve problems with bespoke IT solutions 
+                      by providing the most efficient technological solutions to improve business profitability.
+
+                      </p>
+                      
+                      </Card.Text>
+                      <br/>
+                      <div className= "button-wrapa" >
+                        <div className="button-wrapa-one" >
+                      <Link to="/our_work" className="brand">
+                        <Button
+                          className=" px-5 py-1 home-button doyenbtnview"
+                          
+                        >
+                          {" "}
+                          View Our Work{" "}
+                        </Button>
+                        </Link>
+                        </div>
+                        <div>
+                        <Link to="/Contact" className="brand">
+                        <Button
+                          className=" px-5 py-1 home-button doyenbtnrequest"
+                          
+                        >
+                          {" "}
+                          Request A Quote{" "}
+                        </Button>
+                        </Link>
+                        </div>
+                        </div>
+                        
+                       
+                       
+                        {/* </Card.ImgOverlay> */}
+                      </Card>
+                  </Carousel.Caption>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyenacademy.png" alt="...">
+
+                </img>
+                  <Carousel.Caption className='caption'>
+                    <br/>
+                    <br/>
+                    <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
+                      
+                      {/* <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+
+                          <Card.ImgOverlay  className="overlay-container d-flex flex-column align-items-center justify-content-center">
+                           */}
+                          <Card.Title className="text-center 2 marg" >
+                          {" "}
+                          
+                          
+                          <h2 > Doyenify Academy </h2>
+                        </Card.Title>
+                        <Card.Text className="home-card-text 2" >
+                      <br />
+                      <p style={{ fontSize: "20px", paddingLeft: "15px", paddingRight: "15px"}}> At this Academy we offer you courses that will help you thrieve in the job market,
+                        remember You don't have to be great to start, but you have to start to be great - zig Ziglar.
+
+                      </p>
+
+
+                      </Card.Text>
+                      <br/>
+
+                      <div className="button-wrapa">
+                        <div className="button-wrapa-one" >
+                      <Link to="/our_work" className="brand">
+                        <Button
+                          className="px-5 py-1 home-button"
+                          style={{
+                          backgroundColor: "#757F77",
+                          color: "#ffffff",
+                          borderRadius: " 50px",
+                          border: " 2px solid #ffffff",
+                          fontWeight: "600",
+                          }}
+                        >
+                          {" "}
+                          View Our Work{" "}
+                        </Button>
+                        </Link>
+                        </div>
+                        <div>
+                        <Link to="/Contact" className="brand">
+                        <Button
+                          className="px-5 py-1 home-button"
+                          style={{
+                          backgroundColor: "#387846",
+                          color: "#ffffff",
+                          borderRadius: " 50px",
+                          border: " 2px solid #ffffff",
+                          fontWeight: "600",
+                          }}
+                        >
+                          {" "}
+                          Request A Quote{" "}
+                        </Button>
+                        </Link>
+                        </div>
+                        </div>
+                        
+                        
+                          
+                        {/* </Card.ImgOverlay> */}
+                      </Card>
+                  </Carousel.Caption>
+                </div>
+              </Carousel.Item>
+
+              <Carousel.Item>
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/jakpaim.png" alt="...">
+
+                </img>
+                  <Carousel.Caption className='caption'>
+                    <br/>
+                    <br/>
+                    <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
+                      
+                      
+                    {/* <Card.Img src="./img/jakpaim.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                        <Card.ImgOverlay className="overlay-container d-flex flex-column align-items-center justify-content-center" > */}
+              
+            
+                        <Card.Title className= "text-center  marg" >
+                        {" "}
+                        
+                        
+                        <a style={{textDecoration: "none", color: "#00FF38"}} href="https://jakpawithaplan.com/"><h2> Jakpa With A Plan </h2></a>
+                      </Card.Title>
+                      <Card.Text className="home-card-text ">
+                    <br />
+                    <p style={{ fontSize: "20px" }}> Moving To Greener Pastures Is Not
+                    An Escape From Your Current Situation,  
+                    But Rather A Step Towards Your Desired Destination
+
+                    </p>
+
+
+                    </Card.Text>
+                    <br/>
+                      
+                    <div className="button-wrapa" >
+                      <div className="button-wrapa-one" >
+                    <Link to="/our_work" className="brand">
+                      <Button
+                        className="px-5 py-1 home-button"
+                        style={{
+                        backgroundColor: "#757F77",
+                        color: "#ffffff",
+                        borderRadius: " 50px",
+                        border: " 2px solid #ffffff",
+                        fontWeight: "600",
+                        }}
+                      >
+                        {" "}
+                        View Our Work{" "}
+                      </Button>
+                      </Link>
+                      </div>
+                      <div>
+                      <Link to="/Contact" className="brand">
+                      <Button
+                        className="px-5 py-1 home-button"
+                        style={{
+                        backgroundColor: "#387846",
+                        color: "#ffffff",
+                        borderRadius: " 50px",
+                        border: " 2px solid #ffffff",
+                        fontWeight: "600",
+                        }}
+                      >
+                        {" "}
+                        Request A Quote{" "}
+                      </Button>
+                      </Link>
+                      </div>
+                      </div>
+                      
+                      {/* </Card.ImgOverlay> */}
+                      </Card>
+                  </Carousel.Caption>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyentalent.png" alt="...">
+
+                </img>
+                  <Carousel.Caption className='caption'>
+                    <br/>
+                    <br/>
+                    <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
+                      
+                    {/* <Card.Img  src="./img/doyentalent.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                        <Card.ImgOverlay  className=" overlay-container d-flex flex-column align-items-center justify-content-center">
+               */}
+                      <Card.Title className="text-center 2 marg"  >
+                      {" "}
+                      
+                      
+                      <h2> Doyen Talent</h2>
+                    </Card.Title>
+                    <Card.Text className="home-card-text 2">
+                  <br />
+                  <p  style={{ fontSize: "20px" }}> Employees are the heart and soul of any organizations. Treat them well 
+                  nurture their growth, and watch your business thrieve.
+
+                  </p>
+
+
+                  </Card.Text>
+                  <br/>
+                  <div  className="button-wrapa" >
+                    
+                    <div>
+                    <Link to="/Contact" className="brand">
+                    <Button
+                      className="px-5 py-1 home-button"
+                      style={{
+                      backgroundColor: "#387846",
+                      color: "#ffffff",
+                      borderRadius: " 50px",
+                      border: " 2px solid #ffffff",
+                      fontWeight: "600",
+                      }}
+                    >
+                      {" "}
+                      Request A Quote{" "}
+                    </Button>
+                    </Link>
+                    </div>
+                    </div>
+                    
+                    {/* </Card.ImgOverlay> */}
+                    </Card>
+                  </Carousel.Caption>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className='carousel-div caroheight' >
+                <img className="caroimg" src="./img/doyenhr.png" alt="...">
+
+                </img>
+                  <Carousel.Caption className='caption'>
+                    <br/>
+                    <br/>
+                    <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
+                      
+                    {/* <Card.Img src="./img/doyenhr.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
+                        <Card.ImgOverlay className=" overlay-container d-flex flex-column align-items-center justify-content-center"> */}
+              
+                        <Card.Title className="text-center  marg" >
+                        {" "}
+                        
+                        
+                        <h2> DoyenHR </h2>
+                      </Card.Title>
+                      <Card.Text className="home-card-text " >
+                    <br />
+                    <p style={{ fontSize: "20px" }}> Unlock the full potential of your workforce with DoyenHR tailored to your unique needs.
+                    Empower your employees, streamline processes and cultivate a culture of success.
+
+                    </p>
+
+
+                    </Card.Text>
+                    <br/>
+                    <div className="button-wrapa" >
+                      
+                      <div>
+                      <Link to="/Contact" className="brand">
+                      <Button
+                        className="px-5 py-1 home-button"
+                        style={{
+                        backgroundColor: "#387846",
+                        color: "#ffffff",
+                        borderRadius: " 50px",
+                        border: " 2px solid #ffffff",
+                        fontWeight: "600",
+                        }}
+                      >
+                        {" "}
+                        Request A Quote{" "}
+                      </Button>
+                      </Link>
+                      </div>
+                      </div>
+                      
+                     
+                      {/* </Card.ImgOverlay> */}
+            
+                    </Card>  
+                  </Carousel.Caption>
+                </div>
+              </Carousel.Item>
+              
+              
+          </Carousel>
+          
+          {/* linkree */}
+          <div className="linktree-container"> 
+          <Link to="https://linktr.ee/doyenify" target="_blank" className= "linktree-wrapa"> 
+          <h4 className="linktree-icon"> Linktree < img src= "./img/linktree.png" width="" height= "" alt="linktree" /> </h4>
+          </Link>
+          </div>
+          
       </div>
-      <div style={{backgroundColor: "#D9D7F8"}}>
+
+      
+      <div className="eng" style={{backgroundColor: "#D9D7F8"}}>
             <Row >
               <Col className=" col-12 col-sm-6 do-content ms-3 d-flex flex-column align-items-left justify-content-center">
               < img src= "./img/web.png" width="400px" height= "400px" alt="Web" />
@@ -145,7 +434,9 @@ const Home = () =>
             </div>
              </div>
     </main>
+    <Drift />
   </div>  
-;
+  )
+};
 
 export default Home;

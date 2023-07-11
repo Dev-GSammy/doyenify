@@ -5,6 +5,31 @@
     height: 495px;
 }
 
+
+   
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+.doyenbtnview {
+    background-color: #757F77;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
+
+.doyenbtnrequest {
+    background-color: #387846;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
 .ourhome-link { text-decoration: none;
 
     color: white;
@@ -14,6 +39,8 @@
 }
 .button-wrapa{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 .button-wrapa-one{
@@ -27,18 +54,24 @@
 }
 .linktree-container{
     position: relative;
-    top: 80px;
+    top: -120px;
     left: 35vw;
+    z-index: 1000;
+    height: 0px;
 }
+
+
 
 .linktree-wrapa{
     text-decoration: none;
     color: rgb(255, 255, 255);
-
+    
+    
 }
 
 .linktree-wrapa:hover{
     color: #387846;
+    
 }
 
 .linktree-icon{
@@ -139,9 +172,7 @@
 
  @media screen and (max-width: 640px) {
 
-   .home-header-wrapper{
-    height: 100vh;
-   }
+   
 
    .card-home-wrapper{
     height: 100%;
@@ -184,3 +215,99 @@
     }
     
  }
+
+
+
+.cardcon {
+    border-radius: 0; 
+    height: 495px;
+}
+
+.cardcont1 {
+    margin-top: 0;
+}
+
+.ene {
+    margin-top: 5px;
+}
+
+.firstcal {
+    font-size: 20px;
+}
+
+
+
+
+.marg {
+    margin-top: 180px; 
+    color: #00FF38;
+}
+
+.marg2 {
+    margin-top: 180px; 
+    color: #00FF38;
+}
+
+.caroimg {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.caroheight {
+    height: 495px; 
+    width: 100%;
+}
+
+
+.eng {
+    margin-top: 0px;
+}
+
+
+@media (min-width: 100px) and (max-width: 567px){
+    .cardcon {
+        height: 99vh;
+    }
+
+    .cardcont1 {
+        margin-top: 0;
+    }
+
+    .caroheight {
+        height: 100vh; 
+        
+    }
+
+    .eng {
+        margin-top: 0;
+    }
+
+    .marg {
+        margin-top: 160px; 
+        
+    }
+
+    .marg2 {
+        margin-top: 100px; 
+        
+    }
+
+    .linktree-container{
+        position: relative;
+        top: -150px;
+        left: 30vw;
+        z-index: 1000;
+    }
+
+    
+    
+    
+
+    
+    
+} 
+
+
+  

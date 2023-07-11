@@ -9,13 +9,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../contact.css";
 
+
 const validationSchema = Yup.object().shape({
-  firstName: Yup.string().required("Required"),
-  lastName: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.number().required("Required"),
-  message: Yup.string().required("Required"),
-  servicesCheckbox: Yup.array().required()
+  Firstname: Yup.string().required("Required"),
+  Lastname: Yup.string().required("Required"),
+  Email: Yup.string().email("Invalid Email").required("Required"),
+  Phone: Yup.number().required("Required"),
+  Message: Yup.string().required("Required"),
+  Services: Yup.array().required()
 });
 
 const Contact: React.FC = () => {
@@ -154,28 +155,28 @@ const Contact: React.FC = () => {
               <Col className="col-12 order-1 col-md-8 order-md-2">
                 <Formik
                   initialValues={{
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    phone: "",
-                    message: "",
-                    servicesCheckbox: []
+                    Firstname: "",
+                    Lastname: "",
+                    Email: "",
+                    Phone: "",
+                    Message: "",
+                    Services: []
                   }}
 
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    axios.post('https://sheet.best/api/sheets/3d3daed8-f416-44c0-b33b-8da2fcce6814', values)
+                    axios.post('https://us-central1-doyenifypanelapi.cloudfunctions.net/app/contact-Message',  values)
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
                       resetForm();
                       resetForm();
-                      toast.success('We have received your message, We will get back to you shortly');
+                      toast.success('We have received your Message, We will get back to you shortly');
                     })
 
                     .catch(error => {
                       console.error('error submitting form', error);
                       setSubmitting(false);
-                      toast.error("Sorry we could not receive your message. Please check your connection and try again")
+                      toast.error("Sorry we could not receive your Message. Please check your connection and try again")
                     });
                     resetForm();
                   }}
@@ -206,14 +207,14 @@ const Contact: React.FC = () => {
                           <Form.Control
                             className="contact-input"
                             type="text"
-                            name="firstName"
-                            value={values.firstName}
+                            name="Firstname"
+                            value={values.Firstname}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            isInvalid={!!errors.firstName}
+                            isInvalid={!!errors.Firstname}
                           />
                           <Form.Control.Feedback type="invalid">
-                            {errors.firstName}
+                            {errors.Firstname}
                           </Form.Control.Feedback>
                         </Form.Group>
 
@@ -227,14 +228,14 @@ const Contact: React.FC = () => {
                           <Form.Control
                             className="contact-input"
                             type="text"
-                            name="email"
-                            value={values.email}
+                            name="Email"
+                            value={values.Email}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            isInvalid={!!errors.email}
+                            isInvalid={!!errors.Email}
                           />
                           <Form.Control.Feedback type="invalid">
-                            {errors.email}
+                            {errors.Email}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -250,14 +251,14 @@ const Contact: React.FC = () => {
                           <Form.Control
                             className="contact-input"
                             type="text"
-                            name="lastName"
-                            value={values.lastName}
+                            name="Lastname"
+                            value={values.Lastname}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            isInvalid={!!errors.lastName}
+                            isInvalid={!!errors.Lastname}
                           />
                           <Form.Control.Feedback type="invalid">
-                            {errors.lastName}
+                            {errors.Lastname}
                           </Form.Control.Feedback>
                         </Form.Group>
 
@@ -269,14 +270,14 @@ const Contact: React.FC = () => {
                           <Form.Control
                             className="contact-input"
                             type="text"
-                            name="phone"
-                            value={values.phone}
+                            name="Phone"
+                            value={values.Phone}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            isInvalid={!!errors.phone}
+                            isInvalid={!!errors.Phone}
                           />
                           <Form.Control.Feedback type="invalid">
-                            {errors.phone}
+                            {errors.Phone}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -289,28 +290,28 @@ const Contact: React.FC = () => {
                           <Form.Label className="input-label">
                             Choose one or more services
                           </Form.Label>
-                          <FieldArray name="servicesCheckbox">
+                          <FieldArray name="Services">
                             {() => (
                               <div className="checkbox_container" style={{display: "flex", flexDirection: "column",
                                 justifyContent: "space-between" }}>
                               <label className="checkbox_label">
-                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="graphicDesign" ></Field>
+                                <Field className="me-3" type="checkbox" name="Services" value="graphicDesign" ></Field>
                                   Graphic Design
                               </label>
                               <label className="checkbox_label">
-                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="videoEditing"></Field>
+                                <Field className="me-3" type="checkbox" name="Services" value="videoEditing"></Field>
                                   Video Editing
                               </label>
                               <label className="checkbox_label">
-                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDesign" ></Field>
+                                <Field className="me-3" type="checkbox" name="Services" value="webDesign" ></Field>
                                   Web Design (UI/UX)
                               </label>
                               <label className="checkbox_label">
-                                <Field className="me-3" type="checkbox" name="servicesCheckbox" value="webDevelopment" ></Field>
+                                <Field className="me-3" type="checkbox" name="Services" value="webDevelopment" ></Field>
                                   Web Development
                               </label>
                               <Form.Control.Feedback type="invalid">
-                            {errors.phone}
+                            {errors.Phone}
                           </Form.Control.Feedback>
                               </div>
                               
@@ -318,7 +319,7 @@ const Contact: React.FC = () => {
                           </FieldArray>
                           
                           <Form.Control.Feedback type="invalid">
-                            {errors.servicesCheckbox}
+                            {errors.Services}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>
@@ -334,16 +335,16 @@ const Contact: React.FC = () => {
                           <Form.Control
                             className="contact-input"
                             as="textarea"
-                            placeholder="Write your message"
+                            placeholder="Write your Message"
                             rows={3}
-                            name="message"
-                            value={values.message}
+                            name="Message"
+                            value={values.Message}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            isInvalid={!!errors.message}
+                            isInvalid={!!errors.Message}
                           />
                           <Form.Control.Feedback type="invalid">
-                            {errors.message}
+                            {errors.Message}
                           </Form.Control.Feedback>
                         </Form.Group>
                       </div>

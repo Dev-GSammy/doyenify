@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { Container, Spinner } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
+import { LiveChatLoaderProvider } from 'react-live-chat-loader'
+
 
 const navigationData = [
   { label: "Home", path: "/" },
@@ -21,7 +23,9 @@ const OurTeamView = React.lazy(() => import("./pages/OurTeam"));
 
 export const App = () => (
   <>
-    <Header navigation={navigationData} />
+   
+    <LiveChatLoaderProvider providerKey="99kzsmh2r94i" provider="drift">
+        /* ... */<Header navigation={navigationData} />
     <Container fluid className="px-0">
       <React.Suspense fallback={<Spinner animation={"border"} />}>
         <Routes>
@@ -30,10 +34,11 @@ export const App = () => (
           <Route path="/about_us" element={<AboutUsView />} />
           <Route path="/services" element={<WhatWeDoView />} />
           <Route path="/contact" element={<ContactView />} />
-          <Route path="our_team" element={<OurTeamView />} />
+           <Route path="our_team" element={<OurTeamView />} />
         </Routes>
       </React.Suspense>
     </Container>
     <Footer />
+      </LiveChatLoaderProvider>
   </>
 );
