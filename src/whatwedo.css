@@ -1,6 +1,9 @@
 /* .img-row {
     overflow-x: hidden;
 } */
+.card-whatwedo-wrapper{
+    height: 495px;
+}
 
 .whatwedo_title {
     text-align: center;
@@ -60,8 +63,11 @@
 
 @media screen and (max-width: 640px) {
     .whatwedo-header-wrapper {
-        height: 0px;
+        height: 100vh;
     }
+    .card-whatwedo-wrapper{
+        height: 100%;
+       }
 
     .whatwedo-card-text {
         line-height: 30px;

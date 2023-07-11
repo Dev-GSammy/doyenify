@@ -10,7 +10,7 @@ const AboutUs = () => (
   <>
     <main role="main" className="container-fluid px-0">
       <div className="text-center about-header-wrapper">
-        <Card className="bg-dark text-white" style={{ borderRadius:  "0" , height: "495px"  }}>
+        <Card className="bg-dark text-white card-about-wrapper" style={{ borderRadius:  "0"  }}>
           <Card.Img src="./img/about.png" style={{ height: "100%", objectFit: "cover"}} alt="about" />
           <Card.ImgOverlay className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center" style={{ color: "#00FF38" }}>

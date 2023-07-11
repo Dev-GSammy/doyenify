@@ -1,7 +1,9 @@
 
-
 * {
     box-sizing: border-box;
+}
+.card-contact-wrapper{
+    height: 495px;
 }
 
 .card-wrapper {
@@ -128,8 +130,11 @@
 
 @media screen and (max-width: 640px) {
     .contact-header-wrapper {
-        height: 0px;
+        height: 100vh;
     }
+   .card-contact-wrapper{
+     height: 100vh;
+}
 
     .contact-card-text {
         line-height: 50px;
