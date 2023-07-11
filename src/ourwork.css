@@ -1,3 +1,6 @@
+.team-header-wrapper{
+    height: 495px;
+}
 .ourwork-link { text-decoration: none;
     color: white;
 }
@@ -50,8 +53,11 @@
  @media screen and (max-width: 640px) {
 
     .work-header-wrapper{
-        height: 0px;
+        height: 100vh;
        }
+    .card-work-wrapper{
+        height: 100%;
+    }
     .work-card-text{
         line-height: 30px;
         letter-spacing: 2px;
