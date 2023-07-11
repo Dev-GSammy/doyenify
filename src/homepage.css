@@ -37,7 +37,7 @@ body {
 }
 .linktree-container{
     position: relative;
-    top: -100px;
+    top: -120px;
     left: 35vw;
     z-index: 1000;
     height: 0px;
@@ -155,9 +155,7 @@ body {
 
  @media screen and (max-width: 640px) {
 
-   .home-header-wrapper{
-    height: 100vh;
-   }
+   
 
    .card-home-wrapper{
     height: 100%;
@@ -266,7 +264,7 @@ body {
     }
 
     .eng {
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     .marg {
