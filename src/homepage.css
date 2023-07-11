@@ -13,6 +13,23 @@ body {
     overflow-x: hidden;
   }
 
+.doyenbtnview {
+    background-color: #757F77;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
+
+.doyenbtnrequest {
+    background-color: #387846;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
 .ourhome-link { text-decoration: none;
 
     color: white;
@@ -251,7 +268,7 @@ body {
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
-        height: 678px;
+        height: 99vh;
     }
 
     .cardcont1 {
@@ -259,7 +276,7 @@ body {
     }
 
     .caroheight {
-        height: 679px; 
+        height: 100vh; 
         
     }
 
@@ -280,13 +297,11 @@ body {
     .linktree-container{
         position: relative;
         top: -150px;
-        left: 35vw;
+        left: 30vw;
         z-index: 1000;
     }
 
-    .firstcal {
-        font-size: 18px;
-    }
+    
     
     
 

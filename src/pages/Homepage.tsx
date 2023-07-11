@@ -31,7 +31,8 @@ const Home = () => {
 
                 </img>
                   <Carousel.Caption className='caption'>
-                    
+                    <br/>
+                    <br/>
                     <Card className="bg-transparent border-transparent text-white cardcon" style={{padding: "0", borderColor: "#ffffff00"}}>
                       
                       {/* <Card.Img src="./img/home.png" alt="Home"  style={{ height: "100%", objectFit: "cover"}}/>
@@ -43,12 +44,12 @@ const Home = () => {
                           {" "}
                           
                           
-                          <h3 > Welcome to Doyenify Technologies </h3>
+                          <h2 > Welcome to Doyenify Technologies </h2>
                         </Card.Title>
                         <Card.Text className="home-card-text " >
                       <br />
                     
-                      <p  className="firstcal" > You are ready to join our global network of happy and excited clients.
+                      <p  style={{fontSize: "20px"}} > You are ready to join our global network of happy and excited clients.
                       We help Individuals and organizations solve problems with bespoke IT solutions 
                       by providing the most efficient technological solutions to improve business profitability.
 
@@ -60,14 +61,8 @@ const Home = () => {
                         <div className="button-wrapa-one" >
                       <Link to="/our_work" className="brand">
                         <Button
-                          className="mt-1 px-5 py-1 home-button"
-                          style={{
-                          backgroundColor: "#757F77",
-                          color: "#ffffff",
-                          borderRadius: " 50px",
-                          border: " 2px solid #ffffff",
-                          fontWeight: "600",
-                          }}
+                          className=" px-5 py-1 home-button doyenbtnview"
+                          
                         >
                           {" "}
                           View Our Work{" "}
@@ -77,14 +72,8 @@ const Home = () => {
                         <div>
                         <Link to="/Contact" className="brand">
                         <Button
-                          className="mt-1 px-5 py-1 home-button"
-                          style={{
-                          backgroundColor: "#387846",
-                          color: "#ffffff",
-                          borderRadius: " 50px",
-                          border: " 2px solid #ffffff",
-                          fontWeight: "600",
-                          }}
+                          className=" px-5 py-1 home-button doyenbtnrequest"
+                          
                         >
                           {" "}
                           Request A Quote{" "}
@@ -135,7 +124,7 @@ const Home = () => {
                         <div className="button-wrapa-one" >
                       <Link to="/our_work" className="brand">
                         <Button
-                          className="mt-1 px-5 py-1 home-button"
+                          className="px-5 py-1 home-button"
                           style={{
                           backgroundColor: "#757F77",
                           color: "#ffffff",
@@ -152,7 +141,7 @@ const Home = () => {
                         <div>
                         <Link to="/Contact" className="brand">
                         <Button
-                          className="mt-1 px-5 py-1 home-button"
+                          className="px-5 py-1 home-button"
                           style={{
                           backgroundColor: "#387846",
                           color: "#ffffff",
@@ -213,7 +202,7 @@ const Home = () => {
                       <div className="button-wrapa-one" >
                     <Link to="/our_work" className="brand">
                       <Button
-                        className="mt-1 px-5 py-1 home-button"
+                        className="px-5 py-1 home-button"
                         style={{
                         backgroundColor: "#757F77",
                         color: "#ffffff",
@@ -230,7 +219,7 @@ const Home = () => {
                       <div>
                       <Link to="/Contact" className="brand">
                       <Button
-                        className="mt-1 px-5 py-1 home-button"
+                        className="px-5 py-1 home-button"
                         style={{
                         backgroundColor: "#387846",
                         color: "#ffffff",
@@ -285,7 +274,7 @@ const Home = () => {
                     <div>
                     <Link to="/Contact" className="brand">
                     <Button
-                      className="mt-1 px-5 py-1 home-button"
+                      className="px-5 py-1 home-button"
                       style={{
                       backgroundColor: "#387846",
                       color: "#ffffff",
@@ -340,7 +329,7 @@ const Home = () => {
                       <div>
                       <Link to="/Contact" className="brand">
                       <Button
-                        className="mt-1 px-5 py-1 home-button"
+                        className="px-5 py-1 home-button"
                         style={{
                         backgroundColor: "#387846",
                         color: "#ffffff",
