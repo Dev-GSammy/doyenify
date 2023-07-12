@@ -301,7 +301,7 @@ const Termandconditions: React.FC = () => {
                                     WITHOUT LIMITATION, RELATING TO YOUR USE OF THE SERVICE, YOU HEREBY WAIVE ANY RIGHT Y</li>
 
                                 <li>Customer Service. If you have any comments or questions regarding these Terms of Service or wish to report any
-                                     violation of these Terms of Service, you may contact us at the address below.</li>
+                                     violation of these Terms of Service, you may contact us at the address below. <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=doyenifyacademy@gmail.com" style={{marginLeft: "5px", display: "block"}} target="_blank">doyenifyacademy@gmail.com</a></li>
                         </ol>
                         </div>
                         </div>
