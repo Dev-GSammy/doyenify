@@ -130,7 +130,7 @@ const Termandconditions: React.FC = () => {
                                         <li>Your use of the Service is at your own risk, including the risk 
                                             that you might be exposed to Content that is offensive, 
                                             indecent, inaccurate, objectionable, or otherwise inappropriate.</li>
-                                        <li></li>
+                                        
                                     </ol>
                                 </li>
 
