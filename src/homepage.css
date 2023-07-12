@@ -268,7 +268,7 @@ body {
 
 @media (min-width: 100px) and (max-width: 567px){
     .cardcon {
-        height: 99vh;
+        height: 110vh;
     }
 
     .cardcont1 {
@@ -276,7 +276,7 @@ body {
     }
 
     .caroheight {
-        height: 100vh; 
+        height: 115vh; 
         
     }
 

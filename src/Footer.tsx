@@ -4,6 +4,8 @@ import Col from "react-bootstrap/Col";
 import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Envelope, Telephone} from 'react-bootstrap-icons';
 import "./footer.css";
 import { Link } from 'react-router-dom';
+import  Termandconditions  from "./Termandconditions";
+import  PrivatePolicy  from "./PrivatePolicy";
 
 
 const Footer: React.FC = () => {
@@ -48,11 +50,11 @@ const Footer: React.FC = () => {
       <div className="spacer20"></div>
       <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="text-black" target="_blank"><Instagram className="footer-link" /> </a>
       <p><span></span></p>
-      <a href="#" className="text-black" ><Facebook className="footer-link" /> </a>
+      <a href="https://web.facebook.com/profile.php?id=100091606221617" className="text-black " target="_blank"><Facebook className="footer-link" /> </a>
       <div className="spacer20"></div>
       <a href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09" className="text-black" target="_blank"><Twitter className="footer-link" /></a>
       <p><span></span></p>
-      <a href="#" className="text-black" ><Youtube className="footer-link" /> </a>
+      <a href="https://www.youtube.com/@DOYENIFY" className="text-black " target="_blank"><Youtube className="footer-link" /> </a>
       <div className="spacer20"></div>
       <a className="social-media contact_linktree_footer_icon footer-link text-black" href="https://linktr.ee/doyenify" target="_blank"><img src="../img/linktree_logo.png"></img></a>
       </Col>
@@ -76,9 +78,9 @@ const Footer: React.FC = () => {
       <div className="d-flex footer-terms">
         <p className="text-center pb-3 px-3">&copy; 2023. All right reserved.</p>
         <p className="text-center pb-3 fs-5">I</p>
-        <a href="#"><p className="text-center pb-3 px-3">Terms and Conditions</p></a>
+        <Termandconditions />
         <p className="text-center pb-3 fs-5">I</p>
-        <a href="#"><p className="text-center pb-3 px-3">Privacy Policy</p></a>
+        <PrivatePolicy />
       </div>
     </div>
       </main>

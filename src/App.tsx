@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Route, Routes } from "react-router-dom";
 import { Container, Spinner } from "react-bootstrap";
 import Header from "./Header";
-import Footer from "./Footer";
 import { LiveChatLoaderProvider } from 'react-live-chat-loader'
+import { Audio } from 'react-loader-spinner'
 
 
 const navigationData = [
@@ -21,24 +21,67 @@ const WhatWeDoView = React.lazy(() => import("./pages/WhatWeDo"));
 const ContactView = React.lazy(() => import("./pages/Contact"));
 const OurTeamView = React.lazy(() => import("./pages/OurTeam"));
 
-export const App = () => (
-  <>
+export const App = () => {
+
+
+  const [ready, setReady] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  useEffect(() => {
+      setIsLoaded(true);
+  }, []);
+
+  useEffect(() => {
+      if (isLoaded) {
+        spins();
+      }
+  }, [isLoaded]);
+
+  const spins = async() => {
+    await new Promise(r => setTimeout(r, 3000));
+    setReady(true)
+  }
+  
+
+  return (
+    <div style={{overflowX: "hidden"}}>
+      {
+            ready ? (<>
+              <LiveChatLoaderProvider providerKey="99kzsmh2r94i" provider="drift">
+                  <Header navigation={navigationData} />
+              <Container fluid className="px-0">
+                <React.Suspense fallback={<Spinner animation={"border"} />}>
+                  <Routes>
+                    <Route path="/" element={<HomeView />} />
+                    <Route path="/our_work" element={<OurWorkView />} />
+                    <Route path="/about_us" element={<AboutUsView />} />
+                    <Route path="/services" element={<WhatWeDoView />} />
+                    <Route path="/contact" element={<ContactView />} />
+                    <Route path="our_team" element={<OurTeamView />} />
+                  </Routes>
+                </React.Suspense>
+              </Container>
+              {/* <Footer /> */}
+            </LiveChatLoaderProvider>
+            </>):
+            (<>
+              <div>
+                  <Audio
+                  height="80"
+                  width="80"
+                  // radius="9"
+                  color="green"
+                  ariaLabel="loading"
+                  wrapperStyle={{alignItems: "center", justifyContent: "center",verticalAlign: "middle", margin: "auto", position: "absolute",
+                  top: "0", left: "0", bottom: "0", right: "0"}}
+                  // wrapperClass
+                  />
+              </div>  
+            </>)
+      }
    
-    <LiveChatLoaderProvider providerKey="99kzsmh2r94i" provider="drift">
-        /* ... */<Header navigation={navigationData} />
-    <Container fluid className="px-0">
-      <React.Suspense fallback={<Spinner animation={"border"} />}>
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-          <Route path="/our_work" element={<OurWorkView />} />
-          <Route path="/about_us" element={<AboutUsView />} />
-          <Route path="/services" element={<WhatWeDoView />} />
-          <Route path="/contact" element={<ContactView />} />
-           <Route path="our_team" element={<OurTeamView />} />
-        </Routes>
-      </React.Suspense>
-    </Container>
-    <Footer />
-      </LiveChatLoaderProvider>
-  </>
-);
+    
+  </div>
+  )
+  
+};

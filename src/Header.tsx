@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -13,6 +13,24 @@ interface Props {
 
 const Header = ({ navigation }: { navigation: Props[] }) => {
   const navigate = useNavigate();
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState(false); //this helps
+
+  useEffect(() => {
+      setIsLoaded(true);
+  }, []);
+
+  const spins = async() => {
+    await new Promise(r => setTimeout(r, 2000));
+    setIsPageLoaded(true);
+  }
+
+  useEffect(() => {
+      if (isLoaded) {
+
+          spins();
+      }
+  }, [isLoaded]);
 
   //Nav link active styling
   const btnEl = document.querySelectorAll('.nav-links');
@@ -26,7 +44,9 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
 
   
   return (
-    <Navbar
+    <>
+      {isPageLoaded ? (<>
+        <Navbar
       collapseOnSelect
       expand="lg"
       style={{ backgroundColor: "#e6ffcc", width: "100vw" }}
@@ -67,6 +87,11 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+      </>):(<></>)
+
+      }
+    </>
+    
   );
 };
 
