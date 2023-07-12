@@ -34,7 +34,7 @@ const Termandconditions: React.FC = () => {
                         </div>
                         <br/>
                         <div className="text-center">
-                             Doyenify provides IT and Consultancy  (Services) via the Company website offered from time to time reach Us through <a href={window.location.origin + "contact"}>Our Contact Form</a> .  The Company Service is owned and operated by Doyenify Team Members.
+                             Doyenify provides IT and Consultancy  (Services) via the Company website offered from time to time reach Us through <a href={window.location.origin + "/contact"}>Our Contact Form</a> .  The Company Service is owned and operated by Doyenify Team Members.
                             
                         </div>
                         
