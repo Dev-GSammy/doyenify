@@ -60,14 +60,14 @@ const Privatepolicy: React.FC = () => {
                             <h5 className="titles">Do We Use Cookies?</h5>
                             <div className="body">Cookies are small files that websites place on individual computer hard drives through web browsers. Users must explicitly allow cookies to be placed by every website that uses them. Cookies enable a website to remember a specific browser, and capture and retain particular information.
                                 Doyenify uses cookies to remember, understand and save your preferences for upcoming visits to our website. Cookies help us gather data regarding website traffic, engagement, and interactions, and enable us to provide better future online experiences, tools, and services.
-                                The information that our cookies collect has no personal information that can identify you specifically. Conversely, the anonymous information captured by the cookies is transmitted to Google, where it is used to create anonymous web activity reporting only for the domain <a href={window.location.pathname + "contact"}>Contact Us</a> , the data is used to gain insight into how to optimize customer experience, content and marketing efforts for  <a href={window.location.pathname + "contact"}>Contact Us</a> .
+                                The information that our cookies collect has no personal information that can identify you specifically. Conversely, the anonymous information captured by the cookies is transmitted to Google, where it is used to create anonymous web activity reporting only for the domain <a href={window.location.origin + "contact"}>Contact Us</a> , the data is used to gain insight into how to optimize customer experience, content and marketing efforts for  <a href={window.location.origin + "contact"}>Contact Us</a> .
                                 In addition, no personally identifiable information will be collected on this website unless explicitly submitted through a fill-in form on our Contact Us page.</div>
                         </div>
                         
                         <div className="holder">
                             <h5 className="titles">Remarketing</h5>
                             <div className="body">Doyenify uses cookies to display remarketing advertisements. These are based on a user’s prior visits 
-                            to <a href={window.location.pathname + "contact"}>Contact Us</a> and may be seen throughout other websites on the Internet.
+                            to <a href={window.location.origin + "contact"}>Contact Us</a> and may be seen throughout other websites on the Internet.
                             Users can opt out of cookies through Google at any point by visiting Google Ads Preferences Manager.</div>
                         </div>
 
