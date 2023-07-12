@@ -74,7 +74,7 @@ const Termandconditions: React.FC = () => {
                               <li><span style={{marginRight: "4px", fontWeight: "600", fontSize: "17px"}}>Age:</span>The Service is meant for those at least eighteen (13) years of age.  
                               Use of the Service by anyone under this age is a violation of the Terms of Service.</li>
 
-                              <li><span style={{marginRight: "4px", fontWeight: "600", fontSize: "17px"}}>Intellectual Property:</span>5.You acknowledge that all materials on the Service, including
+                              <li><span style={{marginRight: "4px", fontWeight: "600", fontSize: "17px"}}>Intellectual Property:</span>You acknowledge that all materials on the Service, including
                                <span style={{color: "#FF0000"}}>(but not limited to these )</span>; the Website design, Video editing, graphics design,
                                 text, pictures, and other files and the selection and arrangement thereof are the property of Company and/or 
                                  licensors, and are subject to and protected by Nigeria and international copyright and other intellectual property 
