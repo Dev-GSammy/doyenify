@@ -4,8 +4,8 @@ import Col from "react-bootstrap/Col";
 import {Facebook, Instagram, Linkedin, Twitter,Youtube, Whatsapp, Telegram, Envelope, Telephone} from 'react-bootstrap-icons';
 import "./footer.css";
 import { Link } from 'react-router-dom';
-import  Termandconditions  from "./Termandconditions";
-import  PrivatePolicy  from "./PrivatePolicy";
+// import  Termandconditions  from "./pages/Termandconditions";
+// import  PrivatePolicy  from "./pages/PrivatePolicy";
 
 
 const Footer: React.FC = () => {
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
        style={{  border: "0" }} 
        loading="lazy" 
        >
-       </iframe>
+       </iframe> 
       </Col>
     </Row>
     
@@ -78,9 +78,13 @@ const Footer: React.FC = () => {
       <div className="d-flex footer-terms">
         <p className="text-center pb-3 px-3">&copy; 2023. All right reserved.</p>
         <p className="text-center pb-3 fs-5">I</p>
-        <Termandconditions />
+        {/* <Termandconditions /> */}
+        <a href={window.location.origin + "/termandconditions"} className="text-black " target="_blank"><p   className="text-center pb-3 px-3">Terms and Conditions</p></a>
+
         <p className="text-center pb-3 fs-5">I</p>
-        <PrivatePolicy />
+        {/* <PrivatePolicy /> */}
+        <a href={window.location.origin + "/Privatepolicy"} className="text-black " target="_blank"><p  className="text-center pb-3 px-3">Privacy Policy</p></a>
+      
       </div>
     </div>
       </main>

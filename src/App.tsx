@@ -4,6 +4,7 @@ import { Container, Spinner } from "react-bootstrap";
 import Header from "./Header";
 import { LiveChatLoaderProvider } from 'react-live-chat-loader'
 import { Audio } from 'react-loader-spinner'
+import Termandconditions from "./pages/Termandconditions";
 
 
 const navigationData = [
@@ -20,25 +21,21 @@ const AboutUsView = React.lazy(() => import("./pages/AboutUs"));
 const WhatWeDoView = React.lazy(() => import("./pages/WhatWeDo"));
 const ContactView = React.lazy(() => import("./pages/Contact"));
 const OurTeamView = React.lazy(() => import("./pages/OurTeam"));
+const TeamandCondition = React.lazy(() => import("./pages/Termandconditions"));
+const Privatepolicy = React.lazy(() => import("./pages/PrivatePolicy"));
 
 export const App = () => {
 
 
   const [ready, setReady] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
   
   useEffect(() => {
-      setIsLoaded(true);
+      spins();
   }, []);
 
-  useEffect(() => {
-      if (isLoaded) {
-        spins();
-      }
-  }, [isLoaded]);
-
+  
   const spins = async() => {
-    await new Promise(r => setTimeout(r, 3000));
+    await new Promise(r => setTimeout(r, 100));
     setReady(true)
   }
   
@@ -50,7 +47,8 @@ export const App = () => {
               <LiveChatLoaderProvider providerKey="99kzsmh2r94i" provider="drift">
                   <Header navigation={navigationData} />
               <Container fluid className="px-0">
-                <React.Suspense fallback={<Spinner animation={"border"} />}>
+                {/* <React.Suspense fallback={<Spinner animation={"border"} />}> */}
+                <React.Suspense>
                   <Routes>
                     <Route path="/" element={<HomeView />} />
                     <Route path="/our_work" element={<OurWorkView />} />
@@ -58,6 +56,8 @@ export const App = () => {
                     <Route path="/services" element={<WhatWeDoView />} />
                     <Route path="/contact" element={<ContactView />} />
                     <Route path="our_team" element={<OurTeamView />} />
+                    <Route path="termandconditions" element={<Termandconditions />} />
+                    <Route path="Privatepolicy" element={<Privatepolicy />} />
                   </Routes>
                 </React.Suspense>
               </Container>

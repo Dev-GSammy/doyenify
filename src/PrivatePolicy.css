@@ -1,0 +1,35 @@
+
+
+.firstText {
+    margin-top: 80px;
+}
+
+
+@media (min-width: 100px) and (max-width: 567px){
+    .caroimg {
+        height: 100vh;
+        
+    }
+    
+    .child2 {
+        
+        position: relative;
+        top: -600px;
+        z-index: 1000;
+        
+        
+    }
+
+    .herotext {
+        margin-top: 5px;
+        font-size: 20px; 
+        text-align: justify; 
+        margin-left: 20px; 
+        margin-right: 20px
+    }
+    
+    
+} 
+
+
+  

@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
   const [ready, setReady] = useState(false);
 
   const spins = async() => {
-    await new Promise(r => setTimeout(r, 3000));
+    await new Promise(r => setTimeout(r, 100));
     setReady(true)
   }
   useEffect(() => {

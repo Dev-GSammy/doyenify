@@ -1,0 +1,70 @@
+
+
+.caroimg {
+    width: 100%;
+    height: 430px;
+    object-fit:cover;
+    object-position:50% 50%;
+    /* filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%); */
+   
+}
+
+.child2 {
+    
+    position: relative;
+    top: -320px;
+    z-index: 1000;
+    height: 0px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    
+}
+
+ol li {
+    font-weight:bold;
+}
+li > p {
+    font-weight:normal;
+}
+
+.herotext {
+    font-size: 20px; 
+    text-align: justify; 
+    margin-left: 100px; 
+    margin-right: 100px
+}
+
+
+@media (min-width: 100px) and (max-width: 567px){
+    .caroimg {
+        height: 100vh;
+        
+    }
+    
+    .child2 {
+        
+        position: relative;
+        top: -600px;
+        z-index: 1000;
+        
+        
+    }
+
+    .herotext {
+        margin-top: 5px;
+        font-size: 20px; 
+        text-align: justify; 
+        margin-left: 20px; 
+        margin-right: 20px
+    }
+    
+    
+} 
+
+
+  

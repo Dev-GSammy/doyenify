@@ -21,7 +21,7 @@ const Header = ({ navigation }: { navigation: Props[] }) => {
   }, []);
 
   const spins = async() => {
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 100));
     setIsPageLoaded(true);
   }
 
