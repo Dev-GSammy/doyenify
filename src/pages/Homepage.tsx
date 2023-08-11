@@ -55,7 +55,7 @@ const Home = () => {
 
                       </p>
                       
-                      </Card.Text>
+                      </Card.Text>  
                       <br/>
                       <div className= "button-wrapa" >
                         <div className="button-wrapa-one" >
@@ -67,19 +67,8 @@ const Home = () => {
                           {" "}
                           View Our Work{" "}
                         </Button>
-                        </Link>
-                        </div>
-                        <div>
-                        <Link to="/Contact" className="brand">
-                        <Button
-                          className=" px-5 py-1 home-button doyenbtnrequest"
-                          
-                        >
-                          {" "}
-                          Request A Quote{" "}
-                        </Button>
-                        </Link>
-                        </div>
+                        </Link> 
+                        </div>    
                         </div>
                         
                        
