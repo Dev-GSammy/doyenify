@@ -70,6 +70,22 @@ const Home = () => {
                         </Link> 
                         </div>    
                         </div>
+                        <div>
+	<div className="row">
+		  <div className="col-md-4">
+			<Card className="CardNewRow" style={{padding: "0", borderColor: "#ffffff00"}}>
+      
+      </Card>
+		</div>
+		  <div className="col-md-4">
+			<Card />
+		</div>
+		  <div className="col-md-4">
+		  thirdcomponent
+		  </div>
+
+	</div>
+</div>
                         
                        
                        
